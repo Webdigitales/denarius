@@ -1,6 +1,6 @@
 uuid: 621195a3-e1b4-4c6f-be66-1f3971743ef1
 langcode: fr
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:marketingpopup:4dd6f255-b734-44d8-b888-5509d6b40e58'
