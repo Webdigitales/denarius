@@ -310,3 +310,9 @@ button:focus, .btn:focus {
     color: #ff4151;
   }
 }
+
+.text-xs-center {
+  @media #{$mobile} {
+    text-align: center !important;
+  }
+}
