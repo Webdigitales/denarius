@@ -314,5 +314,9 @@ button:focus, .btn:focus {
 .text-xs-center {
   @media #{$mobile} {
     text-align: center !important;
+
+    .block-social-media-links {
+      text-align: center !important;
+    }
   }
 }
