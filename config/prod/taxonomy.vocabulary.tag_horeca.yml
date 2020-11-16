@@ -1,0 +1,8 @@
+uuid: 782b2aea-52db-42b1-9a56-f892b13bd3dd
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Catégorie Horeca'
+vid: tag_horeca
+description: ''
+weight: 0

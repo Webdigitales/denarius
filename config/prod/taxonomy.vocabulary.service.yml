@@ -1,0 +1,8 @@
+uuid: d35ffc9a-bcc7-4b82-8b4c-a63c1290c166
+langcode: fr
+status: true
+dependencies: {  }
+name: Département
+vid: service
+description: ''
+weight: 0

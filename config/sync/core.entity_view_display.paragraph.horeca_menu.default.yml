@@ -1,0 +1,31 @@
+uuid: bf2f2342-f0ab-451c-b1a3-529c6c567920
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.horeca_menu.field_body
+    - field.field.paragraph.horeca_menu.field_title
+    - paragraphs.paragraphs_type.horeca_menu
+  module:
+    - text
+id: paragraph.horeca_menu.default
+targetEntityType: paragraph
+bundle: horeca_menu
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 550cd6e7-9f95-4d98-a20c-8e47c4bb1065
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.steps_item
+  module:
+    - text
+id: paragraph.steps_item.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: steps_item
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

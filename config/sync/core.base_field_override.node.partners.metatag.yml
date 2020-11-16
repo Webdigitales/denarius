@@ -1,0 +1,18 @@
+uuid: 415aac12-72fa-4824-a5fa-f12e75834418
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.partners
+id: node.partners.metatag
+field_name: metatag
+entity_type: node
+bundle: partners
+label: 'Balises meta (Meta tags)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,26 @@
+uuid: 7e684914-b53a-4ca1-bcd1-86ea09d0cb2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_paragraph_image_text_xs_2x
+label: 'wdi paragraph image text | xs | @2x'
+effects:
+  0c592c5b-655d-4541-8b08-cdb55e5c4074:
+    uuid: 0c592c5b-655d-4541-8b08-cdb55e5c4074
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 690
+      height: 500
+      crop_type: focal_point
+  be733366-567c-4f00-8ad4-87ede24a9bae:
+    uuid: be733366-567c-4f00-8ad4-87ede24a9bae
+    id: image_crop
+    weight: 2
+    data:
+      width: 690
+      height: 500
+      anchor: center-center
+pipeline: __default__

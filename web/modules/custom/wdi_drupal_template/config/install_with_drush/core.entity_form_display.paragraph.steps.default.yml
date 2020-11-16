@@ -1,0 +1,108 @@
+uuid: deefdd31-b34b-41ea-99e7-4997efa603b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.steps.field_grid_column
+    - field.field.paragraph.steps.field_grid_content
+    - field.field.paragraph.steps.field_paragraph_header
+    - paragraphs.paragraphs_type.steps
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_wrapper:
+      children:
+        - group_settings
+        - group_content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: wrapper
+      region: content
+    group_settings:
+      children:
+        - field_grid_column
+      parent_name: group_wrapper
+      weight: 9
+      format_type: tab
+      format_settings:
+        description: ''
+        formatter: open
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Settings
+      region: content
+    group_content:
+      children:
+        - field_paragraph_header
+        - field_grid_content
+      parent_name: group_wrapper
+      weight: 10
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Content
+      region: content
+id: paragraph.steps.default
+targetEntityType: paragraph
+bundle: steps
+mode: default
+content:
+  field_grid_column:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_grid_content:
+    weight: 9
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: grid_item
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_paragraph_header:
+    weight: 8
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: title
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+hidden:
+  created: true
+  status: true

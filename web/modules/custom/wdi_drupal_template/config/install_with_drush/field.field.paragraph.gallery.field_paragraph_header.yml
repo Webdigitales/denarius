@@ -1,0 +1,73 @@
+uuid: 32db3e50-e36b-41cd-a7a7-803e953c9dfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_header
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.title
+  module:
+    - entity_reference_revisions
+id: paragraph.gallery.field_paragraph_header
+field_name: field_paragraph_header
+entity_type: paragraph
+bundle: gallery
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      title: title
+    target_bundles_drag_drop:
+      body:
+        weight: 16
+        enabled: false
+      call_to_action:
+        weight: 17
+        enabled: false
+      gallery:
+        weight: 18
+        enabled: false
+      grid:
+        weight: 19
+        enabled: false
+      grid_item:
+        weight: 20
+        enabled: false
+      image:
+        weight: 21
+        enabled: false
+      image_text:
+        weight: 22
+        enabled: false
+      intro:
+        weight: 23
+        enabled: false
+      link:
+        weight: 24
+        enabled: false
+      quote:
+        weight: 25
+        enabled: false
+      slider:
+        weight: 26
+        enabled: false
+      testimonials:
+        weight: 27
+        enabled: false
+      text:
+        weight: 28
+        enabled: false
+      text_image:
+        weight: 29
+        enabled: false
+      title:
+        enabled: true
+        weight: 30
+field_type: entity_reference_revisions

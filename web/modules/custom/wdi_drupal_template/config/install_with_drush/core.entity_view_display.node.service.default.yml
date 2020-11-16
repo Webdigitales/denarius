@@ -1,0 +1,68 @@
+uuid: bdf08966-3819-4a60-abae-efd5e685242d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_button
+    - field.field.node.service.field_service
+    - field.field.node.service.field_media_image
+    - field.field.node.service.field_meta
+    - field.field.node.service.field_page_content
+    - field.field.node.service.field_teaser_icon
+    - field.field.node.service.field_teaser_image
+    - field.field.node.service.field_teaser_title
+    - node.type.service
+  module:
+    - entity_reference_revisions
+    - link
+    - metatag
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  field_button:
+    weight: 1
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media_image:
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: wdi_banner_image
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_meta:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_page_content:
+    weight: 2
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  field_service: true
+  field_teaser_icon: true
+  field_teaser_image: true
+  field_teaser_title: true
+  langcode: true
+  links: true

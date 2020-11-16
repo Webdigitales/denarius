@@ -1,0 +1,34 @@
+uuid: 8b783b38-bf2c-4cdb-a00e-e19a1d54bc5e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.wdi_offer_image_md_1x
+    - image.style.wdi_offer_image_md_2x
+  theme:
+    - bootstrap
+id: wdi_offer_image
+label: 'wdi offer image'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_offer_image_md_1x
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_offer_image_md_2x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_offer_image_md_1x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_offer_image_md_2x
+breakpoint_group: bootstrap
+fallback_image_style: wdi_offer_image_md_1x

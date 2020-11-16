@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view template to display a list of rows.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows for this list.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ * - list: @todo.
+ *   - type: Starting tag will be either a ul or ol.
+ *   - attributes: HTML attributes for the list element.
+ *
+ * @see template_preprocess_views_view_list()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if attributes -%}
+<div class="view-wrapper" data-aos="fade-up">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div{{ attributes.addClass('view view--flex pagination') }}>
+          {% endif %}
+          <div class="view__item item--center">
+            <a href="{{ path('entity.node.canonical', {'node': 9}) }}">
+              <svg class="icon">
+                <use xlink:href="/sites/default/themes/custom/wdi_theme/images/svg-sprite.svg#gallery"></use>
+              </svg>
+            </a>
+          </div>
+          {% for row in rows %}
+            <div class="view__item">
+              {{- row.content -}}
+            </div>
+          {% endfor %}
+          {% if attributes -%}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

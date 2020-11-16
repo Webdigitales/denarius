@@ -1,0 +1,27 @@
+uuid: 6d948b26-5cfc-487c-82e4-e39c59295c6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - wdi_theme
+_core:
+  default_config_hash: OJptRfOdUoqplEu-gLq_b6P7Hn37kipbWq7QI8i_b5E
+id: wdi_theme_account_menu
+theme: wdi_theme
+region: navigation_collapsible
+weight: -11
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

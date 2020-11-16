@@ -1,0 +1,10 @@
+uuid: 4b458801-2541-44d8-8865-7178644e3a88
+langcode: en
+status: true
+dependencies: {  }
+id: pdf_link
+label: 'Lien vers un fichier'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

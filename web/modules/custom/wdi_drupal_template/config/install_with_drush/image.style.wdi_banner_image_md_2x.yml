@@ -1,0 +1,26 @@
+uuid: e478f85d-364b-4c3e-a4ce-5de69f75ea47
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_banner_image_md_2x
+label: 'wdi banner image | md | @2x'
+effects:
+  698a2f27-4a26-4caf-95cf-0b969cf5cce3:
+    uuid: 698a2f27-4a26-4caf-95cf-0b969cf5cce3
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 1000
+      crop_type: focal_point
+  1cf14fa5-b1e4-4514-a2d5-136b2720812d:
+    uuid: 1cf14fa5-b1e4-4514-a2d5-136b2720812d
+    id: image_crop
+    weight: 2
+    data:
+      width: 1200
+      height: 1000
+      anchor: center-center
+pipeline: __default__

@@ -1,0 +1,37 @@
+uuid: 7af68fbb-4ca4-46c2-ac1d-fbb34e4e0289
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wdi_banner_image
+    - field.field.media.video.field_media_video_file
+    - media.type.video
+  module:
+    - file
+_core:
+  default_config_hash: dQR0mYK5NNg27OigHrxZrHSsnwewnNZcPJKjKIO0cpA
+id: media.video.wdi_banner_image
+targetEntityType: media
+bundle: video
+mode: wdi_banner_image
+content:
+  field_media_video_file:
+    type: file_video
+    weight: 0
+    label: visually_hidden
+    settings:
+      autoplay: true
+      loop: true
+      multiple_file_display_type: sources
+      muted: true
+      width: 1920
+      height: 1080
+      controls: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

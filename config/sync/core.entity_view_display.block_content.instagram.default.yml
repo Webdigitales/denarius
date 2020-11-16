@@ -1,0 +1,46 @@
+uuid: 2961d532-9d21-47ec-ba9b-0a4de00a0680
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.instagram
+    - field.field.block_content.instagram.field_code
+    - field.field.block_content.instagram.field_link
+    - field.field.block_content.instagram.field_title
+  module:
+    - link
+    - text
+id: block_content.instagram.default
+targetEntityType: block_content
+bundle: instagram
+mode: default
+content:
+  field_code:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

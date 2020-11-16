@@ -1,0 +1,26 @@
+uuid: cda7a9ba-c0bd-409e-8a35-030611412ad6
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_gallery
+label: 'Paragraph Gallery (310x560)'
+effects:
+  f7353acd-114e-4df9-ba87-1e3d3470c923:
+    uuid: f7353acd-114e-4df9-ba87-1e3d3470c923
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 310
+      height: 560
+      crop_type: focal_point
+  df4b7d34-f936-4e3e-97f8-0a982a656efd:
+    uuid: df4b7d34-f936-4e3e-97f8-0a982a656efd
+    id: image_scale
+    weight: 2
+    data:
+      width: 310
+      height: 560
+      upscale: false
+pipeline: __default__

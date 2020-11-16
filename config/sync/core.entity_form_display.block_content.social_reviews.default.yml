@@ -1,0 +1,38 @@
+uuid: 0e60d25a-ba37-4e50-841e-8acd41d1f48f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.social_reviews
+    - field.field.block_content.social_reviews.field_code
+  module:
+    - text
+id: block_content.social_reviews.default
+targetEntityType: block_content
+bundle: social_reviews
+mode: default
+content:
+  field_code:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

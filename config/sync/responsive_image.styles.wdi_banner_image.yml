@@ -1,0 +1,24 @@
+uuid: d9a67cbc-ce11-49d7-a455-a3a6a8226ccf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.wdi_banner_image_lg_1x
+    - image.style.wdi_banner_image_lg_2x
+  theme:
+    - bootstrap
+id: wdi_banner_image
+label: 'wdi banner image'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_lg_1x
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_lg_2x
+breakpoint_group: bootstrap
+fallback_image_style: wdi_banner_image_lg_1x

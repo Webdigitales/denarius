@@ -1,0 +1,8 @@
+uuid: 1c23d570-0b81-4f4c-8e8c-10b253fb67bd
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Équipements chambre & suite'
+vid: amenities
+description: ''
+weight: 0

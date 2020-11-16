@@ -1,0 +1,10 @@
+uuid: 0c5ca29e-29fd-444e-8890-35ff851d06bb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.link
+label: Lien
+targetEntityType: node
+cache: true

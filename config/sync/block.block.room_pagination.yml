@@ -1,0 +1,25 @@
+uuid: b5c8065e-6684-4ea2-afd2-60e9a6cd6f3b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.wdi_pagination
+  module:
+    - views
+  theme:
+    - wdi_theme
+id: room_pagination
+theme: wdi_theme
+region: hidden
+weight: 0
+provider: null
+plugin: 'views_block:wdi_pagination-room_pagination'
+settings:
+  id: 'views_block:wdi_pagination-room_pagination'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

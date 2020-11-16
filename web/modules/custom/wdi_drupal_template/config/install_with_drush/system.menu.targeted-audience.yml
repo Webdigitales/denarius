@@ -1,0 +1,8 @@
+uuid: dbe90302-1cf6-4faf-bf42-226c30fcd18d
+langcode: en
+status: true
+dependencies: {  }
+id: targeted-audience
+label: 'targeted audience'
+description: ''
+locked: false

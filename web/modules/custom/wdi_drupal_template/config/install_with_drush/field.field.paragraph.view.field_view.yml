@@ -1,0 +1,27 @@
+uuid: 0187c8a9-7ee2-43a9-b8e9-2af17a0e8bec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view
+    - paragraphs.paragraphs_type.view
+  module:
+    - block_field
+id: paragraph.view.field_view
+field_name: field_view
+entity_type: paragraph
+bundle: view
+label: View
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    'views_block:articles-news_home': 'views_block:articles-news_home'
+    'views_block:articles-news_service': 'views_block:articles-news_service'
+    'views_block:articles-news_page': 'views_block:articles-news_page'
+    'views_block:partners-listing_partners': 'views_block:partners-listing_partners'
+    'views_block:team-team_grid': 'views_block:team-team_grid'
+field_type: block_field

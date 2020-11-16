@@ -1,0 +1,36 @@
+uuid: a514c529-1a5c-4aab-9e04-5f928bf34ff5
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: wdi_partner_logo
+label: 'wdi partner logo'
+effects:
+  01c43470-42b4-4012-8787-5f180262165e:
+    uuid: 01c43470-42b4-4012-8787-5f180262165e
+    id: image_effects_set_canvas
+    weight: 1
+    data:
+      canvas_size: relative
+      exact:
+        width: ''
+        height: ''
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 20
+        right: 20
+        top: 20
+        bottom: 20
+      canvas_color: ''
+  b4f8feb4-bd6c-4bee-82c3-3947b3cf4b4e:
+    uuid: b4f8feb4-bd6c-4bee-82c3-3947b3cf4b4e
+    id: image_scale
+    weight: 2
+    data:
+      width: 325
+      height: 325
+      upscale: true
+pipeline: __default__

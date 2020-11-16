@@ -1,0 +1,20 @@
+uuid: c1df7d92-8c28-48f9-b5f7-c33897fa79ba
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - bartik
+id: selecteurdelangue
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Sélecteur de langue'
+  provider: language
+  label_display: '0'
+visibility: {  }

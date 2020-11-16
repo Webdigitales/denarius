@@ -1,0 +1,10 @@
+uuid: 46fb91e8-6201-404d-a7f1-3b63f1fe9e4b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_news_image_thumbnail
+label: 'wdi news image thumbnail'
+targetEntityType: media
+cache: true

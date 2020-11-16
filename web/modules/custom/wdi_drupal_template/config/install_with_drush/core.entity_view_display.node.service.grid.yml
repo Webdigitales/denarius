@@ -1,0 +1,58 @@
+uuid: 0c8cb5fb-0cdb-42ad-89f6-2f8fed42e6bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.grid
+    - field.field.node.service.field_button
+    - field.field.node.service.field_media_image
+    - field.field.node.service.field_page_content
+    - field.field.node.service.field_teaser_icon
+    - field.field.node.service.field_teaser_image
+    - field.field.node.service.field_teaser_title
+    - image.style.wdi_service_image
+    - node.type.service
+  module:
+    - icon_select
+    - media
+    - user
+id: node.service.grid
+targetEntityType: node
+bundle: service
+mode: grid
+content:
+  field_teaser_icon:
+    weight: 1
+    label: visually_hidden
+    settings:
+      apply_dimensions: '1'
+      width: '48'
+      height: '48'
+    third_party_settings: {  }
+    type: icon_select_formatter_default
+    region: content
+  field_teaser_image:
+    type: media_thumbnail
+    weight: 2
+    label: visually_hidden
+    settings:
+      image_style: wdi_service_image
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_teaser_title:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_button: true
+  field_media_image: true
+  field_meta: true
+  field_page_content: true
+  field_service: true
+  langcode: true
+  links: true

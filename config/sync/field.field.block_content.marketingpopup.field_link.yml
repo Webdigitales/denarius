@@ -1,0 +1,23 @@
+uuid: 2187395e-3175-457b-9fc9-623d4092d99d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.marketingpopup
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.marketingpopup.field_link
+field_name: field_link
+entity_type: block_content
+bundle: marketingpopup
+label: Lien
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

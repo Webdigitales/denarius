@@ -1,0 +1,10 @@
+uuid: 823de9f6-1a6b-4096-9905-d797196499e7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_room_thumbnail
+label: 'wdi room thumbnail'
+targetEntityType: media
+cache: true

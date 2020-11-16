@@ -1,0 +1,21 @@
+uuid: e9e4f253-a9ee-4eda-80b5-96a4933c4d25
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.horeca_menu
+  module:
+    - text
+id: paragraph.horeca_menu.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: horeca_menu
+label: Menu
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

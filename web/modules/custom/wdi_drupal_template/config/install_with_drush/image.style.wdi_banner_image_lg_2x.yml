@@ -1,0 +1,26 @@
+uuid: 97824d72-76ae-4cd0-af06-f120bd3a5271
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_banner_image_lg_2x
+label: 'wdi banner image | lg | @2x'
+effects:
+  ce7011fe-0b12-473a-b1d6-12a15868b9ad:
+    uuid: ce7011fe-0b12-473a-b1d6-12a15868b9ad
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 500
+      crop_type: focal_point
+  14d99fc8-be1c-48af-b34b-93c0ec373fa5:
+    uuid: 14d99fc8-be1c-48af-b34b-93c0ec373fa5
+    id: image_crop
+    weight: 2
+    data:
+      width: 600
+      height: 500
+      anchor: center-center
+pipeline: __default__

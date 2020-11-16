@@ -1,0 +1,66 @@
+uuid: ed5b0008-69be-46b8-b558-e0c4bf608c12
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.instagram
+    - field.field.block_content.instagram.field_code
+    - field.field.block_content.instagram.field_link
+    - field.field.block_content.instagram.field_title
+  module:
+    - link_attributes
+    - text
+id: block_content.instagram.default
+targetEntityType: block_content
+bundle: instagram
+mode: default
+content:
+  field_code:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        class: true
+        id: false
+        name: false
+        rel: false
+        accesskey: false
+        aria-label: false
+        title: false
+    third_party_settings: {  }
+    type: link_attributes
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

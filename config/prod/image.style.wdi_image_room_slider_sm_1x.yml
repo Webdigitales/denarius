@@ -1,0 +1,16 @@
+uuid: fd9d7cf3-d92c-4cfa-b56b-4651b501f852
+langcode: fr
+status: true
+dependencies: {  }
+name: wdi_image_room_slider_sm_1x
+label: 'wdi image room slider | sm | @1x'
+effects:
+  cc0ff63d-c65e-4f48-a1ad-56e9bfc4289e:
+    uuid: cc0ff63d-c65e-4f48-a1ad-56e9bfc4289e
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 400
+      upscale: true
+pipeline: __default__

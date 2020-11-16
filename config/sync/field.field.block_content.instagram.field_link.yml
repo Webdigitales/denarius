@@ -1,0 +1,23 @@
+uuid: ec7f1310-8bb5-421b-a942-f7547d423efa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.instagram
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.instagram.field_link
+field_name: field_link
+entity_type: block_content
+bundle: instagram
+label: Lien
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

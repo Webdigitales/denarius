@@ -1,0 +1,29 @@
+uuid: 34685c10-261a-4dc2-ad02-f3af4045a9ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_partners
+    - paragraphs.paragraphs_type.testimonials
+    - taxonomy.vocabulary.partners
+id: paragraph.testimonials.field_partners
+field_name: field_partners
+entity_type: paragraph
+bundle: testimonials
+label: Partners
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      partners: partners
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

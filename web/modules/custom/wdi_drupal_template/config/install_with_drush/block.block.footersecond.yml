@@ -1,0 +1,25 @@
+uuid: b84e2ca5-fa13-432d-8a0e-8de7495da8cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-second
+  module:
+    - system
+  theme:
+    - wdi_theme
+id: footersecond
+theme: wdi_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-second'
+settings:
+  id: 'system_menu_block:footer-second'
+  label: Titre
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

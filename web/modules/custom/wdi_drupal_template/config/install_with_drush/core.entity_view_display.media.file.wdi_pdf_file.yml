@@ -1,0 +1,30 @@
+uuid: 6dc43bb8-7d91-407a-88dd-ff093dbf715d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wdi_pdf_file
+    - field.field.media.file.field_media_file
+    - media.type.file
+  module:
+    - file
+_core:
+  default_config_hash: 9s0lWIanCnW5Xrrkmedxohs9F0yk4LO8ZcmVQ9xyuu4
+id: media.file.wdi_pdf_file
+targetEntityType: media
+bundle: file
+mode: wdi_pdf_file
+content:
+  field_media_file:
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

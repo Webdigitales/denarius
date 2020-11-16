@@ -1,0 +1,5 @@
+name: 'WDI Modal Booking'
+type: module
+description: 'Modal Booking service cache context'
+core: 8.x
+package: 'Webdigitales'

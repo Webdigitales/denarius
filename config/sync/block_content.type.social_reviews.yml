@@ -1,0 +1,8 @@
+uuid: b46da791-dac6-4a5c-b900-9e16d19b4c51
+langcode: fr
+status: true
+dependencies: {  }
+id: social_reviews
+label: 'Social reviews'
+revision: 0
+description: ''

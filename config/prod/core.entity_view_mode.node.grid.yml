@@ -1,0 +1,10 @@
+uuid: cf8242c7-c696-4416-bfbc-de83d90a5c3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.grid
+label: Grid
+targetEntityType: node
+cache: true

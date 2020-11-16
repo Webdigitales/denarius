@@ -1,0 +1,10 @@
+uuid: 73f53d35-9797-4243-ac4e-1ad0a2a37c40
+langcode: en
+status: true
+dependencies: {  }
+id: image_text
+label: 'Image + Texte'
+icon_uuid: null
+icon_default: null
+description: 'Content - Image + Text'
+behavior_plugins: {  }

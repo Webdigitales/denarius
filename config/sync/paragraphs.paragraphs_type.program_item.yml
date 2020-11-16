@@ -1,0 +1,10 @@
+uuid: 404f5ffc-cbe4-49b6-a580-b4b1fa879250
+langcode: fr
+status: true
+dependencies: {  }
+id: program_item
+label: 'Ligne de programme'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

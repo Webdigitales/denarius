@@ -1,0 +1,28 @@
+uuid: 637c49df-c972-45fb-981d-ef432e75b0ef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - media.type.video
+    - node.type.horeca
+id: node.horeca.field_video
+field_name: field_video
+entity_type: node
+bundle: horeca
+label: Vidéo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

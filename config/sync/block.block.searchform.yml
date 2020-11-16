@@ -1,0 +1,21 @@
+uuid: 39eb0f73-abeb-4a5b-9c27-096dadb4166c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - wdi_theme
+id: searchform
+theme: wdi_theme
+region: hidden
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

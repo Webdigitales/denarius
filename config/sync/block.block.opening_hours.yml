@@ -1,0 +1,25 @@
+uuid: 85a15afd-7925-435d-8884-17d98b4c1243
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7e2bcf4d-b706-4b73-a7dd-3bac54eb16ec'
+  module:
+    - block_content
+  theme:
+    - wdi_theme
+id: opening_hours
+theme: wdi_theme
+region: hidden
+weight: -4
+provider: null
+plugin: 'block_content:7e2bcf4d-b706-4b73-a7dd-3bac54eb16ec'
+settings:
+  id: 'block_content:7e2bcf4d-b706-4b73-a7dd-3bac54eb16ec'
+  label: 'Opening hours'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

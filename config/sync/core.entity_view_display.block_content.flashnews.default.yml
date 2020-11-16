@@ -1,0 +1,37 @@
+uuid: eb592856-df77-41e1-8218-57ca55b785b4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.flashnews
+    - field.field.block_content.flashnews.body
+    - field.field.block_content.flashnews.field_link
+  module:
+    - link
+    - text
+id: block_content.flashnews.default
+targetEntityType: block_content
+bundle: flashnews
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true

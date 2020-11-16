@@ -1,0 +1,173 @@
+// @todo these should be their own CSS files and only included when
+// specific Drupal libraries are used.
+@import "component/bootstrap/alert";
+@import "component/bootstrap/ajax";
+@import "component/bootstrap/breadcrumbs";
+@import "component/bootstrap/field";
+@import "component/bootstrap/file";
+@import "component/bootstrap/filter";
+@import "component/bootstrap/form";
+@import "component/bootstrap/icon";
+@import "component/bootstrap/navbar";
+@import "component/bootstrap/panel";
+@import "component/bootstrap/progress-bar";
+@import "component/bootstrap/table-drag";
+@import "component/bootstrap/tabs";
+@import "component/bootstrap/toolbar";
+
+// Custom
+@import "component/drupal/menu";
+@import "component/drupal/node";
+@import "component/drupal/field-body";
+@import "component/drupal/paragraphs";
+@import "component/drupal/block";
+@import "component/drupal/views";
+@import "component/drupal/throbber";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @media #{$tablet-max} {
+    padding-bottom: 56px;
+
+    &.path-node-29 {
+      padding-bottom: 0;
+    }
+  }
+}
+
+
+div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {
+  background: $black;
+
+  .agree-button, .decline-button {
+    border: 0;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: $font-family-base;
+    color: $white;
+    box-shadow: none;
+    border-radius: 2px;
+    text-shadow: none;
+
+    &:hover {
+      background-color: $brand-primary;
+    }
+  }
+
+  .agree-button {
+    background: $brand-success;
+  }
+
+  .decline-button {
+    background: $brand-danger;
+  }
+
+  .eu-cookie-compliance-message {
+    margin: 15px 0 0;
+
+    button {
+      color: $brand-primary;
+
+      &:hover {
+        text-decoration: none;
+        opacity: .6;
+      }
+    }
+  }
+}
+
+.input-group {
+  input {
+    height: 48px;
+  }
+
+  .input-group-btn {
+    .btn-primary {
+      border-radius: 0 3px 3px 0 !important;
+      border: 0;
+      height: 48px;
+      width: 48px;
+    }
+  }
+}
+
+picture {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.tag {
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  color: $brand-secondary;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1px;
+  display: inline-flex;
+}
+
+span.price {
+  font-weight: 700;
+  font-size: $font-size-base;
+
+  .price--has-promo & {
+    text-decoration: line-through;
+  }
+
+  &.price--promo {
+    display: inline-flex;
+    padding: 4px 16px;
+    background-color: $brand-danger;
+    color: $white;
+  }
+}
+
+.caret {
+  margin-left: 4px;
+}
+
+.bg--primary {
+  background-color: $brand-primary;
+}
+
+.bg--secondary {
+  background-color: $brand-secondary;
+}
+
+.bg--white {
+  background-color: $white;
+}
+
+.bg--secondary-light, .bg--white {
+  .booking__phone {
+    p {
+      color: $brand-primary !important;
+
+      > a {
+        color: $brand-primary !important;
+      }
+    }
+  }
+}
+
+.form-submit {
+  justify-content: center;
+  margin: 16px 0 0;
+}

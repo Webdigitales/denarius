@@ -1,0 +1,36 @@
+uuid: 07241dd1-43dd-4798-a94d-baf342e5065a
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: partner
+label: 'Partner (115x70)'
+effects:
+  c94d7055-5159-4ee1-a584-c6c21f8f795d:
+    uuid: c94d7055-5159-4ee1-a584-c6c21f8f795d
+    id: image_effects_set_canvas
+    weight: -9
+    data:
+      canvas_size: exact
+      exact:
+        width: '115'
+        height: '70'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: ''
+  d407e1f7-a37f-47c8-9400-db98b2513560:
+    uuid: d407e1f7-a37f-47c8-9400-db98b2513560
+    id: image_scale
+    weight: -10
+    data:
+      width: 115
+      height: 70
+      upscale: false
+pipeline: __default__

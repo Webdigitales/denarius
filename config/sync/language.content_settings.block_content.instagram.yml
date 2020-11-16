@@ -1,0 +1,18 @@
+uuid: ac51f8d2-3376-41ef-87a1-f25b3de21e49
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.instagram
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.instagram
+target_entity_type_id: block_content
+target_bundle: instagram
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,148 @@
+uuid: a5ebf3b3-146c-4bd0-ac57-bad5037d543b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.room.field_amenities
+    - field.field.node.room.field_animal
+    - field.field.node.room.field_area
+    - field.field.node.room.field_article_summary
+    - field.field.node.room.field_bed
+    - field.field.node.room.field_button
+    - field.field.node.room.field_checkin
+    - field.field.node.room.field_checkout
+    - field.field.node.room.field_media_image_multiple
+    - field.field.node.room.field_option
+    - field.field.node.room.field_persons
+    - field.field.node.room.field_room_category
+    - field.field.node.room.field_teaser_image
+    - node.type.room
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+    - time_field
+    - user
+id: node.room.default
+targetEntityType: node
+bundle: room
+mode: default
+content:
+  field_amenities:
+    weight: 102
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_animal:
+    weight: 109
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_area:
+    weight: 106
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_article_summary:
+    weight: 107
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_bed:
+    weight: 105
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_button:
+    weight: 112
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_checkin:
+    weight: 103
+    label: hidden
+    settings:
+      time_format: 'H:i'
+    third_party_settings: {  }
+    type: time_formatter
+    region: content
+  field_checkout:
+    weight: 104
+    label: hidden
+    settings:
+      time_format: 'H:i'
+    third_party_settings: {  }
+    type: time_formatter
+    region: content
+  field_media_image_multiple:
+    type: entity_reference_entity_view
+    weight: 113
+    label: hidden
+    settings:
+      view_mode: wdi_room_slider
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_option:
+    type: entity_reference_revisions_entity_view
+    weight: 110
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_persons:
+    weight: 108
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_room_category:
+    weight: 114
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_teaser_image:
+    weight: 111
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

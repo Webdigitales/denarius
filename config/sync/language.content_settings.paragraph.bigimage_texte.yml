@@ -1,0 +1,18 @@
+uuid: da338227-ea97-4ed7-94a7-68f874326607
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bigimage_texte
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.bigimage_texte
+target_entity_type_id: paragraph
+target_bundle: bigimage_texte
+default_langcode: site_default
+language_alterable: true

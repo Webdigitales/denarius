@@ -1,0 +1,10 @@
+uuid: 72f62b53-654b-40f5-bd01-4e235e0a56f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_paragraph_slider
+label: 'wdi paragraph slider'
+targetEntityType: media
+cache: true

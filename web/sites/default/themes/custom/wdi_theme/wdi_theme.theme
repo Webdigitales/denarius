@@ -1,0 +1,225 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ */
+
+use Drupal\Component\Utility\Html;
+
+/* --------------------------------------------------
+ * Hooks suggestions
+ ---------------------------------------------------- */
+
+// Hook for blocks
+function wdi_theme_theme_suggestions_block_alter(array &$suggestions, array $variables)
+{
+  if (isset($variables['elements']['content']['#block_content'])) {
+    $suggestions[] = 'block__' . $variables['elements']['content']['#block_content']->bundle();
+    $suggestions[] = 'block__' . $variables['elements']['content']['#block_content']->bundle() . '__' . $variables['elements']['content']['#view_mode'];
+  }
+}
+
+// Hook for page
+function wdi_theme_theme_suggestions_page_alter(array &$suggestions, array $variables)
+{
+  // Current route
+  $current_route_name = \Drupal::service('current_route_match')->getRouteName();
+  if ($current_route_name == 'entity.node.canonical') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    // Suggestion by Node Type
+    $suggestions[] = 'page__node__' . $node->getType();
+  } elseif ($current_route_name == 'entity.taxonomy_term.canonical') {
+    // Suugestion by voc bundle
+    $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
+    $vocabulary_id = $term->bundle();
+    $suggestion_to_insert = 'page__taxonomy__term__' . $vocabulary_id;
+    array_splice($suggestions, 2, 0, $suggestion_to_insert);
+  }
+
+  // Customizing HTTP Error Pages
+  // Get Request Object.
+  $request = \Drupal::request();
+
+  // If there is HTTP Exception..
+  if ($exception = $request->attributes->get('exception')) {
+    // Get the status code.
+    $status_code = $exception->getStatusCode();
+    if (in_array($status_code, array(401, 403, 404))) {
+      //$suggestions[] = 'page__' . $status_code;
+      $suggestions[] = 'page__error';
+      $suggestions[] = 'page__error__' . $status_code;
+    }
+  }
+
+  return $suggestions;
+}
+
+// Hook for image formater
+function wdi_theme_theme_suggestions_image_formatter_alter(array &$suggestions, array $variables)
+{
+  $entity = $variables['item']->getEntity();
+  $field_name = $variables['item']->getParent()->getName();
+  $suggestions[] = 'image_formatter__' . $entity->getEntityTypeId() . '__' . $entity->bundle() . '__' . $field_name;
+}
+
+// Hook for taxonomy term
+function wdi_theme_theme_suggestions_taxonomy_term_alter(&$suggestions, $vars, $hook)
+{
+  $suggestions[] = 'taxonomy_term__' . $vars['elements']['#view_mode'];
+}
+
+// Hook for views
+function wdi_theme_theme_suggestions_views_view(&$suggestions, array $variables, $hook)
+{
+  $suggestions = [];
+  $view = $variables['view'];
+  $suggestions[] = 'views_view__' . $view->id();
+  $suggestions[] = 'views_view__' . $view->current_display;
+  $suggestions[] = 'views_view__' . $view->id() . '__' . $view->current_display;
+}
+
+/* --------------------------------------------------
+ * Alter functions
+ ---------------------------------------------------- */
+
+/**
+ *  Page attachments alter
+ *
+ * @param array $page
+ */
+function wdi_theme_page_attachments_alter(array &$page)
+{
+  // Override Meta Viewport
+  $viewport = [
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'viewport',
+      'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
+    ],
+  ];
+  $page['#attached']['html_head'][] = [$viewport, 'viewport'];
+
+  // Remove Meta Generator
+  foreach ($page['#attached']['html_head'] as $key => $attachment) {
+    if ($attachment[1] == 'system_meta_generator') {
+      unset($page['#attached']['html_head'][$key]);
+    }
+  }
+}
+
+/* --------------------------------------------------
+ * Preprocess functions
+ ---------------------------------------------------- */
+
+/**
+ * HTML preprocess
+ */
+function wdi_theme_preprocess_html(&$variables)
+{
+  /*Implements hook_preprocess_html() for unique class for the node page.
+    NOTE: Add "path_info.args ? 'path-' ~ path_info.args" in body_classes in html.html.twig*/
+  $variables['path_info']['args'] = FALSE;
+  $path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', $path);
+
+  if (count($path_args) >= 3) {
+    $variables['path_info']['args'] = Html::cleanCssIdentifier(ltrim($path, '/'));
+  }
+
+  // Get current language and stock variable 'language' --> used as class in html.html.twig
+  $variables['language'] = \Drupal::languageManager()
+    ->getCurrentLanguage()
+    ->getId();
+
+  // Get current uri and stock in variable for use if needed
+  $variables['current_uri'] = \Drupal\Core\Url::fromRoute('<current>', [], ['absolute' => 'true'])
+    ->toString();
+}
+
+/**
+ * Implements hook_preprocess_node() for node.html.twig.
+ */
+function wdi_theme_preprocess_node(&$variables)
+{
+  // Preprocess by node type
+  $node = $variables['node'];
+
+  $preprocess_function = 'wdi_theme_node__' . $node->type->getString() . '__preprocess';
+  if (function_exists($preprocess_function)) {
+    $preprocess_function($variables);
+  }
+
+  $variables['language'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['current_uri'] = \Drupal\Core\Url::fromRoute('<current>', [], ['absolute' => 'true'])->toString();
+  $variables['site_logo'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
+}
+
+/**
+ * Blocks preprocess
+ */
+function wdi_theme_preprocess_block(&$variables)
+{
+  if (isset($variables['elements']['content']['#block_content'])) {
+    // Get bundle to use in class
+    $variables['bundle'] = $variables['elements']['content']['#block_content']->bundle();
+    // Get view mode to use in class
+    $variables['view_mode'] = $variables['elements']['content']['#block_content']->bundle() . '--' . $variables['elements']['content']['#view_mode'];
+  }
+  // Allow translate on config block description
+  if ($variables['elements']['#base_plugin_id'] == 'block_content') {
+    if ($variables['label'] != '') {
+      $variables['label'] = $variables['content']['#block_content']->label();
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_field()
+ */
+function wdi_theme_preprocess_field(&$variables, $hook)
+{
+  // Adding magnific popup in paragraph gallery
+  $element = $variables['element'];
+  if ($element['#field_name'] == 'field_media_image_unlimited' && $element['#bundle'] == 'gallery') {
+    $variables['#attached']['library'][] = 'magnific_popup/magnific_popup';
+  }
+}
+
+/**
+ * Page preprocess
+ */
+function wdi_theme_preprocess_page(&$variables)
+{
+  // Current route
+  $current_route_name = \Drupal::service('current_route_match')->getRouteName();
+
+  if ($current_route_name == 'entity.taxonomy_term.canonical') {
+    // Include taxonomy term in page preprocess to access it like 'term.id' in page.html.twig
+    $term = \Drupal::routeMatch()->getParameter('taxonomy_term');
+    $variables['term'] = $term;
+  }
+
+  // Logo SVG
+  $variables['logo'] = '/' . drupal_get_path('theme', 'wdi_theme') . '/logo.svg';
+
+  // Add paragraphs libraries
+  //TODO Only link to pages that use paragraphs
+  $variables['#attached']['library'][] = 'wdi_theme/paragraphs';
+}
+
+/**********************************************************************************************
+ * HELPER FUNCTIONS
+ **********************************************************************************************/
+
+/**
+ * isFrontPage
+ *
+ * @return mixed
+ */
+function isFrontPage()
+{
+  return \Drupal::service('path.matcher')->isFrontPage();
+}

@@ -1,0 +1,154 @@
+uuid: 71a4092a-373f-4a2c-9900-04bbbd77c920
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_content
+    - node.type.horeca
+    - paragraphs.paragraphs_type.bigimage_texte
+    - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.call_to_action
+    - paragraphs.paragraphs_type.code
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.image_text
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.services
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_image
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.horeca.field_page_content
+field_name: field_page_content
+entity_type: node
+bundle: horeca
+label: 'Contenu de la page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text: text
+      image_text: image_text
+      text_image: text_image
+      bigimage_texte: bigimage_texte
+      image: image
+      video: video
+      call_to_action: call_to_action
+      gallery: gallery
+      faq: faq
+      quote: quote
+      services: services
+      block: block
+      code: code
+    target_bundles_drag_drop:
+      text:
+        enabled: true
+        weight: -65
+      image_text:
+        enabled: true
+        weight: -64
+      text_image:
+        enabled: true
+        weight: -63
+      bigimage_texte:
+        enabled: true
+        weight: -62
+      image:
+        enabled: true
+        weight: -61
+      video:
+        enabled: true
+        weight: -60
+      call_to_action:
+        enabled: true
+        weight: -59
+      gallery:
+        enabled: true
+        weight: -58
+      faq:
+        enabled: true
+        weight: -57
+      quote:
+        enabled: true
+        weight: -56
+      services:
+        enabled: true
+        weight: -55
+      block:
+        enabled: true
+        weight: -54
+      code:
+        enabled: true
+        weight: -53
+      body:
+        weight: -52
+        enabled: false
+      faq_item:
+        weight: -51
+        enabled: false
+      grid:
+        weight: -50
+        enabled: false
+      grid_item:
+        weight: -49
+        enabled: false
+      label_price:
+        weight: -48
+        enabled: false
+      link:
+        weight: -47
+        enabled: false
+      pages:
+        weight: -46
+        enabled: false
+      pages_item:
+        weight: -45
+        enabled: false
+      pdf_link:
+        weight: -44
+        enabled: false
+      pricing:
+        weight: -43
+        enabled: false
+      program:
+        weight: -42
+        enabled: false
+      program_item:
+        weight: -41
+        enabled: false
+      services_item:
+        weight: -40
+        enabled: false
+      slider:
+        weight: -39
+        enabled: false
+      svg_icon:
+        weight: -38
+        enabled: false
+      testimonial:
+        weight: -37
+        enabled: false
+      testimonials:
+        weight: -36
+        enabled: false
+      title:
+        weight: -35
+        enabled: false
+      webform:
+        weight: -34
+        enabled: false
+      horeca_menu:
+        weight: 45
+        enabled: false
+      menu:
+        weight: 50
+        enabled: false
+field_type: entity_reference_revisions

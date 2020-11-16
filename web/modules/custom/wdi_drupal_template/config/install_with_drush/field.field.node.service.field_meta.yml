@@ -1,0 +1,21 @@
+uuid: 5f9fd193-c5b5-47e1-9edb-d9b287e158ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta
+    - node.type.service
+  module:
+    - metatag
+id: node.service.field_meta
+field_name: field_meta
+entity_type: node
+bundle: service
+label: 'Meta SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

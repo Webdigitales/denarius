@@ -1,0 +1,61 @@
+uuid: 23d01c12-bb96-44f0-8e83-e3baca0e0b88
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.crop_thumbnail
+    - image.style.wdi_banner_image_lg_1x
+    - image.style.wdi_banner_image_lg_2x
+    - image.style.wdi_banner_image_md_1x
+    - image.style.wdi_banner_image_md_2x
+    - image.style.wdi_banner_image_sm_1x
+    - image.style.wdi_banner_image_sm_2x
+    - image.style.wdi_banner_image_xs_1x
+    - image.style.wdi_banner_image_xs_2x
+  theme:
+    - bootstrap
+id: wdi_banner_image
+label: 'wdi banner image'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_lg_1x
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_lg_2x
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_md_1x
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_md_2x
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_sm_1x
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_sm_2x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_xs_1x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_banner_image_xs_2x
+breakpoint_group: bootstrap
+fallback_image_style: crop_thumbnail

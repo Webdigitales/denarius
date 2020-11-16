@@ -1,0 +1,21 @@
+uuid: b8a07ea1-bed2-40d0-81ac-b10f031518c0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.pricing
+  module:
+    - text
+id: paragraph.pricing.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: pricing
+label: Remarque
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

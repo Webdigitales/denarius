@@ -1,0 +1,25 @@
+uuid: ae628e5e-bef1-4a08-9088-19cb96728752
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fb5b1d2d-e604-474f-935d-1f2616f89224'
+  module:
+    - block_content
+  theme:
+    - wdi_theme
+id: contact_team
+theme: wdi_theme
+region: hidden
+weight: 0
+provider: null
+plugin: 'block_content:fb5b1d2d-e604-474f-935d-1f2616f89224'
+settings:
+  id: 'block_content:fb5b1d2d-e604-474f-935d-1f2616f89224'
+  label: 'Contact team'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,35 @@
+uuid: 38f410a8-6929-4b1b-860c-d3fc2373e7c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery.field_media_image_unlimited
+    - field.field.paragraph.gallery.field_paragraph_header
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+id: paragraph.gallery.default
+targetEntityType: paragraph
+bundle: gallery
+mode: default
+content:
+  field_media_image_unlimited:
+    type: entity_reference_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      view_mode: wdi_paragraph_gallery_thumbnail
+      link: false
+    third_party_settings: {  }
+  field_paragraph_header:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  field_title: true

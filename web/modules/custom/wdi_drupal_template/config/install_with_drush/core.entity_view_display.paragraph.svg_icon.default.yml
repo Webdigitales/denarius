@@ -1,0 +1,25 @@
+uuid: 35df0621-f662-482d-a889-cc179c5d67a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.svg_icon.field_icon
+    - paragraphs.paragraphs_type.svg_icon
+  module:
+    - icon_select
+id: paragraph.svg_icon.default
+targetEntityType: paragraph
+bundle: svg_icon
+mode: default
+content:
+  field_icon:
+    weight: 0
+    label: visually_hidden
+    settings:
+      apply_dimensions: '1'
+      width: '32'
+      height: '32'
+    third_party_settings: {  }
+    type: icon_select_formatter_default
+    region: content
+hidden: {  }

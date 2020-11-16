@@ -1,0 +1,18 @@
+uuid: f6e27622-090d-4390-a102-0101a26ad130
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.svg_icon
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.svg_icon
+target_entity_type_id: paragraph
+target_bundle: svg_icon
+default_langcode: site_default
+language_alterable: false

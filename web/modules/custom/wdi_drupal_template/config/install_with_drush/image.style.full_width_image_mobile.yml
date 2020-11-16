@@ -1,0 +1,26 @@
+uuid: 23b0ed06-9fd1-4c69-b380-2499d28d8114
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: full_width_image_mobile
+label: 'Full width image Mobile'
+effects:
+  62755867-37ba-447c-b875-19d0f0a54310:
+    uuid: 62755867-37ba-447c-b875-19d0f0a54310
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 340
+      crop_type: focal_point
+  652d484f-72d2-463c-91b3-284790a73be3:
+    uuid: 652d484f-72d2-463c-91b3-284790a73be3
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 750
+      height: 340
+      anchor: center-center
+pipeline: __default__

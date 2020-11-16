@@ -1,0 +1,20 @@
+uuid: 089f7714-9bff-4aff-8af5-990e6460fb40
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.room_category
+  module:
+    - path
+id: taxonomy_term.room_category.path
+field_name: path
+entity_type: taxonomy_term
+bundle: room_category
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

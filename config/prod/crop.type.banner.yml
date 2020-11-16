@@ -1,0 +1,12 @@
+uuid: 47dd2b78-8940-484b-a3f8-68344f7917e8
+langcode: en
+status: true
+dependencies: {  }
+id: banner
+label: Banner
+description: ''
+aspect_ratio: '192:54'
+soft_limit_width: 1920
+soft_limit_height: 540
+hard_limit_width: 1920
+hard_limit_height: 540

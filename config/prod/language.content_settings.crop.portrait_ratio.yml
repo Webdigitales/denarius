@@ -1,0 +1,11 @@
+uuid: c9ce76f8-4ae7-45d0-ae00-913835cf16fd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.portrait_ratio
+id: crop.portrait_ratio
+target_entity_type_id: crop
+target_bundle: portrait_ratio
+default_langcode: site_default
+language_alterable: false

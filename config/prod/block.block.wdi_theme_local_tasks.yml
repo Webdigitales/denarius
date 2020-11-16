@@ -1,0 +1,22 @@
+uuid: 9285e2d0-ba9d-45d0-8242-c4c570a6fd9c
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - wdi_theme
+_core:
+  default_config_hash: 7mxSnFkwq-5YBJC24Qe_px76VuC5ZMBqOsWmhkIo_yQ
+id: wdi_theme_local_tasks
+theme: wdi_theme
+region: tabs
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

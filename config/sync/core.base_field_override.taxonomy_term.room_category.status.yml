@@ -1,0 +1,22 @@
+uuid: c323b9ee-eef9-4f03-98a6-6fcd89212f70
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.room_category
+id: taxonomy_term.room_category.status
+field_name: status
+entity_type: taxonomy_term
+bundle: room_category
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

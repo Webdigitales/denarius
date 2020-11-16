@@ -1,0 +1,19 @@
+uuid: 84b8d809-1a30-4a0d-878a-37a331714d5e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_offer_end
+    - node.type.service
+id: node.service.field_offer_end
+field_name: field_offer_end
+entity_type: node
+bundle: service
+label: Validité
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

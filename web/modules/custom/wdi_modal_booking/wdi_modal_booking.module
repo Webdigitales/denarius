@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Contains wdi_modal_booking.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\wdi_modal_booking\Cache\Context\DefaultCacheContext;
+
+/**
+ * Implements hook_help().
+ */
+function wdi_modal_booking_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    // Main module help for the wdi_modal_booking module.
+    case 'help.page.wdi_modal_booking':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Modal Booking service cache context') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Blocks preprocess
+ */
+function wdi_modal_booking_preprocess_block(&$variables)
+{
+  // Cookies bloc info booking
+  if (isset($variables['elements']['#id']) && $variables['elements']['#id'] == 'reservezsurlesitedusanglier') {
+
+    // Ajout de la dépendance au contexte.
+    //$variables['#cache']['contexts'][] = 'wdi_modal_booking';
+    $variables['#cache']['max-age'] = 0;
+
+    if (isset($_COOKIE["booking_modal"])) {
+      $variables['booking_modal'] = false;
+    } else {
+      $config = \Drupal::config('wdi_modal_booking.settings');
+      $nbr_days = $config->get('nbr_days');
+      $nbr_days_in_seconds = 60 * 60 * 24 * $nbr_days;
+      setrawcookie('booking_modal', TRUE, time() + $nbr_days_in_seconds, '/');
+      $variables['booking_modal'] = true;
+    }
+  }
+}

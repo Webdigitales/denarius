@@ -1,0 +1,26 @@
+uuid: 44735be9-91da-4474-ad35-06dcb5e3714f
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: square
+label: 'Square 165x165'
+effects:
+  b9606f72-ead5-4766-af48-a7ec57625239:
+    uuid: b9606f72-ead5-4766-af48-a7ec57625239
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 165
+      height: 165
+      crop_type: focal_point
+  46e3ecb0-96dd-47fd-996f-80e543601a76:
+    uuid: 46e3ecb0-96dd-47fd-996f-80e543601a76
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 165
+      height: 165
+      anchor: center-center
+pipeline: __default__

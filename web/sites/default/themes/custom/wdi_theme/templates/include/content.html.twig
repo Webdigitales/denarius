@@ -1,0 +1,73 @@
+{# Main #}
+{% block main %}
+  <main id="content" role="main" class="main js-quickedit-main-content">
+    {% if (page.sidebar_first|render|striptags|trim and page.sidebar_second is empty) or (page.sidebar_second and page.sidebar_first|render|striptags|trim is empty) %}
+    <div class="{{ container }} p-full-width">
+      <div class="row">
+        {% endif %}
+        {# Sidebar First #}
+        {% if page.sidebar_first is defined and page.sidebar_first|render|striptags|trim %}
+          {% block sidebar_first %}
+            <div class="col-sm-3">
+              <aside class="sidebar sidebar--left" role="complementary">
+                <div class="sidebar-content">
+                  {{ page.sidebar_first }}
+                </div>
+              </aside>
+            </div>
+          {% endblock %}
+        {% endif %}
+
+        {# Help #}
+        {% if page.help |render|striptags|trim %}
+          {% block help %}
+            {{ page.help }}
+          {% endblock %}
+        {% endif %}
+
+        {# Content #}
+        {% set content_classes = [
+          page.sidebar_first and page.sidebar_second ? 'content-wrapper col-sm-6',
+          page.sidebar_first|render|striptags|trim and page.sidebar_second is empty ? 'content-wrapper col-sm-9',
+          page.sidebar_second and page.sidebar_first|render|striptags|trim is empty ? 'content-wrapper col-sm-9',
+          page.sidebar_first|render|striptags|trim is empty and page.sidebar_second|render|striptags|trim is empty ? 'content-wrapper'
+        ] %}
+
+        {# Content #}
+        {% block content %}
+          <a id="main-content"></a>
+          <div {{ content_attributes.addClass(content_classes) }}>
+            <div class="content">
+              {{ page.content }}
+            </div>
+          </div>
+        {% endblock %}
+
+        {% if page.content_bottom |render|striptags|trim %}
+          {% block content_bottom %}
+          <div class="col-sm-12">
+            <div class="content_bottom">
+              {{ page.content_bottom }}
+            </div>
+          </div>
+          {% endblock %}
+        {% endif %}
+
+        {# Sidebar Second #}
+        {% if page.sidebar_second is defined and page.sidebar_second |render|striptags|trim %}
+          {% block sidebar_second %}
+            <div class="col-sm-3">
+              <aside class="sidebar sidebar--right" role="complementary">
+                <div class="sidebar-content">
+                  {{ page.sidebar_second }}
+                </div>
+              </aside>
+            </div>
+          {% endblock %}
+        {% endif %}
+        {% if (page.sidebar_first|render|striptags|trim and page.sidebar_second is empty) or (page.sidebar_second and page.sidebar_first|render|striptags|trim is empty) %}
+      </div>
+    </div>
+    {% endif %}
+  </main>
+{% endblock %}

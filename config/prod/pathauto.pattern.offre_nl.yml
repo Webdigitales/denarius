@@ -1,0 +1,33 @@
+uuid: 005b8ef7-0b07-4a38-9053-6342a9756a61
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: offre_nl
+label: 'Offre NL'
+type: 'canonical_entities:node'
+pattern: 'onze-aanbiedingen/[node:title]'
+selection_criteria:
+  a39bcd52-b934-4205-8ae6-77ff7e48b065:
+    id: node_type
+    bundles:
+      service: service
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a39bcd52-b934-4205-8ae6-77ff7e48b065
+  08f6dca0-9ffb-4ab9-b84d-7888f0d4bd92:
+    id: language
+    langcodes:
+      nl: nl
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 08f6dca0-9ffb-4ab9-b84d-7888f0d4bd92
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

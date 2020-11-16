@@ -1,0 +1,18 @@
+uuid: 7fadef94-46e3-4f0f-a1e7-f4852fa0f260
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.amenities
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.amenities
+target_entity_type_id: taxonomy_term
+target_bundle: amenities
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: 7b9a143a-2d7b-4e3a-ba7d-2c171bb16384
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_checkout
+    - node.type.room
+  module:
+    - time_field
+id: node.room.field_checkout
+field_name: field_checkout
+entity_type: node
+bundle: room
+label: 'Heure de départ'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time

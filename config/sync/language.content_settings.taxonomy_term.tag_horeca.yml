@@ -1,0 +1,18 @@
+uuid: 234be4b9-3784-4d58-aac1-86c177952b42
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tag_horeca
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tag_horeca
+target_entity_type_id: taxonomy_term
+target_bundle: tag_horeca
+default_langcode: site_default
+language_alterable: false

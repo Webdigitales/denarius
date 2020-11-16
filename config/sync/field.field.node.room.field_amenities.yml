@@ -1,0 +1,29 @@
+uuid: 9d46d921-5a0b-4403-863b-81a736699f89
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amenities
+    - node.type.room
+    - taxonomy.vocabulary.amenities
+id: node.room.field_amenities
+field_name: field_amenities
+entity_type: node
+bundle: room
+label: Équipements
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      amenities: amenities
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

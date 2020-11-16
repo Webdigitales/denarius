@@ -1,0 +1,60 @@
+uuid: 7680d9bd-0613-4b7a-a7a3-cad77e40e4f1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.wdi_paragraph_grande_image_texte_lg_1x
+    - image.style.wdi_paragraph_grande_image_texte_lg_2x
+    - image.style.wdi_paragraph_grande_image_texte_md_1x
+    - image.style.wdi_paragraph_grande_image_texte_md_2x
+    - image.style.wdi_paragraph_grande_image_texte_sm_1x
+    - image.style.wdi_paragraph_grande_image_texte_sm_2x
+    - image.style.wdi_paragraph_grande_image_texte_xs_1x
+    - image.style.wdi_paragraph_grande_image_texte_xs_2x
+  theme:
+    - bootstrap
+id: wdi_paragraph_grande_image_text
+label: 'wdi paragraph grande image text'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_paragraph_grande_image_texte_lg_1x
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_paragraph_grande_image_texte_lg_2x
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_paragraph_grande_image_texte_md_1x
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_paragraph_grande_image_texte_md_2x
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_paragraph_grande_image_texte_sm_1x
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_paragraph_grande_image_texte_sm_2x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_paragraph_grande_image_texte_xs_1x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_paragraph_grande_image_texte_xs_2x
+breakpoint_group: bootstrap
+fallback_image_style: wdi_paragraph_grande_image_texte_sm_2x

@@ -1,0 +1,21 @@
+uuid: 001bf8c0-8711-44e2-bf02-42af1a4ba2fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_column
+    - paragraphs.paragraphs_type.steps
+  module:
+    - options
+id: paragraph.steps.field_grid_column
+field_name: field_grid_column
+entity_type: paragraph
+bundle: steps
+label: 'Grid column'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

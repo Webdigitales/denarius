@@ -1,0 +1,21 @@
+uuid: 26b7ce22-10f2-4772-9010-de721eee51e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_level
+    - paragraphs.paragraphs_type.grid_item
+  module:
+    - options
+id: paragraph.grid_item.field_title_level
+field_name: field_title_level
+entity_type: paragraph
+bundle: grid_item
+label: 'Title level'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,10 @@
+uuid: 7fe13a4e-b993-4f4f-a1bb-70bf465336fe
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_paragraph_grande_image_texte
+label: 'wdi paragraph grande image + texte'
+targetEntityType: media
+cache: true

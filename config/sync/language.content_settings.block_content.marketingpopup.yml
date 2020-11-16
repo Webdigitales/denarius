@@ -1,0 +1,18 @@
+uuid: 69711b7e-2e1b-4c7e-b918-40babf6779f9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.marketingpopup
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.marketingpopup
+target_entity_type_id: block_content
+target_bundle: marketingpopup
+default_langcode: site_default
+language_alterable: true

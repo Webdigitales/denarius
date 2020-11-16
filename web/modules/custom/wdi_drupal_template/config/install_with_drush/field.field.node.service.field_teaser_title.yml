@@ -1,0 +1,19 @@
+uuid: e9cf193c-ec84-41cc-847e-7a008f24b893
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_title
+    - node.type.service
+id: node.service.field_teaser_title
+field_name: field_teaser_title
+entity_type: node
+bundle: service
+label: 'Teaser title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

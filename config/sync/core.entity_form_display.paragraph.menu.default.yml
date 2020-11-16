@@ -1,0 +1,36 @@
+uuid: cca875cb-3bca-4999-8a99-62a27a7e55cb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.menu.field_menu_item
+    - paragraphs.paragraphs_type.menu
+  module:
+    - paragraphs
+id: paragraph.menu.default
+targetEntityType: paragraph
+bundle: menu
+mode: default
+content:
+  field_menu_item:
+    type: paragraphs
+    weight: 1
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: horeca_menu
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

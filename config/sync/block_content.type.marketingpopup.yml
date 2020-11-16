@@ -1,0 +1,8 @@
+uuid: 58c7bd66-fe27-4724-bd19-f4cc10b39ce6
+langcode: fr
+status: true
+dependencies: {  }
+id: marketingpopup
+label: 'Marketing Popup'
+revision: 1
+description: ''

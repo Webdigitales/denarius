@@ -1,0 +1,21 @@
+uuid: 3989b08b-8099-449e-8524-dee988f4881d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opening_hours
+    - node.type.horeca
+  module:
+    - text
+id: node.horeca.field_opening_hours
+field_name: field_opening_hours
+entity_type: node
+bundle: horeca
+label: 'Heures d''ouverture'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

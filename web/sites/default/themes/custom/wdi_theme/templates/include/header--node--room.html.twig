@@ -1,0 +1,104 @@
+{% if node.field_media_image is not empty or node.field_video is not empty %}
+  {% set header_class = 'header--with-media' %}
+{% endif %}
+
+
+{# Tabs #}
+{% if page.tabs %}
+  {% block tabs %}
+    <div class="tabs">{{ page.tabs }}</div>
+  {% endblock %}
+{% endif %}
+
+{# Highlighted #}
+{% if page.highlighted %}
+  {% block highlighted %}
+    <div class="highlighted">{{ page.highlighted }}</div>
+  {% endblock %}
+{% endif %}
+
+{# Navbar #}
+{% if page.navigation or page.navigation_collapsible %}
+  {% block navbar %}
+    <header id="header" role="banner" class="header header--room {{ header_class }}">
+      {# Banner #}
+      {% if page.header %}
+        {% block header %}
+          <div class="banner">
+            <div class="banner__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8 col-md-7">
+                    {{ page.header }}
+                    {% if  drupal_field('field_buttons', 'node') is not empty %}
+                      {{ drupal_field('field_buttons', 'node') }}
+                    {% endif %}
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-md-offset-1">
+                    {% if  drupal_field('field_button', 'node') is not empty %}
+                      {{ drupal_field('field_button', 'node') }}
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% if node.field_media_image_multiple is not empty and node.field_video is empty %}
+              <div class="banner__slider paragraph__slider" id="slider_{{ node.id }}">
+                <button class="slider-control__button button--prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 8" width="14" height="12.6" class="slider-button_icon">
+                    <path fill-rule="evenodd" d="M-.005 3.298h14.827c-.714-1.301-1.071-2.149-1.107-3.304 1.626 1.992 3.737 3.029 6.29 4.006-2.553.934-4.572 2.073-6.29 4.005.11-1.256.405-2.015 1.129-3.395H-.005V3.298z">
+                    </path>
+                  </svg>
+                </button>
+                <button class="slider-control__button button--next">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 8" width="14" height="12.6" class="slider-button_icon">
+                    <path fill-rule="evenodd" d="M-.005 3.298h14.827c-.714-1.301-1.071-2.149-1.107-3.304 1.626 1.992 3.737 3.029 6.29 4.006-2.553.934-4.572 2.073-6.29 4.005.11-1.256.405-2.015 1.129-3.395H-.005V3.298z">
+                    </path>
+                  </svg>
+                </button>
+                {{ drupal_field('field_media_image_multiple', 'node') }}
+              </div>
+            {% endif %}
+          </div>
+        {% endblock %}
+      {% endif %}
+      {# Bootstrap Nav #}
+      <div id="navbar" class="main-nav">
+        <div class="navbar container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="navbar-header">
+                {{ page.navigation }}
+              </div>
+              {# Navigation (collapsible) #}
+              {% if page.navigation_collapsible %}
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                  {{ page.navigation_collapsible }}
+                </div>
+              {% endif %}
+              {# Header actions #}
+              {% if page.header_actions %}
+                <div class="header_actions">
+                  {{ page.header_actions }}
+                  {% if  drupal_field('field_button', 'node') is not empty %}
+                    {{ drupal_field('field_button', 'node') }}
+                  {% endif %}
+                  {# .btn-navbar is used as the toggle for collapsed navbar content #}
+                  {% if page.navigation_collapsible %}
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navbar-collapse">
+                      <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  {% endblock %}
+{% endif %}

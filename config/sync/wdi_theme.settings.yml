@@ -1,0 +1,44 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://dev.sanglier-durbuy.be/sites/default/themes/custom/wdi_theme/favicon.ico'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  wdi_theme: 8000
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+table_responsive: '-1'
+region_wells:
+  tabs: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header_actions: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer_first: ''
+  footer_second: ''
+  footer_third: ''
+  footer_fourth: ''
+  footer_bottom: ''
+  hidden: ''
+cdn_provider: ''
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset_http_request_cache: ''
+table: ''
+langcode: fr

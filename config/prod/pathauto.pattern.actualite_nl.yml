@@ -1,0 +1,33 @@
+uuid: 93282558-1c89-4e5b-9961-4b0e94bfdc75
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: actualite_nl
+label: 'Actualité NL'
+type: 'canonical_entities:node'
+pattern: 'nieuws/[node:title]'
+selection_criteria:
+  e69418e2-0c8e-4342-a01d-f01c87194add:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e69418e2-0c8e-4342-a01d-f01c87194add
+  1e59adad-6521-4e75-9da7-1e533bffffff:
+    id: language
+    langcodes:
+      nl: nl
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 1e59adad-6521-4e75-9da7-1e533bffffff
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

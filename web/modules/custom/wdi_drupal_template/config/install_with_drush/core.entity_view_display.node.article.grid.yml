@@ -1,0 +1,40 @@
+uuid: 48f7cd5b-7a63-49a4-a289-a633d7105124
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.grid
+    - field.field.node.article.field_service
+    - field.field.node.article.field_media_image
+    - field.field.node.article.field_meta
+    - field.field.node.article.field_page_content
+    - image.style.wdi_news_image
+    - node.type.article
+  module:
+    - media
+    - user
+_core:
+  default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
+id: node.article.grid
+targetEntityType: node
+bundle: article
+mode: grid
+content:
+  field_media_image:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: wdi_news_image
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  comment: true
+  field_article_summary: true
+  field_meta: true
+  field_page_content: true
+  field_service: true
+  field_tags: true
+  langcode: true
+  links: true

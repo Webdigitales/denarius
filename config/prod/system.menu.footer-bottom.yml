@@ -1,0 +1,8 @@
+uuid: 6604b27c-4582-4f3c-a5d5-63f9962969ed
+langcode: en
+status: true
+dependencies: {  }
+id: footer-bottom
+label: 'Footer bottom'
+description: ''
+locked: false

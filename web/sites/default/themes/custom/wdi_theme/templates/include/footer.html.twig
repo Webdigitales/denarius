@@ -1,0 +1,36 @@
+<footer class="footer hidden-print" role="contentinfo">
+  <div class="{{ container }}">
+    <div class="row footer-4col-wrapper" data-aos="fade-up">
+      <div class="col-xs-6 col-sm-6 col-md-3">
+        {% block footer_first %}
+          {{ page.footer_first }}
+        {% endblock %}
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3">
+        {% block footer_second %}
+          {{ page.footer_second }}
+        {% endblock %}
+      </div>
+      <div class="col-sm-12 col-md-3 footer__contact">
+        {% block footer_third %}
+          {{ page.footer_third }}
+        {% endblock %}
+      </div>
+      <div class="col-sm-12 col-md-3">
+        {% block footer_fourth %}
+          {{ page.footer_fourth }}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">{{ drupal_entity('block', 'copyright') }}</div>
+        <div class="col-md-3">{{ drupal_entity('block', 'legalfooterinfos') }}</div>
+        <div class="col-md-3">{{ drupal_entity('block', 'nav_footer') }}</div>
+        <div class="col-md-3 text-right">{{ drupal_entity('block', 'socialmedialinks') }}</div>
+      </div>
+    </div>
+  </div>
+</footer>

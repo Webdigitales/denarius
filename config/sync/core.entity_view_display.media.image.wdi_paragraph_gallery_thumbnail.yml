@@ -1,0 +1,38 @@
+uuid: b499743f-869d-456a-b028-8b427e837697
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wdi_paragraph_gallery_thumbnail
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.wdi_paragraph_gallery_thumbnail
+  module:
+    - lazy
+    - responsive_image
+_core:
+  default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
+id: media.image.wdi_paragraph_gallery_thumbnail
+targetEntityType: media
+bundle: image
+mode: wdi_paragraph_gallery_thumbnail
+content:
+  thumbnail:
+    type: responsive_image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      responsive_image_style: wdi_paragraph_gallery_thumbnail
+      image_link: ''
+    third_party_settings:
+      lazy:
+        placeholder_style: ''
+        lazy_image: '0'
+        data_uri: false
+hidden:
+  created: true
+  field_media_image: true
+  langcode: true
+  name: true
+  uid: true

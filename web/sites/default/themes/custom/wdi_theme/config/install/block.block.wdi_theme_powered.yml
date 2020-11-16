@@ -1,0 +1,22 @@
+uuid: 3eea3377-c446-4913-82a7-5e1e0996300d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wdi_theme
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: wdi_theme_powered
+theme: wdi_theme
+region: footer_bottom
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

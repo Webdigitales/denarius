@@ -1,0 +1,35 @@
+uuid: 6ac364dc-a00b-4cd1-8c73-f6dcd8693d52
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: horeca_fr_nl_en
+label: 'Horeca FR/NL/EN'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parent:url:path]/[node:title]'
+selection_criteria:
+  f45d130f-a4d0-42dc-94fb-d9d642f79220:
+    id: node_type
+    bundles:
+      horeca: horeca
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f45d130f-a4d0-42dc-94fb-d9d642f79220
+  c13b0465-143f-4565-a21f-408cd78cad92:
+    id: language
+    langcodes:
+      en: en
+      fr: fr
+      nl: nl
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: c13b0465-143f-4565-a21f-408cd78cad92
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

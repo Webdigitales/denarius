@@ -1,0 +1,26 @@
+uuid: b1b381e3-45b8-4760-9a9d-15b34f9a574b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_offer_image_md_2x
+label: 'wdi offer image | md | @2x'
+effects:
+  75c58534-e8cb-48eb-a60c-6b87a762764f:
+    uuid: 75c58534-e8cb-48eb-a60c-6b87a762764f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 584
+      height: 800
+      crop_type: focal_point
+  676f003d-950f-4076-bd50-55180fe25df5:
+    uuid: 676f003d-950f-4076-bd50-55180fe25df5
+    id: image_scale
+    weight: 2
+    data:
+      width: 584
+      height: 800
+      upscale: false
+pipeline: __default__

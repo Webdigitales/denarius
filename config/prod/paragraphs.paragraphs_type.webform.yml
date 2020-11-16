@@ -1,0 +1,10 @@
+uuid: 8d51e6b7-e42a-4e59-92c4-8265bbeb93a7
+langcode: en
+status: true
+dependencies: {  }
+id: webform
+label: Formulaire
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

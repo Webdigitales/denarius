@@ -1,0 +1,21 @@
+uuid: 35df0621-f662-482d-a889-cc179c5d67a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.svg_icon.field_icon
+    - paragraphs.paragraphs_type.svg_icon
+id: paragraph.svg_icon.default
+targetEntityType: paragraph
+bundle: svg_icon
+mode: default
+content:
+  field_icon:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

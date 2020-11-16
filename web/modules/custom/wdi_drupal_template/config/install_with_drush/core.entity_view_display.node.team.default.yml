@@ -1,0 +1,55 @@
+uuid: 664def86-db34-4946-8dbb-8571cb7ef8c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.team.field_email
+    - field.field.node.team.field_media_image
+    - field.field.node.team.field_phone_number
+    - field.field.node.team.field_teaser_title
+    - image.style.wdi_team_thumbnail
+    - node.type.team
+  module:
+    - media
+    - telephone
+    - user
+id: node.team.default
+targetEntityType: node
+bundle: team
+mode: default
+content:
+  field_email:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: wdi_team_thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  field_phone_number:
+    weight: 2
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_teaser_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  links: true

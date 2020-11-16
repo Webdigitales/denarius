@@ -1,0 +1,25 @@
+uuid: 8e8b8b81-9d89-4532-913d-95cc2b214068
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.svg_icon.field_icon
+    - paragraphs.paragraphs_type.svg_icon
+id: paragraph.svg_icon.default
+targetEntityType: paragraph
+bundle: svg_icon
+mode: default
+content:
+  field_icon:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

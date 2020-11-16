@@ -1,0 +1,24 @@
+uuid: 2445b2d6-939e-430f-bd58-68f8181394cf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.horeca
+  module:
+    - views
+  theme:
+    - wdi_theme
+id: page_bars
+theme: wdi_theme
+region: hidden
+weight: 0
+provider: null
+plugin: 'views_block:horeca-page_bars'
+settings:
+  id: 'views_block:horeca-page_bars'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,44 @@
+uuid: 95505f32-a6c3-4429-8017-f5f47bfb628c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - image_effects
+name: logo_partners
+label: 'Logo Partners'
+effects:
+  36fc4ad6-3930-4e70-81d8-3ff991ef0656:
+    uuid: 36fc4ad6-3930-4e70-81d8-3ff991ef0656
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      upscale: false
+  2a574b4e-14e9-418d-a306-16582fec5f36:
+    uuid: 2a574b4e-14e9-418d-a306-16582fec5f36
+    id: image_effects_set_canvas
+    weight: 2
+    data:
+      canvas_size: exact
+      exact:
+        width: '100'
+        height: '100'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: '#FFFFFFFF'
+  6fd37ad6-8757-47dd-9f5b-c17ca9cf0324:
+    uuid: 6fd37ad6-8757-47dd-9f5b-c17ca9cf0324
+    id: image_crop
+    weight: 3
+    data:
+      width: 100
+      height: 100
+      anchor: center-center
+pipeline: __default__

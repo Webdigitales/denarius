@@ -1,0 +1,18 @@
+uuid: c047132a-b261-4e3c-b2c4-0542bc850c80
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_paragraph_image_text_lg_2x
+label: 'wdi paragraph image text | lg | @2x'
+effects:
+  2fa2d85c-c5a8-40a7-bb43-8636a84552c1:
+    uuid: 2fa2d85c-c5a8-40a7-bb43-8636a84552c1
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 960
+      crop_type: focal_point
+pipeline: __default__

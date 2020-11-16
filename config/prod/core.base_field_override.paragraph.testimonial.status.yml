@@ -1,0 +1,22 @@
+uuid: b1998bd6-f571-4230-a289-5574cbdada42
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.testimonial
+id: paragraph.testimonial.status
+field_name: status
+entity_type: paragraph
+bundle: testimonial
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

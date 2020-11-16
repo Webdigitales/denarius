@@ -1,0 +1,18 @@
+uuid: b24cea50-f5e7-4625-9d94-fc349ae3daa2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - shortcut.set.viewer
+id: shortcut.viewer.title
+field_name: title
+entity_type: shortcut
+bundle: viewer
+label: Nom
+description: 'Le nom du raccourci'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

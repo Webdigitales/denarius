@@ -1,0 +1,143 @@
+uuid: 6ebaf90a-edb6-46a5-993b-819520c1c05b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_content
+    - node.type.page
+    - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.call_to_action
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.grid
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.image_text
+    - paragraphs.paragraphs_type.intro
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.testimonial
+    - paragraphs.paragraphs_type.testimonials
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_image
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.view
+  module:
+    - entity_reference_revisions
+id: node.page.field_page_content
+field_name: field_page_content
+entity_type: node
+bundle: page
+label: 'Page Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      intro: intro
+      text: text
+      quote: quote
+      image: image
+      grid: grid
+      text_image: text_image
+      image_text: image_text
+      slider: slider
+      gallery: gallery
+      call_to_action: call_to_action
+      testimonials: testimonials
+      view: view
+      block: block
+      testimonial: testimonial
+      video: video
+    target_bundles_drag_drop:
+      intro:
+        enabled: true
+        weight: -39
+      text:
+        enabled: true
+        weight: -38
+      quote:
+        enabled: true
+        weight: -37
+      image:
+        enabled: true
+        weight: -36
+      grid:
+        enabled: true
+        weight: -35
+      text_image:
+        enabled: true
+        weight: -34
+      image_text:
+        enabled: true
+        weight: -33
+      slider:
+        enabled: true
+        weight: -32
+      gallery:
+        enabled: true
+        weight: -31
+      call_to_action:
+        enabled: true
+        weight: -30
+      testimonials:
+        enabled: true
+        weight: -29
+      view:
+        enabled: true
+        weight: -28
+      block:
+        enabled: true
+        weight: -27
+      pdf_link:
+        weight: -26
+        enabled: false
+      body:
+        weight: -25
+        enabled: false
+      link:
+        weight: -24
+        enabled: false
+      title:
+        weight: -23
+        enabled: false
+      grid_item:
+        weight: -22
+        enabled: false
+      svg_icon:
+        weight: -21
+        enabled: false
+      code:
+        weight: 32
+        enabled: false
+      faq:
+        weight: 33
+        enabled: false
+      faq_item:
+        weight: 34
+        enabled: false
+      services:
+        weight: 40
+        enabled: false
+      services_item:
+        weight: 41
+        enabled: false
+      steps:
+        weight: 47
+        enabled: false
+      steps_item:
+        weight: 48
+        enabled: false
+      testimonial:
+        enabled: true
+        weight: 50
+      video:
+        enabled: true
+        weight: 56
+      webform:
+        weight: 56
+        enabled: false
+field_type: entity_reference_revisions

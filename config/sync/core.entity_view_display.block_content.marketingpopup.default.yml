@@ -1,0 +1,48 @@
+uuid: ba03ec40-8e7a-4526-ae0f-dc552851d01e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.marketingpopup
+    - field.field.block_content.marketingpopup.field_content
+    - field.field.block_content.marketingpopup.field_link
+    - field.field.block_content.marketingpopup.field_title
+  module:
+    - entity_reference_revisions
+    - link
+id: block_content.marketingpopup.default
+targetEntityType: block_content
+bundle: marketingpopup
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: teaser
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 2
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

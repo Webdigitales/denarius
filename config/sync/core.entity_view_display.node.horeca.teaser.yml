@@ -1,0 +1,47 @@
+uuid: da08197f-08b0-4413-bbd5-a39826d3fd49
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.horeca.field_address
+    - field.field.node.horeca.field_button
+    - field.field.node.horeca.field_buttons
+    - field.field.node.horeca.field_horeca_category
+    - field.field.node.horeca.field_id_resengo
+    - field.field.node.horeca.field_id_voucher_resengo
+    - field.field.node.horeca.field_meals
+    - field.field.node.horeca.field_media_image
+    - field.field.node.horeca.field_opening_hours
+    - field.field.node.horeca.field_page_content
+    - field.field.node.horeca.field_phone
+    - field.field.node.horeca.field_teaser_image
+    - field.field.node.horeca.field_video
+    - node.type.horeca
+  module:
+    - user
+id: node.horeca.teaser
+targetEntityType: node
+bundle: horeca
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address: true
+  field_button: true
+  field_buttons: true
+  field_horeca_category: true
+  field_id_resengo: true
+  field_id_voucher_resengo: true
+  field_meals: true
+  field_media_image: true
+  field_opening_hours: true
+  field_page_content: true
+  field_phone: true
+  field_teaser_image: true
+  field_video: true
+  langcode: true

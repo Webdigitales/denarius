@@ -1,0 +1,10 @@
+uuid: 7f721c86-1d03-4b0e-8460-f2e189f5e511
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_offer_thumbnail
+label: 'wdi offer thumbnail'
+targetEntityType: media
+cache: true

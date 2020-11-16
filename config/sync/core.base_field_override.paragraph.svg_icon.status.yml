@@ -1,0 +1,22 @@
+uuid: 85878efe-a539-4a6a-ac9f-38daa9cac1fd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.svg_icon
+id: paragraph.svg_icon.status
+field_name: status
+entity_type: paragraph
+bundle: svg_icon
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

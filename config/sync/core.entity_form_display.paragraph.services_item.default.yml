@@ -1,0 +1,21 @@
+uuid: 376fd187-d39b-431e-bd41-c9b52fefa6ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_item.field_service
+    - paragraphs.paragraphs_type.services_item
+id: paragraph.services_item.default
+targetEntityType: paragraph
+bundle: services_item
+mode: default
+content:
+  field_service:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

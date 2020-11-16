@@ -1,0 +1,91 @@
+uuid: ec30e646-9625-4e06-a9d9-2627c55e02de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.body
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.pdf_link
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.title
+  module:
+    - entity_reference_revisions
+id: paragraph.text.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: text
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      title: title
+      body: body
+      link: link
+      pdf_link: pdf_link
+    target_bundles_drag_drop:
+      title:
+        enabled: true
+        weight: -39
+      body:
+        enabled: true
+        weight: -38
+      link:
+        enabled: true
+        weight: -37
+      pdf_link:
+        enabled: true
+        weight: -36
+      text:
+        weight: -35
+        enabled: false
+      call_to_action:
+        weight: -34
+        enabled: false
+      gallery:
+        weight: -33
+        enabled: false
+      grid:
+        weight: -32
+        enabled: false
+      image:
+        weight: -31
+        enabled: false
+      image_text:
+        weight: -30
+        enabled: false
+      intro:
+        weight: -29
+        enabled: false
+      quote:
+        weight: -28
+        enabled: false
+      slider:
+        weight: -27
+        enabled: false
+      testimonials:
+        weight: -26
+        enabled: false
+      text_image:
+        weight: -25
+        enabled: false
+      grid_item:
+        weight: -24
+        enabled: false
+      block:
+        weight: -23
+        enabled: false
+      svg_icon:
+        weight: -22
+        enabled: false
+      view:
+        weight: -21
+        enabled: false
+field_type: entity_reference_revisions

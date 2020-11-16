@@ -1,0 +1,112 @@
+uuid: 6b86367d-e023-4d61-9fee-4e4ddd2b9e3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - wdi_theme
+id: socialmedialinks
+theme: wdi_theme
+region: hidden
+weight: -2
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    facebook:
+      value: webdigitales
+      description: ''
+      weight: '-30'
+    linkedin:
+      value: company/webdigitales/about/
+      description: ''
+      weight: '-29'
+    instagram:
+      value: webdigitales
+      description: ''
+      weight: '-28'
+    vimeo:
+      value: webdigitales
+      description: ''
+      weight: '-27'
+    rss:
+      value: ''
+      description: ''
+      weight: '-26'
+    email:
+      value: ''
+      description: ''
+      weight: '-25'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-24'
+    github:
+      value: ''
+      description: ''
+      weight: '-23'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-22'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-21'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-20'
+    contact:
+      value: ''
+      description: ''
+      weight: '-19'
+    behance:
+      value: ''
+      description: ''
+      weight: '-18'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-17'
+    twitter:
+      value: ''
+      description: ''
+      weight: '-16'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-15'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-14'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-13'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-12'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: _blank
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

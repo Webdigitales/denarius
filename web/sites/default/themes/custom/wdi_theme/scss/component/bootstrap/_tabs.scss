@@ -1,0 +1,226 @@
+/**
+ * Tabs and local action styles.
+ */
+.local-actions {
+  margin: 10px 0 10px -5px;
+}
+.tabs--secondary {
+  margin: 10px 0 5px;
+}
+
+/**
+ * Missing Bootstrap 2 tab styling.
+ * $see http://stackoverflow.com/questions/18432577/stacked-tabs-in-bootstrap-3
+ * $see http://bootply.com/74926
+ */
+.tabbable {
+  margin-bottom: 20px;
+}
+.tabs-below, .tabs-left, .tabs-right {
+  > .nav-tabs {
+    border-bottom: 0;
+    .summary {
+      color: $nav-disabled-link-color;
+      font-size: $font-size-small;
+    }
+  }
+}
+.tab-pane > .panel-heading {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+
+// Below.
+.tabs-below {
+  > .nav-tabs {
+    border-top: 1px solid $nav-tabs-border-color;
+    > li {
+      margin-top: -1px;
+      margin-bottom: 0;
+      > a {
+        border-radius: 0 0 $border-radius-base $border-radius-base;
+        &:hover,
+        &:focus {
+          border-top-color: $nav-tabs-border-color;
+          border-bottom-color: transparent;
+        }
+      }
+    }
+    > .active {
+      > a,
+      > a:hover,
+      > a:focus {
+        border-color: transparent $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-border-color;
+      }
+    }
+  }
+}
+
+// Left and right tabs.
+.tabs-left,
+.tabs-right {
+  > .nav-tabs {
+    padding-bottom: 20px;
+    width: 220px;
+    > li {
+      float: none;
+      &:focus {
+        outline: 0;
+      }
+      > a {
+        margin-right: 0;
+        margin-bottom: 3px;
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+  > .tab-content {
+    border-radius: 0 $border-radius-base $border-radius-base $border-radius-base;
+    border: 1px solid $nav-tabs-border-color;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    overflow: hidden;
+    padding: 10px 15px;
+  }
+}
+
+// Left tabs.
+.tabs-left {
+  > .nav-tabs {
+    float: left;
+    margin-right: -1px;
+    > li > a {
+      border-radius: $border-radius-base 0 0 $border-radius-base;
+      &:hover,
+      &:focus {
+        border-color: $nav-tabs-link-hover-border-color $nav-tabs-border-color $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color;
+      }
+    }
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+      border-color: $nav-tabs-border-color transparent $nav-tabs-border-color $nav-tabs-border-color;
+      box-shadow: -1px 1px 1px rgba(0,0,0,.05);
+    }
+  }
+}
+
+// Right tabs.
+.tabs-right {
+  > .nav-tabs {
+    float: right;
+    margin-left: -1px;
+    > li > a {
+      border-radius: 0 $border-radius-base $border-radius-base 0;
+      &:hover,
+      &:focus {
+        border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.05);
+      }
+    }
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+      border-color: $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-border-color transparent;
+    }
+  }
+}
+
+/* --------------------------------------------------
+ * Tabs search block
+ ---------------------------------------------------- */
+.tabs-search {
+  margin-top: 120px;
+
+  .nav-tabs {
+    display: flex;
+    justify-content: center;
+    border: 0;
+
+    li {
+      margin: 0;
+      border: 0;
+
+      &.active {
+        border: 0;
+
+        a {
+          background-color: $white;
+          color: $brand-primary;
+          border: 0;
+        }
+      }
+
+      a {
+        background-color: $black;
+        color: $white;
+        min-width: 180px;
+        text-align: center;
+        font-size: $font-size-small;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border: 0;
+        display: block;
+        padding: 15px 20px;
+
+        &:hover {
+          background-color: $gray-darker;
+          color: $white;
+        }
+      }
+    }
+  }
+  .tab-content {
+    padding: 40px;
+    background-color: $white;
+    box-shadow: $default-shadow;
+    border-radius: $border-radius-base;
+
+    @media #{$normal} {
+      #search-form {
+        border: 1px solid $gray-border;
+        box-shadow: none;
+      }
+    }
+
+    .block-description {
+      min-height: 56px;
+
+      .btn-primary {
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .block-description-item {
+      color: $headings-color;
+      font-size: $font-size-base;
+    }
+
+    .block-tips {
+      padding: 8px 16px;
+      background-color: $gray-lighter;
+      border-radius: $border-radius-base;
+      margin-top: 20px;
+
+      .tip {
+        display: block;
+        padding: 8px 0;
+      }
+
+      .btn-link {
+        margin: 0;
+      }
+
+      .tips-link {
+        text-align: right;
+      }
+    }
+  }
+}

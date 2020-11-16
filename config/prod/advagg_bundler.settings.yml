@@ -1,0 +1,10 @@
+active: false
+css:
+  max: 1
+  logic: 0
+js:
+  max: 1
+  logic: 0
+_core:
+  default_config_hash: EcoLc85VhRBp0HrOvv3FwHG8zJCsYkGSHNhRc3dPvWA
+langcode: fr

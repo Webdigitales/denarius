@@ -1,0 +1,108 @@
+uuid: 4c1a312d-33f0-44c7-8cfb-de1eca1667d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_header
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.title
+    - paragraphs.paragraphs_type.view
+  module:
+    - entity_reference_revisions
+id: paragraph.view.field_paragraph_header
+field_name: field_paragraph_header
+entity_type: paragraph
+bundle: view
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      link: link
+      title: title
+    target_bundles_drag_drop:
+      block:
+        weight: 27
+        enabled: false
+      body:
+        weight: 28
+        enabled: false
+      call_to_action:
+        weight: 29
+        enabled: false
+      faq:
+        weight: 30
+        enabled: false
+      faq_item:
+        weight: 31
+        enabled: false
+      gallery:
+        weight: 32
+        enabled: false
+      grid:
+        weight: 33
+        enabled: false
+      grid_item:
+        weight: 34
+        enabled: false
+      image:
+        weight: 35
+        enabled: false
+      image_text:
+        weight: 36
+        enabled: false
+      services:
+        weight: 37
+        enabled: false
+      services_item:
+        weight: 38
+        enabled: false
+      intro:
+        weight: 39
+        enabled: false
+      link:
+        enabled: true
+        weight: 40
+      pdf_link:
+        weight: 41
+        enabled: false
+      quote:
+        weight: 42
+        enabled: false
+      slider:
+        weight: 43
+        enabled: false
+      steps:
+        weight: 44
+        enabled: false
+      steps_item:
+        weight: 45
+        enabled: false
+      svg_icon:
+        weight: 46
+        enabled: false
+      testimonial:
+        weight: 47
+        enabled: false
+      testimonials:
+        weight: 48
+        enabled: false
+      text:
+        weight: 49
+        enabled: false
+      text_image:
+        weight: 50
+        enabled: false
+      title:
+        enabled: true
+        weight: 51
+      view:
+        weight: 52
+        enabled: false
+field_type: entity_reference_revisions

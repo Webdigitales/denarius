@@ -1,0 +1,28 @@
+uuid: 55ac223d-9941-4bcc-b090-13dfeac689d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service
+    - node.type.service
+    - paragraphs.paragraphs_type.services_item
+id: paragraph.services_item.field_service
+field_name: field_service
+entity_type: paragraph
+bundle: services_item
+label: Offre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      service: service
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

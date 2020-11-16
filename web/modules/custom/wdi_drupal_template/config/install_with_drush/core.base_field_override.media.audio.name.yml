@@ -1,0 +1,20 @@
+uuid: 406f1c63-12db-46b0-bc55-bf75b7d311d1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.name
+field_name: name
+entity_type: media
+bundle: audio
+label: Nom
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

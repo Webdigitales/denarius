@@ -1,0 +1,23 @@
+uuid: d2d34c99-2a33-48d2-b1c6-f708d5b0d140
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_persons
+    - node.type.room
+id: node.room.field_persons
+field_name: field_persons
+entity_type: node
+bundle: room
+label: 'Capacité (nombre de personnes)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

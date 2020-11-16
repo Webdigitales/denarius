@@ -1,0 +1,26 @@
+uuid: 140c2326-64f9-4194-a0e7-10cf3ff491a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_news_image
+label: 'wdi news image'
+effects:
+  58d999b1-4e5d-4c2e-a223-4b09242aee98:
+    uuid: 58d999b1-4e5d-4c2e-a223-4b09242aee98
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 340
+      height: 250
+      crop_type: focal_point
+  0fe34a27-d836-4250-9c2b-dc35cc45cbe0:
+    uuid: 0fe34a27-d836-4250-9c2b-dc35cc45cbe0
+    id: image_crop
+    weight: 2
+    data:
+      width: 340
+      height: 250
+      anchor: center-center
+pipeline: __default__

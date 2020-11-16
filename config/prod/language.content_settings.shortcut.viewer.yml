@@ -1,0 +1,18 @@
+uuid: 9ecf9be4-7d06-4124-834b-07c138b4c104
+langcode: fr
+status: true
+dependencies:
+  config:
+    - shortcut.set.viewer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: shortcut.viewer
+target_entity_type_id: shortcut
+target_bundle: viewer
+default_langcode: site_default
+language_alterable: false

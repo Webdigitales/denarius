@@ -1,0 +1,30 @@
+uuid: 0e95411c-db1e-4bdf-8701-d40cab102659
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.label_price.field_price
+    - field.field.paragraph.label_price.field_title
+    - paragraphs.paragraphs_type.label_price
+id: paragraph.label_price.default
+targetEntityType: paragraph
+bundle: label_price
+mode: default
+content:
+  field_price:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_title:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

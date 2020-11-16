@@ -1,0 +1,124 @@
+uuid: 5d79aa9f-1080-483b-b0fe-53e6035ab079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_content
+    - paragraphs.paragraphs_type.grid
+    - paragraphs.paragraphs_type.grid_item
+  module:
+    - entity_reference_revisions
+id: paragraph.grid.field_grid_content
+field_name: field_grid_content
+entity_type: paragraph
+bundle: grid
+label: Contenu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      grid_item: grid_item
+    target_bundles_drag_drop:
+      grid_item:
+        enabled: true
+        weight: 16
+      body:
+        weight: 17
+        enabled: false
+      call_to_action:
+        weight: 18
+        enabled: false
+      gallery:
+        weight: 19
+        enabled: false
+      grid:
+        weight: 20
+        enabled: false
+      image:
+        weight: 21
+        enabled: false
+      image_text:
+        weight: 22
+        enabled: false
+      link:
+        weight: 24
+        enabled: false
+      quote:
+        weight: 25
+        enabled: false
+      slider:
+        weight: 26
+        enabled: false
+      testimonials:
+        weight: 27
+        enabled: false
+      text:
+        weight: 28
+        enabled: false
+      text_image:
+        weight: 29
+        enabled: false
+      title:
+        weight: 30
+        enabled: false
+      block:
+        weight: 33
+        enabled: false
+      code:
+        weight: 36
+        enabled: false
+      faq:
+        weight: 37
+        enabled: false
+      faq_item:
+        weight: 38
+        enabled: false
+      label_price:
+        weight: 44
+        enabled: false
+      pages:
+        weight: 46
+        enabled: false
+      pages_item:
+        weight: 47
+        enabled: false
+      pdf_link:
+        weight: 48
+        enabled: false
+      pricing:
+        weight: 49
+        enabled: false
+      program:
+        weight: 50
+        enabled: false
+      program_item:
+        weight: 51
+        enabled: false
+      services:
+        weight: 53
+        enabled: false
+      services_item:
+        weight: 54
+        enabled: false
+      svg_icon:
+        weight: 56
+        enabled: false
+      testimonial:
+        weight: 57
+        enabled: false
+      video:
+        weight: 62
+        enabled: false
+      view:
+        weight: 63
+        enabled: false
+      webform:
+        weight: 64
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,25 @@
+uuid: faf52dc0-ece9-4ce2-a2d3-f4479574e32f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-first
+  module:
+    - system
+  theme:
+    - wdi_theme
+id: footerfirst
+theme: wdi_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-first'
+settings:
+  id: 'system_menu_block:footer-first'
+  label: 'Menu 1'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

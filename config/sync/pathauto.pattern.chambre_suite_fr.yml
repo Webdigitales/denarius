@@ -1,0 +1,35 @@
+uuid: c601560c-9dc6-440f-87e2-59b676d4c6de
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: chambre_suite_fr
+label: 'Chambre & Suite FR/NL/EN'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parent:url:path]/[node:title]'
+selection_criteria:
+  83933754-89ad-4cfc-8565-9c30e37e29eb:
+    id: node_type
+    bundles:
+      room: room
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 83933754-89ad-4cfc-8565-9c30e37e29eb
+  520ba134-06ae-4022-8d97-0dcd20f563c1:
+    id: language
+    langcodes:
+      en: en
+      fr: fr
+      nl: nl
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 520ba134-06ae-4022-8d97-0dcd20f563c1
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

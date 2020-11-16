@@ -1,0 +1,24 @@
+uuid: 85f2e963-b39d-4a1a-bc7e-a4cda57e24d7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.instagram
+    - field.storage.block_content.field_code
+  module:
+    - text
+id: block_content.instagram.field_code
+field_name: field_code
+entity_type: block_content
+bundle: instagram
+label: Code
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<!-- DOC : https://www.sowecms.com/demos/InstagramFeed/ -->\r\n<div id=\"instagram_feed\"></div>\r\n<script src=\"/sites/default/themes/custom/wdi_theme/js/InstagramFeed.min.js\"></script>\r\n<script>\r\n    (function(){\r\n        new InstagramFeed({\r\n            'username': 'sanglier_des_ardennes',\r\n            'container': document.getElementById(\"instagram_feed\"),\r\n            'display_profile': false,\r\n            'display_biography': false,\r\n            'display_gallery': true,\r\n            'callback': null,\r\n            'styling': false,\r\n            'items': 10,\r\n            'items_per_row': 5,\r\n            'margin': 0.5,\r\n            'image_size': 240\r\n        });\r\n    })();\r\n</script>"
+    format: code
+default_value_callback: ''
+settings: {  }
+field_type: text_long

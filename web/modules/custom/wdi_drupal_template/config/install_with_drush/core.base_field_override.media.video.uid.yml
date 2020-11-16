@@ -1,0 +1,20 @@
+uuid: 2768a741-bd1c-4196-a48e-b1da8e97c4fa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.video
+id: media.video.uid
+field_name: uid
+entity_type: media
+bundle: video
+label: 'Écrit par'
+description: 'L''identifiant (ID) de l''auteur.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

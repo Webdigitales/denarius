@@ -1,0 +1,44 @@
+uuid: d51dc1fe-68ab-4a7e-95e4-8efb6a5a022b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.logo
+    - field.field.taxonomy_term.partners.field_link
+    - field.field.taxonomy_term.partners.field_logo
+    - field.field.taxonomy_term.partners.field_title
+    - image.style.wdi_partner_logo
+    - taxonomy.vocabulary.partners
+  module:
+    - link
+    - media
+id: taxonomy_term.partners.logo
+targetEntityType: taxonomy_term
+bundle: partners
+mode: logo
+content:
+  field_link:
+    type: link
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_logo:
+    type: media_thumbnail
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: wdi_partner_logo
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  field_title: true
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: 47acc7fa-a299-4f7b-9471-d3600057022d
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Catégorie de chambre'
+vid: room_category
+description: ''
+weight: 0

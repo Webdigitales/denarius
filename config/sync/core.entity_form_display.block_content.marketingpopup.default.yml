@@ -1,0 +1,73 @@
+uuid: 7c100973-84b5-43c2-a614-b3722ed8b9e6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.marketingpopup
+    - field.field.block_content.marketingpopup.field_content
+    - field.field.block_content.marketingpopup.field_link
+    - field.field.block_content.marketingpopup.field_title
+  module:
+    - link
+    - paragraphs
+id: block_content.marketingpopup.default
+targetEntityType: block_content
+bundle: marketingpopup
+mode: default
+content:
+  field_content:
+    type: paragraphs
+    weight: 2
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: text
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

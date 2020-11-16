@@ -1,0 +1,94 @@
+uuid: e0d8ef3f-80a9-477d-9196-19a8d207dfd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_header
+    - paragraphs.paragraphs_type.steps
+    - paragraphs.paragraphs_type.title
+  module:
+    - entity_reference_revisions
+id: paragraph.steps.field_paragraph_header
+field_name: field_paragraph_header
+entity_type: paragraph
+bundle: steps
+label: Header
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      title: title
+    target_bundles_drag_drop:
+      steps:
+        weight: 23
+        enabled: false
+      block:
+        weight: 24
+        enabled: false
+      body:
+        weight: 25
+        enabled: false
+      call_to_action:
+        weight: 26
+        enabled: false
+      gallery:
+        weight: 27
+        enabled: false
+      grid:
+        weight: 28
+        enabled: false
+      grid_item:
+        weight: 29
+        enabled: false
+      image:
+        weight: 30
+        enabled: false
+      image_text:
+        weight: 31
+        enabled: false
+      services:
+        weight: 32
+        enabled: false
+      services_item:
+        weight: 33
+        enabled: false
+      intro:
+        weight: 34
+        enabled: false
+      link:
+        weight: 35
+        enabled: false
+      pdf_link:
+        weight: 36
+        enabled: false
+      quote:
+        weight: 37
+        enabled: false
+      slider:
+        weight: 38
+        enabled: false
+      svg_icon:
+        weight: 39
+        enabled: false
+      testimonials:
+        weight: 40
+        enabled: false
+      text:
+        weight: 41
+        enabled: false
+      text_image:
+        weight: 42
+        enabled: false
+      title:
+        enabled: true
+        weight: 43
+      view:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

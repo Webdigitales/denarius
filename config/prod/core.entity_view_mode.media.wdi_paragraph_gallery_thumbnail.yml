@@ -1,0 +1,10 @@
+uuid: ecb6fa51-5a1b-4e82-a83b-eaa81715ac52
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_paragraph_gallery_thumbnail
+label: 'wdi paragraph gallery thumbnail'
+targetEntityType: media
+cache: true

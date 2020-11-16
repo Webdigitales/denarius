@@ -1,0 +1,23 @@
+uuid: e02e3644-5e9b-40c1-b9df-51921eb5a6b6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.social_reviews
+    - field.field.block_content.social_reviews.field_code
+  module:
+    - text
+id: block_content.social_reviews.default
+targetEntityType: block_content
+bundle: social_reviews
+mode: default
+content:
+  field_code:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true

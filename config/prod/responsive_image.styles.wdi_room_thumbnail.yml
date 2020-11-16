@@ -1,0 +1,34 @@
+uuid: 81df14b9-3f66-46d6-9521-5ef7ea2a03c3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.wdi_image_room_thumbnail_md_1x
+    - image.style.wdi_image_room_thumbnail_md_2x
+  theme:
+    - bootstrap
+id: wdi_room_thumbnail
+label: 'wdi room thumbnail'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_thumbnail_md_1x
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_thumbnail_md_2x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_thumbnail_md_1x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_thumbnail_md_2x
+breakpoint_group: bootstrap
+fallback_image_style: wdi_image_room_thumbnail_md_1x

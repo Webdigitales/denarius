@@ -1,0 +1,121 @@
+uuid: 51b3dc90-8e18-4627-a715-649b83edd31c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_program
+    - node.type.service
+    - paragraphs.paragraphs_type.program
+  module:
+    - entity_reference_revisions
+id: node.service.field_program
+field_name: field_program
+entity_type: node
+bundle: service
+label: Programme
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      program: program
+    target_bundles_drag_drop:
+      block:
+        weight: 34
+        enabled: false
+      body:
+        weight: 35
+        enabled: false
+      call_to_action:
+        weight: 36
+        enabled: false
+      code:
+        weight: 37
+        enabled: false
+      faq:
+        weight: 38
+        enabled: false
+      faq_item:
+        weight: 39
+        enabled: false
+      gallery:
+        weight: 40
+        enabled: false
+      grid:
+        weight: 41
+        enabled: false
+      grid_item:
+        weight: 42
+        enabled: false
+      image:
+        weight: 43
+        enabled: false
+      image_text:
+        weight: 44
+        enabled: false
+      pages:
+        weight: 45
+        enabled: false
+      label_price:
+        weight: 46
+        enabled: false
+      pages_item:
+        weight: 46
+        enabled: false
+      link:
+        weight: 47
+        enabled: false
+      pdf_link:
+        weight: 48
+        enabled: false
+      pricing:
+        weight: 49
+        enabled: false
+      program:
+        enabled: true
+        weight: 50
+      program_item:
+        weight: 51
+        enabled: false
+      quote:
+        weight: 52
+        enabled: false
+      services:
+        weight: 53
+        enabled: false
+      services_item:
+        weight: 54
+        enabled: false
+      slider:
+        weight: 55
+        enabled: false
+      svg_icon:
+        weight: 58
+        enabled: false
+      testimonial:
+        weight: 59
+        enabled: false
+      testimonials:
+        weight: 60
+        enabled: false
+      text:
+        weight: 61
+        enabled: false
+      text_image:
+        weight: 62
+        enabled: false
+      title:
+        weight: 63
+        enabled: false
+      video:
+        weight: 64
+        enabled: false
+      webform:
+        weight: 66
+        enabled: false
+field_type: entity_reference_revisions

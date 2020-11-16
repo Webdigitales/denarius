@@ -1,0 +1,53 @@
+uuid: 3c86ff7c-38d9-4b20-8c4e-4508f0329411
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.wdi_media
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: image_browser
+label: 'Image Browser'
+display: modal
+display_configuration:
+  width: '750'
+  height: '600'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  596249bf-7065-4cfc-afc9-054fc1caf878:
+    settings:
+      view: wdi_media
+      view_display: wdi_image_browser
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 596249bf-7065-4cfc-afc9-054fc1caf878
+    weight: 1
+    label: view
+    id: view
+  ec58facd-cc51-438a-9fb2-12909250d3bc:
+    settings:
+      form_mode: default
+      media_type: image
+      upload_location: 'public://medias/[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 1048M
+      extensions: 'jpg jpeg gif png'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Select entities'
+    uuid: ec58facd-cc51-438a-9fb2-12909250d3bc
+    weight: 2
+    label: 'Upload image'
+    id: dropzonejs_media_entity_inline_entity_form

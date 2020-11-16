@@ -1,0 +1,25 @@
+uuid: 37ca4c6a-6cc8-4a64-ac15-f01bc302d07f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:51476087-23ce-4265-845a-555da7e123bd'
+  module:
+    - block_content
+  theme:
+    - wdi_theme
+id: legalfooterinfos
+theme: wdi_theme
+region: hidden
+weight: 0
+provider: null
+plugin: 'block_content:51476087-23ce-4265-845a-555da7e123bd'
+settings:
+  id: 'block_content:51476087-23ce-4265-845a-555da7e123bd'
+  label: 'legal footer infos'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

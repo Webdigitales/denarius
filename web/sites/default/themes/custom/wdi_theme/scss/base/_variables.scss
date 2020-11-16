@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+/* --------------------------------------------------
+ * Responsive breakpoints
+ ---------------------------------------------------- */
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs: 480px;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min: $screen-xs;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone: $screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet: $screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md: 992px;
+$screen-md-min: $screen-md;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop: $screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop: $screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+/* --------------------------------------------------
+ * Grid system
+ ---------------------------------------------------- */
+
+//** Number of columns in the grid.
+$grid-columns: 12;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint: $screen-lg-min;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+// NOTE : use responsive mediaqueries in bootstrap
+// @media #{$phone} {} Phones portrait (phones, less than 480px)
+// @media #{$mobile} {} Extra small devices (phones, less than 768px)
+// @media #{$tablet} {} Small devices (tablets, 768px and up)
+// @media #{$tablet-max} {} (tablets, 991px and up )
+// @media #{$normal} {} Medium devices (desktops, 992px and up)
+// @media #{$wide} {} Large devices (large desktops, 1200px and up)
+// @media #{$grid-breakpoint} {}
+
+$phone :          "screen and (max-width: #{$screen-xs-min})";
+$mobile:          "screen and (max-width: #{$screen-xs-max})";
+$tablet:          "screen and (min-width: #{$screen-sm-min})";
+$tablet-max:      "screen and (max-width: #{$screen-sm-max})";
+$normal:          "screen and (min-width: #{$screen-md-min})";
+$normal-max:      "screen and (max-width: #{$screen-md-max})";
+$wide:            "screen and (min-width: #{$screen-lg-min})";
+$grid-breakpoint: "screen and (min-width: #{$grid-float-breakpoint})";
+
+// NOTE : Conditionally Target IE10 and 11
+$ie: "all and (-ms-high-contrast: none), (-ms-high-contrast: active)";
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width);
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width);
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1200px + $grid-gutter-width);
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop;
+
+/* --------------------------------------------------
+ * Colors
+ ---------------------------------------------------- */
+
+// Gray
+// --------------------------------------
+
+$gray-base: #6F737F;
+$gray-darker: #000;
+$gray-light: #C9CDD2;
+$gray-lighter: #F8F8F8;
+
+// Bootstrap default colors
+// --------------------------------------
+
+//** Bootstrap.
+
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #FE3340;
+
+//** Background color for `<body>`.
+$body-bg: #fff;
+
+// Custom colors
+// --------------------------------------
+
+//** Common colors.
+$white: #fff;
+$black: #141C26;
+
+//** Borders.
+$gray-border: #DEDFDF;
+
+//** Theme colors.
+$brand-primary: #141c24;
+$brand-primary-light: #141c24;
+$brand-secondary: #ffddbe;
+$brand-bg-light: #FFDDBE;
+
+// Custom gradient
+// --------------------------------------
+$teaser-gradient: linear-gradient(180deg, rgba(0,0,0,0.00) 60%, rgba(0,0,0,0.80) 100%);
+
+/* --------------------------------------------------
+ * Fonts colors
+ ---------------------------------------------------- */
+
+// Headings
+// --------------------------------------
+$headings-color: $brand-primary;
+
+$h1-color: $headings-color;
+$h2-color: $headings-color;
+$h3-color: $headings-color;
+$h4-color: $headings-color;
+$h5-color: $headings-color;
+$h6-color: $headings-color;
+
+// Global text color on `<body>`
+// --------------------------------------
+$text-color: #333333;
+
+// Textual Links
+// --------------------------------------
+
+//** Global textual link color.
+$link-color: $brand-primary;
+//** Link hover color set via `darken()` function.
+$link-hover-color: darken($link-color, 15%);
+
+/* --------------------------------------------------
+ * Fonts for icons
+ ---------------------------------------------------- */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+// --------------------------------------
+
+$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+/* --------------------------------------------------
+ * Fonts for text
+ ---------------------------------------------------- */
+
+// Fonts families
+// --------------------------------------
+
+$font-family-sans-serif: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$font-family-serif: "Merriweather", Georgia, Times, serif;
+$font-family-serif-medium: "Merriweather", Georgia, Times, serif;
+$font-family-serif-light: "Merriweather", Georgia, Times, serif;
+$font-family-base: $font-family-sans-serif;
+
+// Fonts styles
+// --------------------------------------
+
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed: 40px;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.6;
+$base-font-weight: 400;
+
+//** Headings family, weight, line-height
+$headings-font-family:    $font-family-serif;
+$headings-font-weight:    normal;
+$headings-line-height:    1.1;
+
+//** Fonts line-height
+$font-weight-h1:            $headings-font-weight;
+$font-weight-h2:            $font-family-serif-medium;
+$font-weight-h3:            $headings-font-weight;
+$font-weight-h4:            $headings-font-weight;
+$font-weight-h5:            $headings-font-weight;
+$font-weight-h6:            $headings-font-weight;
+
+//** Fonts sizes
+$font-size-base: 16px;
+$font-size-large: 18px;
+$font-size-small: 14px;
+
+$font-size-h1: 54px;
+$font-size-h2: 48px;
+$font-size-h3: 36px;
+$font-size-h4: 26px;
+$font-size-h5: 20px;
+$font-size-h6: 14px;
+
+$font-size-h1-mobile: 40px;
+$font-size-h2-mobile: 32px;
+$font-size-h3-mobile: 26px;
+$font-size-h4-mobile: 20px;
+$font-size-h5-mobile: 16px;
+$font-size-h6-mobile: 12px;
+
+// Links
+// --------------------------------------
+
+//** Link hover decoration.
+$link-hover-decoration: none;
+
+/* --------------------------------------------------
+ * Box shadows
+ ---------------------------------------------------- */
+$default-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+$hover-shadow: 0 2px 60px rgba(0, 0, 0, 0.2);
+
+/* --------------------------------------------------
+ * Animations variables
+ ---------------------------------------------------- */
+
+$transition_time: .3s;
+$transition_time_long: .4s;
+$ease: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+/* --------------------------------------------------
+ * Borders radius
+ ---------------------------------------------------- */
+
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+$border-radius-bottom-right: 2px 2px 60px 2px;
+$border-radius-bottom-left: 2px 2px 2px 60px;
+
+/* --------------------------------------------------
+ * Navbar - Normal
+ ---------------------------------------------------- */
+
+// Basics of a navbar
+$navbar-height: 50px;
+$navbar-margin-bottom: $line-height-computed;
+$navbar-border-radius: $border-radius-base;
+$navbar-padding-horizontal: floor(($grid-gutter-width / 2));
+$navbar-padding-vertical: (($navbar-height - $line-height-computed) / 2);
+$navbar-collapse-max-height: 340px;
+
+$navbar-default-color: #777;
+$navbar-default-bg: #f8f8f8;
+$navbar-default-border: darken($navbar-default-bg, 6.5%);
+
+// Navbar links
+$navbar-default-link-color: #777;
+$navbar-default-link-hover-color: #333;
+$navbar-default-link-hover-bg: transparent;
+$navbar-default-link-active-color: #555;
+$navbar-default-link-active-bg: darken($navbar-default-bg, 6.5%);
+$navbar-default-link-disabled-color: #ccc;
+$navbar-default-link-disabled-bg: transparent;
+
+// Navbar brand label
+$navbar-default-brand-color: $navbar-default-link-color;
+$navbar-default-brand-hover-color: darken($navbar-default-brand-color, 10%);
+$navbar-default-brand-hover-bg: transparent;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg: #ddd;
+$navbar-default-toggle-icon-bar-bg: #888;
+$navbar-default-toggle-border-color: #ddd;
+
+/* --------------------------------------------------
+ * Navbar - Inverted
+ ---------------------------------------------------- */
+
+// Reset inverted navbar basics
+$navbar-inverse-color: lighten($gray-light, 15%);
+$navbar-inverse-bg: #222;
+$navbar-inverse-border: darken($navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+$navbar-inverse-link-color: lighten($gray-light, 15%);
+$navbar-inverse-link-hover-color: #fff;
+$navbar-inverse-link-hover-bg: transparent;
+$navbar-inverse-link-active-color: $navbar-inverse-link-hover-color;
+$navbar-inverse-link-active-bg: darken($navbar-inverse-bg, 10%);
+$navbar-inverse-link-disabled-color: #444;
+$navbar-inverse-link-disabled-bg: transparent;
+
+// Inverted navbar brand label
+$navbar-inverse-brand-color: $navbar-inverse-link-color;
+$navbar-inverse-brand-hover-color: #fff;
+$navbar-inverse-brand-hover-bg: transparent;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg: #333;
+$navbar-inverse-toggle-icon-bar-bg: #fff;
+$navbar-inverse-toggle-border-color: #333;
+
+/* --------------------------------------------------
+ * Dropdown
+ ---------------------------------------------------- */
+
+//** Global color for active items (e.g., navs or dropdowns).
+$component-active-color: $white;
+//** Global background color for active items (e.g., navs or dropdowns).
+$component-active-bg: $brand-primary;
+
+//** Background for the dropdown menu.
+$dropdown-bg: $white;
+//** Dropdown menu `border-color`.
+$dropdown-border: rgba(0, 0, 0, .15);
+//** Dropdown menu `border-color` **for IE8**.
+$dropdown-fallback-border: #ccc;
+//** Divider color for between dropdown items.
+$dropdown-divider-bg: $gray-border;
+
+//** Dropdown link text color.
+$dropdown-link-color: $text-color;
+//** Hover color for dropdown links.
+$dropdown-link-hover-color: $white;
+//** Hover background for dropdown links.
+$dropdown-link-hover-bg: $brand-primary;
+
+//** Active dropdown menu item text color.
+$dropdown-link-active-color: $component-active-color;
+//** Active dropdown menu item background color.
+$dropdown-link-active-bg: $component-active-bg;
+
+//** Disabled dropdown menu item background color.
+$dropdown-link-disabled-color: $gray-light;
+
+//** Text color for headers within dropdown menus.
+$dropdown-header-color: $headings-color;
+
+//** Deprecated `$dropdown-caret-color` as of v3.1.0
+$dropdown-caret-color: $brand-primary;
+
+/* --------------------------------------------------
+ * Buttons
+ ---------------------------------------------------- */
+
+$btn-font-weight: 500;
+
+$btn-default-color: $white;
+$btn-default-bg: $gray-darker;
+$btn-default-border: $gray-darker;
+
+$btn-primary-color: #fff;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: darken($btn-primary-bg, 5%);
+
+$btn-success-color: #fff;
+$btn-success-bg: $brand-success;
+$btn-success-border: darken($btn-success-bg, 5%);
+
+$btn-info-color: #fff;
+$btn-info-bg: $brand-info;
+$btn-info-border: darken($btn-info-bg, 5%);
+
+$btn-warning-color: #fff;
+$btn-warning-bg: $brand-warning;
+$btn-warning-border: darken($btn-warning-bg, 5%);
+
+$btn-danger-color: #fff;
+$btn-danger-bg: $brand-danger;
+$btn-danger-border: transparent;
+
+$btn-link-disabled-color: $gray-light;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base: $border-radius-base;
+$btn-border-radius-large: $border-radius-large;
+$btn-border-radius-small: $border-radius-small;
+
+/* --------------------------------------------------
+ * Forms
+ ---------------------------------------------------- */
+
+//** `<input>` background color
+$input-bg: #fff;
+//** `<input disabled>` background color
+$input-bg-disabled: $gray-lighter;
+
+//** Text color for `<input>`s
+$input-color: $text-color;
+//** `<input>` border color
+$input-border: $gray-border;
+
+// TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
+//** Default `.form-control` border radius
+// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+$input-border-radius: $border-radius-base;
+//** Large `.form-control` border radius
+$input-border-radius-large: $border-radius-large;
+//** Small `.form-control` border radius
+$input-border-radius-small: $border-radius-small;
+
+//** Border color for inputs on focus
+$input-border-focus: $brand-primary;
+
+//** Placeholder text color
+$input-color-placeholder: #999;
+
+//** `.form-group` margin
+$form-group-margin-bottom: 15px;
+
+$legend-color: $gray-darker;
+$legend-border-color: #e5e5e5;
+
+//** Background color for textual input addons
+$input-group-addon-bg: $gray-lighter;
+//** Border color for textual input addons
+$input-group-addon-border-color: $input-border;
+
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled: not-allowed;
+
+/* --------------------------------------------------
+ * Breadcrumbs
+ ---------------------------------------------------- */
+$breadcrumb-padding-vertical: 8px;
+$breadcrumb-padding-horizontal: 0;
+//** Breadcrumb background color
+$breadcrumb-bg: transparent;
+//** Breadcrumb text color
+$breadcrumb-color: #fff;
+//** Text color of current page in the breadcrumb
+$breadcrumb-active-color: #9ECDFF;
+//** Textual separator for between breadcrumb elements
+$breadcrumb-separator: ">";

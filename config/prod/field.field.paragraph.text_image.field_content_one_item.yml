@@ -1,0 +1,121 @@
+uuid: df5ad7c4-e12e-4f72-b9e9-e0eafb341f22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_one_item
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_image
+  module:
+    - entity_reference_revisions
+id: paragraph.text_image.field_content_one_item
+field_name: field_content_one_item
+entity_type: paragraph
+bundle: text_image
+label: Contenu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text: text
+    target_bundles_drag_drop:
+      text:
+        enabled: true
+        weight: -63
+      link:
+        weight: -62
+        enabled: false
+      pdf_link:
+        weight: -61
+        enabled: false
+      body:
+        weight: -60
+        enabled: false
+      call_to_action:
+        weight: -59
+        enabled: false
+      gallery:
+        weight: -58
+        enabled: false
+      grid:
+        weight: -57
+        enabled: false
+      grid_item:
+        weight: -56
+        enabled: false
+      image:
+        weight: -55
+        enabled: false
+      image_text:
+        weight: -54
+        enabled: false
+      quote:
+        weight: -53
+        enabled: false
+      slider:
+        weight: -52
+        enabled: false
+      testimonials:
+        weight: -51
+        enabled: false
+      text_image:
+        weight: -50
+        enabled: false
+      title:
+        weight: -49
+        enabled: false
+      block:
+        weight: -48
+        enabled: false
+      code:
+        weight: -47
+        enabled: false
+      faq:
+        weight: -46
+        enabled: false
+      faq_item:
+        weight: -45
+        enabled: false
+      label_price:
+        weight: -44
+        enabled: false
+      pages:
+        weight: -43
+        enabled: false
+      pages_item:
+        weight: -42
+        enabled: false
+      pricing:
+        weight: -41
+        enabled: false
+      program:
+        weight: -40
+        enabled: false
+      program_item:
+        weight: -39
+        enabled: false
+      services:
+        weight: -38
+        enabled: false
+      services_item:
+        weight: -37
+        enabled: false
+      svg_icon:
+        weight: -36
+        enabled: false
+      testimonial:
+        weight: -35
+        enabled: false
+      video:
+        weight: -34
+        enabled: false
+      webform:
+        weight: -33
+        enabled: false
+field_type: entity_reference_revisions

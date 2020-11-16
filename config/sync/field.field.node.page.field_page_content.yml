@@ -1,0 +1,162 @@
+uuid: 6ebaf90a-edb6-46a5-993b-819520c1c05b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_content
+    - node.type.page
+    - paragraphs.paragraphs_type.bigimage_texte
+    - paragraphs.paragraphs_type.block
+    - paragraphs.paragraphs_type.call_to_action
+    - paragraphs.paragraphs_type.code
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.image_text
+    - paragraphs.paragraphs_type.pages
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.services
+    - paragraphs.paragraphs_type.testimonial
+    - paragraphs.paragraphs_type.testimonials
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_image
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: node.page.field_page_content
+field_name: field_page_content
+entity_type: node
+bundle: page
+label: 'Contenu de la page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text: text
+      text_image: text_image
+      image_text: image_text
+      bigimage_texte: bigimage_texte
+      image: image
+      video: video
+      quote: quote
+      pages: pages
+      services: services
+      call_to_action: call_to_action
+      gallery: gallery
+      faq: faq
+      block: block
+      code: code
+      webform: webform
+      testimonials: testimonials
+      testimonial: testimonial
+    target_bundles_drag_drop:
+      bigimage_texte:
+        enabled: true
+        weight: -62
+      block:
+        enabled: true
+        weight: -53
+      body:
+        weight: -44
+        enabled: false
+      call_to_action:
+        enabled: true
+        weight: -56
+      code:
+        enabled: true
+        weight: -52
+      faq:
+        enabled: true
+        weight: -54
+      faq_item:
+        weight: -39
+        enabled: false
+      gallery:
+        enabled: true
+        weight: -55
+      grid:
+        weight: -50
+        enabled: false
+      grid_item:
+        weight: -41
+        enabled: false
+      horeca_menu:
+        weight: 45
+        enabled: false
+      image:
+        enabled: true
+        weight: -61
+      image_text:
+        enabled: true
+        weight: -63
+      label_price:
+        weight: -37
+        enabled: false
+      link:
+        weight: -43
+        enabled: false
+      menu:
+        weight: 50
+        enabled: false
+      pages:
+        enabled: true
+        weight: -58
+      pages_item:
+        weight: -36
+        enabled: false
+      pdf_link:
+        weight: -45
+        enabled: false
+      pricing:
+        weight: -35
+        enabled: false
+      program:
+        weight: -47
+        enabled: false
+      program_item:
+        weight: -34
+        enabled: false
+      quote:
+        enabled: true
+        weight: -59
+      services:
+        enabled: true
+        weight: -57
+      services_item:
+        weight: -38
+        enabled: false
+      slider:
+        weight: -46
+        enabled: false
+      svg_icon:
+        weight: -40
+        enabled: false
+      testimonial:
+        enabled: true
+        weight: -48
+      testimonials:
+        enabled: true
+        weight: -49
+      text:
+        enabled: true
+        weight: -65
+      text_image:
+        enabled: true
+        weight: -64
+      title:
+        weight: -42
+        enabled: false
+      video:
+        enabled: true
+        weight: -60
+      webform:
+        enabled: true
+        weight: -51
+field_type: entity_reference_revisions

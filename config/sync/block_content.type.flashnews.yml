@@ -1,0 +1,8 @@
+uuid: 2ce41ae7-9647-4188-bfdc-64a2b649bcb6
+langcode: fr
+status: true
+dependencies: {  }
+id: flashnews
+label: Flashnews
+revision: 1
+description: ''

@@ -1,0 +1,22 @@
+uuid: 4c77df87-2740-4af6-a570-09391062e7d4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wdi_theme
+_core:
+  default_config_hash: BwJDfJa1QA7QXkpneSXx2S6cKl0E6y9wTH9h_7yMTP4
+id: wdi_theme_content
+theme: wdi_theme
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: e83df8c7-0559-4832-9294-1d3e841c3da8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.horeca
+  module:
+    - link
+id: node.horeca.field_address
+field_name: field_address
+entity_type: node
+bundle: horeca
+label: 'Adresse (lien google map)'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

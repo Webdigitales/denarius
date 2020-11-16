@@ -1,0 +1,18 @@
+uuid: a4a09044-fc46-47d0-9ae0-fe3c79d26553
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.room
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.room
+target_entity_type_id: node
+target_bundle: room
+default_langcode: site_default
+language_alterable: false

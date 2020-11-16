@@ -1,0 +1,30 @@
+uuid: 4f157890-afb6-4986-ae2a-40285ad97b76
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.wdi_partners
+  module:
+    - system
+    - views
+  theme:
+    - wdi_theme
+id: views_block__wdi_partners_block_logo_2
+theme: wdi_theme
+region: content_bottom
+weight: -20
+provider: null
+plugin: 'views_block:wdi_partners-block_logo'
+settings:
+  id: 'views_block:wdi_partners-block_logo'
+  label: Partenaires
+  provider: views
+  label_display: visible
+  views_label: Partenaires
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/62
+    negate: false
+    context_mapping: {  }

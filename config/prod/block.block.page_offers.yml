@@ -1,0 +1,24 @@
+uuid: 2a13f2ff-3832-4ab3-af59-90f79d8638ef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.offers
+  module:
+    - views
+  theme:
+    - wdi_theme
+id: page_offers
+theme: wdi_theme
+region: hidden
+weight: -12
+provider: null
+plugin: 'views_block:offers-page_offers'
+settings:
+  id: 'views_block:offers-page_offers'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

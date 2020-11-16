@@ -1,0 +1,23 @@
+uuid: da2507cc-fd8e-401d-93e8-cdb32a549375
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button
+    - node.type.service
+  module:
+    - link
+id: node.service.field_button
+field_name: field_button
+entity_type: node
+bundle: service
+label: 'Lien de réservation'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

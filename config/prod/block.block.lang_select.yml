@@ -1,0 +1,44 @@
+uuid: bf7bdb16-c6a5-42a6-9eac-fb7d14bd4472
+langcode: fr
+status: true
+dependencies:
+  module:
+    - lang_dropdown
+  theme:
+    - wdi_theme
+id: lang_select
+theme: wdi_theme
+region: header_actions
+weight: -13
+provider: null
+plugin: 'language_dropdown_block:language_interface'
+settings:
+  id: 'language_dropdown_block:language_interface'
+  label: 'Sélection de la langue'
+  provider: lang_dropdown
+  label_display: visible
+  showall: 0
+  tohome: 0
+  width: '165'
+  display: '2'
+  widget: '0'
+  msdropdown:
+    visible_rows: '5'
+    rounded: 1
+    animation: slideDown
+    event: click
+    skin: ldsSkin
+    custom_skin: ''
+  chosen:
+    disable_search: 1
+    no_results_text: 'No language match'
+  ddslick:
+    ddslick_height: '0'
+    showSelectedHTML: 1
+    imagePosition: left
+    skin: ddsDefault
+    custom_skin: ''
+  languageicons:
+    flag_position: 1
+  hidden_languages: {  }
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 687ae58d-4a32-42bb-b8c3-3e6e9c7e6e5b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.horeca
+  module:
+    - telephone
+id: node.horeca.field_phone
+field_name: field_phone
+entity_type: node
+bundle: horeca
+label: 'Numéro de téléphone'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

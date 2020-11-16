@@ -1,0 +1,102 @@
+.field--name-field-body, [class*='field--type-text-'] {
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6,
+  p, li,
+  ul, ol {
+    margin-bottom: 20px;
+  }
+
+  ul, ol {
+    li {
+      > ul, ol {
+        > li:first-child {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  ul, ol {
+    list-style: none;
+    padding-left: 0;
+    li {
+      position: relative;
+      padding-left: 20px;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        text-align: right;
+      }
+    }
+  }
+
+  ul:not(.not-bullet) {
+    li {
+      &:before {
+        content: "•";
+        color: $brand-primary;
+
+        top: -13px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  ol {
+    counter-reset: li;
+    li {
+      counter-increment: li;
+      &:before {
+        content: "." counter(li);
+        color: $brand-primary;
+        direction: rtl;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .btn {
+    @include button-size(16px, 16px, 13px, 16px, 30px);
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 310px;
+    margin: 0 0 40px 0;
+    transition: all 0.3s;
+
+    &.btn-default {
+      @include button-variant($white, $black, transparent);
+    }
+    &.btn-primary {
+      @include button-variant($white, $brand-primary, transparent);
+    }
+  }
+
+  blockquote {
+    position: relative;
+    border: none;
+    font-style: italic;
+    padding: 10px 0;
+    font-size: $font-size-h3;
+    text-align: center;
+
+    p {
+      display: inline;
+    }
+  }
+
+}

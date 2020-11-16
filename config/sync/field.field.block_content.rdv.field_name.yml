@@ -1,0 +1,19 @@
+uuid: 03fb74e6-d7d1-402f-b629-db5df8bd97f9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.rdv
+    - field.storage.block_content.field_name
+id: block_content.rdv.field_name
+field_name: field_name
+entity_type: block_content
+bundle: rdv
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

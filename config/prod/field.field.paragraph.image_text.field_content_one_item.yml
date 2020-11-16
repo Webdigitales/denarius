@@ -1,0 +1,121 @@
+uuid: 58cf1f49-1fa4-4616-b5a6-409b1045598a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_one_item
+    - paragraphs.paragraphs_type.image_text
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: paragraph.image_text.field_content_one_item
+field_name: field_content_one_item
+entity_type: paragraph
+bundle: image_text
+label: Contenu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text: text
+    target_bundles_drag_drop:
+      text:
+        enabled: true
+        weight: -63
+      pdf_link:
+        weight: -62
+        enabled: false
+      link:
+        weight: -61
+        enabled: false
+      body:
+        weight: -60
+        enabled: false
+      call_to_action:
+        weight: -59
+        enabled: false
+      gallery:
+        weight: -58
+        enabled: false
+      grid:
+        weight: -57
+        enabled: false
+      grid_item:
+        weight: -56
+        enabled: false
+      image:
+        weight: -55
+        enabled: false
+      image_text:
+        weight: -54
+        enabled: false
+      block:
+        weight: -53
+        enabled: false
+      quote:
+        weight: -52
+        enabled: false
+      slider:
+        weight: -51
+        enabled: false
+      testimonials:
+        weight: -50
+        enabled: false
+      text_image:
+        weight: -49
+        enabled: false
+      title:
+        weight: -48
+        enabled: false
+      services:
+        weight: -47
+        enabled: false
+      services_item:
+        weight: -46
+        enabled: false
+      code:
+        weight: -45
+        enabled: false
+      svg_icon:
+        weight: -44
+        enabled: false
+      faq:
+        weight: -43
+        enabled: false
+      faq_item:
+        weight: -42
+        enabled: false
+      label_price:
+        weight: -41
+        enabled: false
+      pages:
+        weight: -40
+        enabled: false
+      pages_item:
+        weight: -39
+        enabled: false
+      pricing:
+        weight: -38
+        enabled: false
+      program:
+        weight: -37
+        enabled: false
+      program_item:
+        weight: -36
+        enabled: false
+      testimonial:
+        weight: -35
+        enabled: false
+      video:
+        weight: -34
+        enabled: false
+      webform:
+        weight: -33
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,89 @@
+uuid: 04ab2441-3f42-417b-8147-4b88f725f413
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.rdv
+    - field.field.block_content.rdv.body
+    - field.field.block_content.rdv.field_avatar
+    - field.field.block_content.rdv.field_e_mail
+    - field.field.block_content.rdv.field_name
+    - field.field.block_content.rdv.field_telephone
+    - image.style.thumbnail
+  module:
+    - field_group
+    - image
+    - lazy
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_contact:
+      children:
+        - field_avatar
+        - field_name
+        - field_e_mail
+        - field_telephone
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: contact-rdv
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: contact
+id: block_content.rdv.default
+targetEntityType: block_content
+bundle: rdv
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_avatar:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+    type: image
+    region: content
+  field_e_mail:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_name:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_telephone:
+    weight: 5
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+hidden:
+  langcode: true

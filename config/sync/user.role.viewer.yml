@@ -1,0 +1,17 @@
+uuid: 85930c7e-1e8e-41f1-a77e-f22e9026d7b7
+langcode: en
+status: true
+dependencies: {  }
+id: viewer
+label: Viewer
+weight: -8
+is_admin: null
+permissions:
+  - 'access in-place editing'
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'access webform submission log'
+  - 'administer webform element access'
+  - 'switch shortcut sets'
+  - 'view any webform submission'
+  - 'view the administration theme'

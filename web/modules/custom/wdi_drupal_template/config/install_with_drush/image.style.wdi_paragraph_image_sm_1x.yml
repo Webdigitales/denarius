@@ -1,0 +1,26 @@
+uuid: e16c6a15-882a-4fd1-b7dd-9a5490c614e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_paragraph_image_sm_1x
+label: 'wdi paragraph image | sm | @1x'
+effects:
+  03db4002-e450-47f2-801c-30e45262c5ca:
+    uuid: 03db4002-e450-47f2-801c-30e45262c5ca
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 440
+      crop_type: focal_point
+  66f0d8d9-18d5-4077-a717-bbaec625bd7a:
+    uuid: 66f0d8d9-18d5-4077-a717-bbaec625bd7a
+    id: image_crop
+    weight: 2
+    data:
+      width: 992
+      height: 440
+      anchor: center-center
+pipeline: __default__

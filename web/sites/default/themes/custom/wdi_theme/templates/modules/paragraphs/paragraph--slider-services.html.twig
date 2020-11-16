@@ -1,0 +1,99 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - paragraph.getCreatedTime() will return the paragraph creation timestamp.
+ *   - paragraph.id(): The paragraph ID.
+ *   - paragraph.bundle(): The type of the paragraph, for example, "image" or "text".
+ *   - paragraph.getOwnerId(): The user ID of the paragraph author.
+ *   See Drupal\paragraphs\Entity\Paragraph for a full list of public properties
+ *   and methods for the paragraph object.
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - paragraphs: The current template type (also known as a "theming hook").
+ *   - paragraphs--type-[type]: The current paragraphs type. For example, if the paragraph is an
+ *     "Image" it would result in "paragraphs--type--image". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - paragraphs--view-mode--[view_mode]: The View Mode of the paragraph; for example, a
+ *     preview would result in: "paragraphs--view-mode--preview", and
+ *     default: "paragraphs--view-mode--default".
+ * - view_mode: View mode; for example, "preview" or "full".
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+  'c-paragraph',
+  not paragraph.isPublished() ? 'paragraph--unpublished',
+  'c-paragraph-offers'
+]
+%}
+
+
+{% block paragraph %}
+  <div id="paragraph_{{ paragraph.id() }}" {{ attributes.addClass(classes) }}>
+    {% if content.field_paragraph_header|render|striptags|trim is not empty %}
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="c-paragraph__header {{ align }}" data-aos="fade-up">
+              {{ content.field_paragraph_header }}
+              <div class="slider-control">
+                <button class="slider-control__button button--prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 8" width="14" height="12.6" class="slider-button_icon">
+                    <path fill-rule="evenodd" d="M-.005 3.298h14.827c-.714-1.301-1.071-2.149-1.107-3.304 1.626 1.992 3.737 3.029 6.29 4.006-2.553.934-4.572 2.073-6.29 4.005.11-1.256.405-2.015 1.129-3.395H-.005V3.298z">
+                    </path>
+                  </svg>
+                </button>
+                <button class="slider-control__button button--next">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 8" width="14" height="12.6" class="slider-button_icon">
+                    <path fill-rule="evenodd" d="M-.005 3.298h14.827c-.714-1.301-1.071-2.149-1.107-3.304 1.626 1.992 3.737 3.029 6.29 4.006-2.553.934-4.572 2.073-6.29 4.005.11-1.256.405-2.015 1.129-3.395H-.005V3.298z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <div class="c-paragraph__body">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="slider-wrapper">
+              <div class="slider">
+                <div class="slider-container">
+                  {% block content %}
+                    {% for key,item in content.field_slide if key|first != '#' %}
+                      <div class="slider__item item-{{ key + 1 }}" data-aos="fade-up">
+                        {{ item }}
+                      </div>
+                    {% endfor %}
+                  {% endblock %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock paragraph %}

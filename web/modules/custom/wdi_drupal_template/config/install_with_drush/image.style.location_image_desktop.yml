@@ -1,0 +1,26 @@
+uuid: 14a9fe3c-6559-4ec7-a3cf-509cdd0d4c61
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: location_image_desktop
+label: 'Location image desktop (750x400)'
+effects:
+  b70e638d-ef8c-422f-b33c-f686e4266a68:
+    uuid: b70e638d-ef8c-422f-b33c-f686e4266a68
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 850
+      crop_type: focal_point
+  8970ce03-e9ea-4f2d-b63f-eed1e80ea57e:
+    uuid: 8970ce03-e9ea-4f2d-b63f-eed1e80ea57e
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1600
+      height: 850
+      anchor: center-center
+pipeline: __default__

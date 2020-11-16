@@ -1,0 +1,7 @@
+wdi_modal_booking.settings:
+  type: config_object
+  label: 'Modal Booking Settings'
+  mapping:
+    nbr_days:
+      type: integer
+      label: 'Number of days'

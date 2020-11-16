@@ -1,0 +1,10 @@
+uuid: 6071fcce-9623-408b-a36b-bab443806f21
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.media_browser_thumbnail
+label: 'Media Browser Thumbnail'
+targetEntityType: media
+cache: true

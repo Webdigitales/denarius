@@ -1,0 +1,22 @@
+uuid: 638342b4-8255-4d64-9869-bf5f3f9c6915
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wdi_theme
+_core:
+  default_config_hash: oEulfk3Py5maVaIpcXRjrCBlyzefHGv6tJHApEsSRGA
+id: wdi_theme_messages
+theme: wdi_theme
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

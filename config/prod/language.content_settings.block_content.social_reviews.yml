@@ -1,0 +1,18 @@
+uuid: 8ed9ba58-da5d-4e9e-a1a6-86848aa387aa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.social_reviews
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.social_reviews
+target_entity_type_id: block_content
+target_bundle: social_reviews
+default_langcode: site_default
+language_alterable: true

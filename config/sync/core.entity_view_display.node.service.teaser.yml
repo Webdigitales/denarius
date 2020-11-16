@@ -1,0 +1,45 @@
+uuid: 402508b8-7ea4-43e6-a75d-0024b75adaff
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service.field_button
+    - field.field.node.service.field_buttons
+    - field.field.node.service.field_department
+    - field.field.node.service.field_media_image
+    - field.field.node.service.field_media_image_multiple
+    - field.field.node.service.field_meta
+    - field.field.node.service.field_offer_end
+    - field.field.node.service.field_offer_price
+    - field.field.node.service.field_page_content
+    - field.field.node.service.field_program
+    - field.field.node.service.field_promo_price
+    - field.field.node.service.field_video
+    - node.type.service
+  module:
+    - user
+id: node.service.teaser
+targetEntityType: node
+bundle: service
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_button: true
+  field_buttons: true
+  field_department: true
+  field_media_image: true
+  field_media_image_multiple: true
+  field_meta: true
+  field_offer_end: true
+  field_offer_price: true
+  field_page_content: true
+  field_program: true
+  field_promo_price: true
+  field_video: true
+  langcode: true

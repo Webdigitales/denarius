@@ -1,0 +1,16 @@
+uuid: 2bc113ff-6048-4c34-b38b-fe67ee3a2e34
+langcode: fr
+status: true
+dependencies: {  }
+name: wdi_image_room_slider_lg_1x
+label: 'wdi image room slider | lg | @1x'
+effects:
+  50d2b6a0-26fc-4a76-89fb-06f1251e44aa:
+    uuid: 50d2b6a0-26fc-4a76-89fb-06f1251e44aa
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 544
+      upscale: true
+pipeline: __default__

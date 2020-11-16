@@ -1,0 +1,38 @@
+uuid: 8da6aeed-3a11-4166-9539-b5cccb074a1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title.field_hide_title
+    - field.field.paragraph.title.field_title
+    - field.field.paragraph.title.field_title_level
+    - paragraphs.paragraphs_type.title
+id: paragraph.title.default
+targetEntityType: paragraph
+bundle: title
+mode: default
+content:
+  field_hide_title:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title_level:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true

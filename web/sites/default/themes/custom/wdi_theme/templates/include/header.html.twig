@@ -1,0 +1,111 @@
+{% if node.field_media_image is not empty or node.field_video is not empty %}
+  {% set header_class = 'header--with-media' %}
+{% endif %}
+
+
+{# Tabs #}
+{% if page.tabs %}
+  {% block tabs %}
+    <div class="tabs">{{ page.tabs }}</div>
+  {% endblock %}
+{% endif %}
+
+{# Highlighted #}
+{% if page.highlighted %}
+    {% block highlighted %}
+        <div class="highlighted">{{ page.highlighted }}</div>
+    {% endblock %}
+{% endif %}
+
+{# Flashnews #}
+{% if page.flashnews %}
+  {% block flashnews %}
+    <div class="flashnews">{{ page.flashnews }}</div>
+  {% endblock %}
+{% endif %}
+
+{# Navbar #}
+<header id="header" role="banner" class="header {{ header_class }}">
+  {# Banner #}
+  {% if page.header %}
+    {% block header %}
+      <div class="banner">
+        <div class="banner__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                {% if drupal_field('field_department', 'node') is not empty %}
+                  {{ drupal_field('field_department', 'node') }}
+                {% endif %}
+                {% if drupal_field('field_horeca_category', 'node') is not empty %}
+                  {{ drupal_field('field_horeca_category', 'node') }}
+                {% endif %}
+                {{ page.header }}
+                {% if  drupal_field('field_buttons', 'node') is not empty %}
+                  {{ drupal_field('field_buttons', 'node') }}
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% if node.field_media_image is not empty or node.field_video is not empty or node.field_video is not empty %}
+          <div class="banner__media">
+            {% if node.field_media_image is not empty and node.field_video is empty %}
+              <div class="media media--image">
+                {{ drupal_field('field_media_image', 'node') }}
+              </div>
+            {% endif %}
+            {% if node.field_video is not empty %}
+              <div class="media media--video">
+                {{ drupal_field('field_video', 'node') }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    {% endblock %}
+  {% endif %}
+  {# Bootstrap Nav #}
+  <div id="navbar" class="main-nav">
+    <div class="navbar container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="navbar-header">
+            {{ page.navigation }}
+          </div>
+          {# Navigation (collapsible) #}
+          {% if page.navigation_collapsible %}
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+              {{ page.navigation_collapsible }}
+            </div>
+          {% endif %}
+          {# Header actions #}
+          {% if page.header_actions %}
+            <div class="header_actions">
+              {{ page.header_actions }}
+              {% if node.field_button.value is empty %}
+                {{ drupal_entity('block', 'headeractions') }}
+              {% endif %}
+              {% if  drupal_field('field_buttons', 'node') is not empty %}
+                {{ drupal_field('field_buttons', 'node') }}
+              {% endif %}
+              {% if  node.field_button.value is not empty %}
+                {{ drupal_field('field_button', 'node') }}
+              {% endif %}
+              {# .btn-navbar is used as the toggle for collapsed navbar content #}
+              {% if page.navigation_collapsible %}
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#navbar-collapse">
+                  <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

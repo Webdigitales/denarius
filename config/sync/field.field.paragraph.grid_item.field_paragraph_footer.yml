@@ -1,0 +1,87 @@
+uuid: 2f68b0e9-ddf7-4622-8cdc-c7ebbcb41d18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_footer
+    - paragraphs.paragraphs_type.grid_item
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.pdf_link
+  module:
+    - entity_reference_revisions
+id: paragraph.grid_item.field_paragraph_footer
+field_name: field_paragraph_footer
+entity_type: paragraph
+bundle: grid_item
+label: Footer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      link: link
+      pdf_link: pdf_link
+    target_bundles_drag_drop:
+      block:
+        weight: 20
+        enabled: false
+      body:
+        weight: 21
+        enabled: false
+      call_to_action:
+        weight: 22
+        enabled: false
+      gallery:
+        weight: 23
+        enabled: false
+      grid:
+        weight: 24
+        enabled: false
+      grid_item:
+        weight: 25
+        enabled: false
+      image:
+        weight: 26
+        enabled: false
+      image_text:
+        weight: 27
+        enabled: false
+      intro:
+        weight: 28
+        enabled: false
+      link:
+        enabled: true
+        weight: 29
+      pdf_link:
+        enabled: true
+        weight: 30
+      quote:
+        weight: 31
+        enabled: false
+      slider:
+        weight: 32
+        enabled: false
+      svg_icon:
+        weight: 33
+        enabled: false
+      testimonials:
+        weight: 34
+        enabled: false
+      text:
+        weight: 35
+        enabled: false
+      text_image:
+        weight: 36
+        enabled: false
+      title:
+        weight: 37
+        enabled: false
+      view:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,10 @@
+uuid: 78abf388-421c-4d5c-8732-c755e8065760
+langcode: en
+status: true
+dependencies: {  }
+id: testimonials
+label: 'Partners testimonials'
+icon_uuid: null
+icon_default: null
+description: 'Content - Title + Text + Partners taxonomy'
+behavior_plugins: {  }

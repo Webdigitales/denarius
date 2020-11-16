@@ -1,0 +1,18 @@
+uuid: a7b2e017-0274-4a66-9539-4368b5d279be
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.service
+id: taxonomy_term.service.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: service
+label: 'Balises meta (Meta tags)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

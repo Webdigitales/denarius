@@ -1,0 +1,21 @@
+uuid: 70f0f818-08c4-482f-8a32-21a125ccf045
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_align
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - options
+id: paragraph.gallery.field_align
+field_name: field_align
+entity_type: paragraph
+bundle: gallery
+label: Align
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

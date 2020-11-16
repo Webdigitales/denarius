@@ -1,0 +1,25 @@
+uuid: 621195a3-e1b4-4c6f-be66-1f3971743ef1
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:marketingpopup:4dd6f255-b734-44d8-b888-5509d6b40e58'
+  module:
+    - block_content
+  theme:
+    - wdi_theme
+id: marketingpopup
+theme: wdi_theme
+region: hidden
+weight: 0
+provider: null
+plugin: 'block_content:4dd6f255-b734-44d8-b888-5509d6b40e58'
+settings:
+  id: 'block_content:4dd6f255-b734-44d8-b888-5509d6b40e58'
+  label: 'Marketing popup'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

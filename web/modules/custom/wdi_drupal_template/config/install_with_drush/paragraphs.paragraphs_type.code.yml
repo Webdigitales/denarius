@@ -1,0 +1,10 @@
+uuid: 1704f00d-f1cc-4177-9a05-4cb6e6a454bd
+langcode: en
+status: true
+dependencies: {  }
+id: code
+label: Code
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

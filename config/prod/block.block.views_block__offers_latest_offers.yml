@@ -1,0 +1,32 @@
+uuid: 1c0132c5-a02d-4a3e-9a0e-1cd5dfab15c6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.offers
+  module:
+    - ctools
+    - views
+  theme:
+    - wdi_theme
+id: views_block__offers_latest_offers
+theme: wdi_theme
+region: hidden
+weight: -11
+provider: null
+plugin: 'views_block:offers-latest_offers'
+settings:
+  id: 'views_block:offers-latest_offers'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      room: room
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

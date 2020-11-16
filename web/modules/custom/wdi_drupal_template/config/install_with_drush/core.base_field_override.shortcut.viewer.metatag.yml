@@ -1,0 +1,18 @@
+uuid: 61ee6b67-b82d-4bfd-be8f-353549ddd660
+langcode: fr
+status: true
+dependencies:
+  config:
+    - shortcut.set.viewer
+id: shortcut.viewer.metatag
+field_name: metatag
+entity_type: shortcut
+bundle: viewer
+label: Metatags
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,24 @@
+uuid: 01a61595-ebdc-41ee-bd92-05f3292a2af4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.offers
+  module:
+    - views
+  theme:
+    - wdi_theme
+id: latest_offers_with_taxo
+theme: wdi_theme
+region: hidden
+weight: 0
+provider: null
+plugin: 'views_block:offers-latest_offers_with_taxo'
+settings:
+  id: 'views_block:offers-latest_offers_with_taxo'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

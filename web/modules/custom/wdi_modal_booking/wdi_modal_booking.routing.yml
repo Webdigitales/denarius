@@ -1,0 +1,9 @@
+wdi_modal_booking.admin_settings:
+  path: '/admin/config/sanglier/modal_booking'
+  defaults:
+    _title: 'Sanglier - Settings'
+    _description: ''
+    _form: '\Drupal\wdi_modal_booking\Form\AdminSettingsForm'
+  requirements:
+    _permission: 'administer wdi_modal_booking'
+

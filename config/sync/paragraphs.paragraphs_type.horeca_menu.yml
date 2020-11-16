@@ -1,0 +1,10 @@
+uuid: 7b74a6c3-83cc-4970-986a-936ee12cee16
+langcode: fr
+status: true
+dependencies: {  }
+id: horeca_menu
+label: 'un menu'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

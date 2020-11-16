@@ -1,0 +1,19 @@
+uuid: af1f7e44-36a4-4e7e-8a78-d108f1af6716
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_resengo
+    - node.type.horeca
+id: node.horeca.field_id_resengo
+field_name: field_id_resengo
+entity_type: node
+bundle: horeca
+label: 'ID Résengo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

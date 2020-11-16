@@ -1,0 +1,24 @@
+uuid: 0002936a-e3d5-485a-8ca3-ccbf4a4f563f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.chambres_suites
+  module:
+    - views
+  theme:
+    - wdi_theme
+id: page_suites
+theme: wdi_theme
+region: hidden
+weight: -13
+provider: null
+plugin: 'views_block:chambres_suites-page_suites'
+settings:
+  id: 'views_block:chambres_suites-page_suites'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

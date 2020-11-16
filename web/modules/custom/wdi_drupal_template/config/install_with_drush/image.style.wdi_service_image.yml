@@ -1,0 +1,26 @@
+uuid: bbb19862-46a1-4762-9fe5-03bdec2351bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_service_image
+label: 'wdi service image'
+effects:
+  35ca3603-c369-4e50-a792-875c4cadd809:
+    uuid: 35ca3603-c369-4e50-a792-875c4cadd809
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 440
+      crop_type: focal_point
+  7cfa9fb2-285e-43c0-990e-524aed960c64:
+    uuid: 7cfa9fb2-285e-43c0-990e-524aed960c64
+    id: image_crop
+    weight: 2
+    data:
+      width: 300
+      height: 440
+      anchor: center-center
+pipeline: __default__

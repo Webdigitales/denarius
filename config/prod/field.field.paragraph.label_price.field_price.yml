@@ -1,0 +1,19 @@
+uuid: efe32364-133e-48be-8d1e-25733d1f8864
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_price
+    - paragraphs.paragraphs_type.label_price
+id: paragraph.label_price.field_price
+field_name: field_price
+entity_type: paragraph
+bundle: label_price
+label: Prix
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

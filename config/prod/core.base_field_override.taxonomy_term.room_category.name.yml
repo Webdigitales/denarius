@@ -1,0 +1,18 @@
+uuid: 010ad8c8-65c1-4f8e-82c6-069fba5a2a53
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.room_category
+id: taxonomy_term.room_category.name
+field_name: name
+entity_type: taxonomy_term
+bundle: room_category
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: ef1b4d2a-5384-4c0b-9f9b-16a1a9b76052
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.call_to_action
+id: paragraph.call_to_action.created
+field_name: created
+entity_type: paragraph
+bundle: call_to_action
+label: 'Écrit le'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

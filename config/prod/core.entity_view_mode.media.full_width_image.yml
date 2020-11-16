@@ -1,0 +1,10 @@
+uuid: e8f0f040-bdd5-4478-a447-a97b891a1e78
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.full_width_image
+label: 'wdi paragraph image'
+targetEntityType: media
+cache: true

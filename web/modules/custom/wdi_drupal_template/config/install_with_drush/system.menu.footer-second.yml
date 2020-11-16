@@ -1,0 +1,8 @@
+uuid: 7c3ab011-3dde-42f1-9fab-1c8178b3ab86
+langcode: en
+status: true
+dependencies: {  }
+id: footer-second
+label: 'Footer Second'
+description: ''
+locked: false

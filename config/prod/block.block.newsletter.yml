@@ -1,0 +1,25 @@
+uuid: 4369ae8f-64ca-43e8-a2f9-17232baffc2f
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0fdf6e51-550b-46ca-b6d4-9c9692ade91a'
+  module:
+    - block_content
+  theme:
+    - wdi_theme
+id: newsletter
+theme: wdi_theme
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:0fdf6e51-550b-46ca-b6d4-9c9692ade91a'
+settings:
+  id: 'block_content:0fdf6e51-550b-46ca-b6d4-9c9692ade91a'
+  label: Newsletter
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

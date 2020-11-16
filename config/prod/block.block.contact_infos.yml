@@ -1,0 +1,25 @@
+uuid: b2c08feb-cbb6-43b4-b30d-80647590815e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:64473889-d7cd-469d-a5b8-f553428dbab4'
+  module:
+    - block_content
+  theme:
+    - wdi_theme
+id: contact_infos
+theme: wdi_theme
+region: hidden
+weight: -9
+provider: null
+plugin: 'block_content:64473889-d7cd-469d-a5b8-f553428dbab4'
+settings:
+  id: 'block_content:64473889-d7cd-469d-a5b8-f553428dbab4'
+  label: 'Contact infos'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

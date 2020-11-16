@@ -1,0 +1,18 @@
+uuid: 323ccaf9-92e9-451d-93a9-999f4d56deab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.partners
+id: node.partners.title
+field_name: title
+entity_type: node
+bundle: partners
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

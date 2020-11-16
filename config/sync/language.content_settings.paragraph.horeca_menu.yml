@@ -1,0 +1,18 @@
+uuid: d566571c-7e0e-4d33-a76b-a09f8e6ac81a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.horeca_menu
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.horeca_menu
+target_entity_type_id: paragraph
+target_bundle: horeca_menu
+default_langcode: site_default
+language_alterable: true

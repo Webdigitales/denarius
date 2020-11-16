@@ -1,0 +1,10 @@
+uuid: 20f9cb54-d2d4-465c-9919-8662b0b69f6d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_room_slider
+label: 'wdi room slider'
+targetEntityType: media
+cache: true

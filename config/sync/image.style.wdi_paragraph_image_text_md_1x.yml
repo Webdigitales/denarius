@@ -1,0 +1,18 @@
+uuid: f7b9bfca-2722-4eb3-a99b-1d49bb0a9bec
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_paragraph_image_text_md_1x
+label: 'wdi paragraph image text | md | @1x'
+effects:
+  de586370-8944-45bf-ac94-56b43dfdb628:
+    uuid: de586370-8944-45bf-ac94-56b43dfdb628
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 480
+      crop_type: focal_point
+pipeline: __default__

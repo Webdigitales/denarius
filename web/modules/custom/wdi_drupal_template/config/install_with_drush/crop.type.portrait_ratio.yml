@@ -1,0 +1,12 @@
+uuid: 9bfb30f0-c02e-40a3-b3f1-7fc059f4a934
+langcode: en
+status: true
+dependencies: {  }
+id: portrait_ratio
+label: 'Portrait ratio'
+description: ''
+aspect_ratio: '5:6'
+soft_limit_width: 500
+soft_limit_height: 600
+hard_limit_width: 500
+hard_limit_height: 600

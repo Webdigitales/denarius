@@ -1,0 +1,25 @@
+uuid: ce288f2a-22bf-431c-889f-04e809e7ebfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-fourth
+  module:
+    - system
+  theme:
+    - wdi_theme
+id: footerfourth
+theme: wdi_theme
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-fourth'
+settings:
+  id: 'system_menu_block:footer-fourth'
+  label: 'Une question ?'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

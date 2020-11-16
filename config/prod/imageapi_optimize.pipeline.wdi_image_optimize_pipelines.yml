@@ -1,0 +1,33 @@
+uuid: e5742f75-3151-467a-8743-4dcfdf656f60
+langcode: fr
+status: true
+dependencies:
+  module:
+    - imageapi_optimize_binaries
+    - imageapi_optimize_webp
+name: wdi_image_optimize_pipelines
+label: 'wdi Image Optimize pipelines'
+processors:
+  f9c73c7e-5cc1-4b4f-a8ea-0dca9e7b587d:
+    uuid: f9c73c7e-5cc1-4b4f-a8ea-0dca9e7b587d
+    id: jpegoptim
+    weight: -9
+    data:
+      manual_executable_path: ''
+      progressive: 1
+      quality: 85
+      size: null
+  6d2e41bb-5339-4ecf-ba41-1c1d51375e53:
+    uuid: 6d2e41bb-5339-4ecf-ba41-1c1d51375e53
+    id: optipng
+    weight: -8
+    data:
+      manual_executable_path: ''
+      level: 5
+      interlace: false
+  58ab2c87-2b7b-453e-b0bb-100cd2988faa:
+    uuid: 58ab2c87-2b7b-453e-b0bb-100cd2988faa
+    id: imageapi_optimize_webp
+    weight: -10
+    data:
+      quality: '85'

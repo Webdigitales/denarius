@@ -1,0 +1,143 @@
+uuid: 4dacea0c-2faa-4459-a4be-5032295135d4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.horeca.field_address
+    - field.field.node.horeca.field_button
+    - field.field.node.horeca.field_buttons
+    - field.field.node.horeca.field_horeca_category
+    - field.field.node.horeca.field_id_resengo
+    - field.field.node.horeca.field_id_voucher_resengo
+    - field.field.node.horeca.field_meals
+    - field.field.node.horeca.field_media_image
+    - field.field.node.horeca.field_opening_hours
+    - field.field.node.horeca.field_page_content
+    - field.field.node.horeca.field_phone
+    - field.field.node.horeca.field_teaser_image
+    - field.field.node.horeca.field_video
+    - node.type.horeca
+  module:
+    - entity_reference_revisions
+    - link
+    - telephone
+    - text
+    - user
+id: node.horeca.full
+targetEntityType: node
+bundle: horeca
+mode: full
+content:
+  field_address:
+    type: link
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_button:
+    weight: 9
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_buttons:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_horeca_category:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_id_resengo:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_id_voucher_resengo:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_meals:
+    type: entity_reference_revisions_entity_view
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_media_image:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: wdi_banner_image
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_opening_hours:
+    type: text_default
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_page_content:
+    weight: 11
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_phone:
+    weight: 10
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_video:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: wdi_banner_image
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_teaser_image: true
+  langcode: true
+  links: true

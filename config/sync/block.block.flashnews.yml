@@ -1,0 +1,25 @@
+uuid: 060413c9-1041-4fef-a75e-16dd3dacb4b7
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:flashnews:dadc8501-dee9-44df-b8c2-ddf29a65c189'
+  module:
+    - block_content
+  theme:
+    - wdi_theme
+id: flashnews
+theme: wdi_theme
+region: flashnews
+weight: 0
+provider: null
+plugin: 'block_content:dadc8501-dee9-44df-b8c2-ddf29a65c189'
+settings:
+  id: 'block_content:dadc8501-dee9-44df-b8c2-ddf29a65c189'
+  label: Flashnews
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

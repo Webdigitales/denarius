@@ -1,0 +1,20 @@
+uuid: 5e8e665a-8acb-4c01-83b1-ec58d34d36c8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wdi_theme
+_core:
+  default_config_hash: ksfnrgnIikor79ovwLhfN02wucVGKHIbmb9cBUwA6ug
+id: wdi_theme_local_actions
+theme: wdi_theme
+region: header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

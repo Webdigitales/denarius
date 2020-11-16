@@ -1,0 +1,19 @@
+uuid: 43542a01-e993-4c10-a5f7-37ab18f6bf64
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.rdv
+    - field.storage.block_content.field_e_mail
+id: block_content.rdv.field_e_mail
+field_name: field_e_mail
+entity_type: block_content
+bundle: rdv
+label: E-mail
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

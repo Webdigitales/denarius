@@ -1,0 +1,19 @@
+uuid: c85233c7-5b39-4dbb-9fc8-e8838e14edc5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_address
+field_name: field_address
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

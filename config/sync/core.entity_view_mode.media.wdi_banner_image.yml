@@ -1,0 +1,10 @@
+uuid: bb295690-a7b8-4a60-ae50-7f740ceab387
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_banner_image
+label: 'wdi banner'
+targetEntityType: media
+cache: true

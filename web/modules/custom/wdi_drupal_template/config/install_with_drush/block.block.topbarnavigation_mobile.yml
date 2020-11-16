@@ -1,0 +1,29 @@
+uuid: be2168b5-96bd-47e4-a1a9-ee0d9e2c3297
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.top-bar-navigation
+  module:
+    - block_class
+    - system
+  theme:
+    - wdi_theme
+third_party_settings:
+  block_class:
+    classes: 'hidden-md hidden-lg'
+id: topbarnavigation_mobile
+theme: wdi_theme
+region: navigation_collapsible
+weight: -12
+provider: null
+plugin: 'system_menu_block:top-bar-navigation'
+settings:
+  id: 'system_menu_block:top-bar-navigation'
+  label: 'Top bar navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

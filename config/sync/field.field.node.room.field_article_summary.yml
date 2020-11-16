@@ -1,0 +1,21 @@
+uuid: 3ff48d65-c17a-4a63-abcb-5a2e37c39b15
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_summary
+    - node.type.room
+  module:
+    - text
+id: node.room.field_article_summary
+field_name: field_article_summary
+entity_type: node
+bundle: room
+label: Résumé
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

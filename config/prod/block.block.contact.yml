@@ -1,0 +1,25 @@
+uuid: 4b90eb93-0927-4dab-a02a-c5edb6d1ed56
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b150bf26-3eca-4878-aeff-1b9e39d98dbc'
+  module:
+    - block_content
+  theme:
+    - wdi_theme
+id: contact
+theme: wdi_theme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:b150bf26-3eca-4878-aeff-1b9e39d98dbc'
+settings:
+  id: 'block_content:b150bf26-3eca-4878-aeff-1b9e39d98dbc'
+  label: Contact
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

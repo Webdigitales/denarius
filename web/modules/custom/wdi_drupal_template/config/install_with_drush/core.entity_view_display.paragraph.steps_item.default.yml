@@ -1,0 +1,33 @@
+uuid: 3d82394c-fed9-428a-bf9a-2fd5c827e0f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.steps_item.field_body
+    - field.field.paragraph.steps_item.field_paragraph_footer
+    - paragraphs.paragraphs_type.steps_item
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.steps_item.default
+targetEntityType: paragraph
+bundle: steps_item
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_paragraph_footer:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden: {  }

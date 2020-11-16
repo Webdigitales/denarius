@@ -1,0 +1,22 @@
+uuid: a3f8ba8b-d242-49f7-9826-5d80ffc69101
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_item.field_service
+    - paragraphs.paragraphs_type.services_item
+id: paragraph.services_item.default
+targetEntityType: paragraph
+bundle: services_item
+mode: default
+content:
+  field_service:
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: grid
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

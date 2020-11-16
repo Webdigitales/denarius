@@ -1,0 +1,25 @@
+uuid: f0c3909f-a39c-4a24-9ba8-ac86dcdc05a6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.program_item.field_body
+    - paragraphs.paragraphs_type.program_item
+  module:
+    - text
+id: paragraph.program_item.default
+targetEntityType: paragraph
+bundle: program_item
+mode: default
+content:
+  field_body:
+    weight: 0
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

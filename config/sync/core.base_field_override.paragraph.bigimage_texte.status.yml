@@ -1,0 +1,22 @@
+uuid: 99ac4b62-d609-4b56-bd3a-2dfdd27d53ea
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bigimage_texte
+id: paragraph.bigimage_texte.status
+field_name: status
+entity_type: paragraph
+bundle: bigimage_texte
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

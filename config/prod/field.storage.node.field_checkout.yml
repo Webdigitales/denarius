@@ -1,0 +1,19 @@
+uuid: 2079eacb-d593-418e-8784-2db35047a47f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - time_field
+id: node.field_checkout
+field_name: field_checkout
+entity_type: node
+type: time
+settings: {  }
+module: time_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

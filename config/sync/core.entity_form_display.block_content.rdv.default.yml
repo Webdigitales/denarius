@@ -1,0 +1,105 @@
+uuid: 9b38f03a-c7f4-48b0-91c4-70bfe8cd8a15
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.rdv
+    - field.field.block_content.rdv.body
+    - field.field.block_content.rdv.field_avatar
+    - field.field.block_content.rdv.field_e_mail
+    - field.field.block_content.rdv.field_name
+    - field.field.block_content.rdv.field_telephone
+    - image.style.square
+  module:
+    - field_group
+    - focal_point
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_personne_de_contact:
+      children:
+        - field_avatar
+        - field_name
+        - field_e_mail
+        - field_telephone
+      parent_name: ''
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Personne de contact'
+id: block_content.rdv.default
+targetEntityType: block_content
+bundle: rdv
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_avatar:
+    weight: 4
+    settings:
+      preview_image_style: square
+      preview_link: true
+      offsets: '50,50'
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
+  field_e_mail:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_name:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_telephone:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

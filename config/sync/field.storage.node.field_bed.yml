@@ -1,0 +1,21 @@
+uuid: 9153d8b5-b599-4f12-891d-3ca42a516efc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_bed
+field_name: field_bed
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

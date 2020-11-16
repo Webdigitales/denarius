@@ -1,0 +1,30 @@
+uuid: b11ffd8d-fb38-49f9-adc4-cd555bfcea2b
+langcode: fr
+status: false
+dependencies:
+  config:
+    - views.view.wdi_partners
+  module:
+    - system
+    - views
+  theme:
+    - wdi_theme
+id: views_block__wdi_partners_block_testimonial
+theme: wdi_theme
+region: flashnews
+weight: -20
+provider: null
+plugin: 'views_block:wdi_partners-block_testimonial'
+settings:
+  id: 'views_block:wdi_partners-block_testimonial'
+  label: 'Quelques Témoignages'
+  provider: views
+  label_display: visible
+  views_label: 'Quelques Témoignages'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/62
+    negate: false
+    context_mapping: {  }

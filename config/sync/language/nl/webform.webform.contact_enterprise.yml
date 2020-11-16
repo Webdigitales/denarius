@@ -1,0 +1,4 @@
+description: 'Eenvoudig e-mailcontactformulier'
+settings:
+  confirmation_message: 'Uw bericht is verzonden.'
+elements: "processed_text:\n  '#text': \"<h2>Vraag een offerte aan</h2>\\n<p>Wilt u een onvergetelijk bedrijfsevenement organiseren? Vraag een gratis offerte aan voor de organisatie van uw bedrijfsseminarie!</p>\\n\"\ncompany:\n  '#title': Bedrijfsnaam\nvat_number:\n  '#title': Btw-nummer\nname:\n  '#first__title': Voornaam\n  '#last__title': Naam\nemail:\n  '#title': E-mailadres\nphone_number:\n  '#title': Telefoonnummer\nduration_event:\n  '#title': 'Duur van het evenement'\nnumber_persons:\n  '#title': 'Aantal personen'\narrival_date:\n  '#title': 'Datum van ankomst'\nevent_type:\n  '#title': 'Type evenement'\nmessage:\n  '#title': Bericht\nactions:\n  '#submit__label': Sturen\n"

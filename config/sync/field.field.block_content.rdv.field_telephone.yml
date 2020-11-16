@@ -1,0 +1,21 @@
+uuid: e59394c5-8441-4d72-b267-b5da1d90f367
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.rdv
+    - field.storage.block_content.field_telephone
+  module:
+    - telephone
+id: block_content.rdv.field_telephone
+field_name: field_telephone
+entity_type: block_content
+bundle: rdv
+label: Téléphone
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

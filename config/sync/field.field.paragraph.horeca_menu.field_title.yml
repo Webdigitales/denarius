@@ -1,0 +1,19 @@
+uuid: 966cf121-1917-4f21-9af4-553fa4df4c06
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.horeca_menu
+id: paragraph.horeca_menu.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: horeca_menu
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

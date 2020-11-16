@@ -1,0 +1,67 @@
+uuid: 921ed223-4abc-40c0-91c0-304e3ec69c86
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.page.field_button
+    - field.field.node.page.field_media_image
+    - field.field.node.page.field_meta
+    - field.field.node.page.field_page_content
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - link
+    - metatag
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_button:
+    type: link
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 5
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: wdi_banner_image
+      link: false
+    third_party_settings: {  }
+  field_meta:
+    weight: 4
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_page_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true

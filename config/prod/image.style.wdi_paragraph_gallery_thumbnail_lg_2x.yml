@@ -1,0 +1,18 @@
+uuid: a27ed9da-71dd-441c-8177-67a8f19e820e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_paragraph_gallery_thumbnail_lg_2x
+label: 'wdi paragraph gallery thumbnail | lg | @2x'
+effects:
+  f63697a4-d255-4362-97fc-b336eacf80be:
+    uuid: f63697a4-d255-4362-97fc-b336eacf80be
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 560
+      height: 560
+      crop_type: focal_point
+pipeline: __default__

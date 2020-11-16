@@ -1,0 +1,19 @@
+uuid: 00e614b7-8bd5-4b92-b27b-150969666cf9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.marketingpopup
+    - field.storage.block_content.field_title
+id: block_content.marketingpopup.field_title
+field_name: field_title
+entity_type: block_content
+bundle: marketingpopup
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

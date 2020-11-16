@@ -1,0 +1,10 @@
+uuid: 37b62dc1-9aa6-4c2b-bd2c-51b008eb6cd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_pdf_file
+label: 'wdi pdf file'
+targetEntityType: media
+cache: true

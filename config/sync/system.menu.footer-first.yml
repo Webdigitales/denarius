@@ -1,0 +1,8 @@
+uuid: e96184db-b549-4bee-abee-3263a4a4795c
+langcode: fr
+status: true
+dependencies: {  }
+id: footer-first
+label: 'Footer First'
+description: ''
+locked: false

@@ -1,0 +1,26 @@
+uuid: 9ca6cb9a-b00e-4c7d-947e-31b9b464dc36
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_image_text
+label: 'Paragraph image/text (570x380)'
+effects:
+  b4e554d6-f0ed-40b8-b90d-67045304cf77:
+    uuid: b4e554d6-f0ed-40b8-b90d-67045304cf77
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 570
+      height: 380
+      crop_type: focal_point
+  202b6aed-7134-4ff9-8120-d2339800f741:
+    uuid: 202b6aed-7134-4ff9-8120-d2339800f741
+    id: image_scale
+    weight: 2
+    data:
+      width: 570
+      height: 380
+      upscale: false
+pipeline: __default__

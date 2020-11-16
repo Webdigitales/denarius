@@ -1,0 +1,28 @@
+uuid: 53a5b158-7b10-4e2f-aef9-b8feb374a426
+langcode: fr
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: cCiWdBHgLwj5omG35lsKc4LkW4MBdmcctkVop4ol5x0
+name: thumbnail
+label: 'Vignette (100x100)'
+effects:
+  54f7c4bc-225a-47ea-b12a-41410f522171:
+    uuid: 54f7c4bc-225a-47ea-b12a-41410f522171
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 100
+      height: 100
+      crop_type: focal_point
+  d9dba753-c323-4f09-86e0-12ab9b1af73f:
+    uuid: d9dba753-c323-4f09-86e0-12ab9b1af73f
+    id: image_crop
+    weight: 2
+    data:
+      width: 100
+      height: 100
+      anchor: center-center
+pipeline: __default__

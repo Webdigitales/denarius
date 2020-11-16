@@ -1,0 +1,21 @@
+uuid: ad892e35-69a8-4c6e-8627-9cf3798b2821
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_image
+    - node.type.article
+id: node.article.field_teaser_image
+field_name: field_teaser_image
+entity_type: node
+bundle: article
+label: 'Image de vignette'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

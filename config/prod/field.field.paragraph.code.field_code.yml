@@ -1,0 +1,24 @@
+uuid: b3768348-8fab-4d2f-9e6c-e7b6e06d6dd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_code
+    - paragraphs.paragraphs_type.code
+  module:
+    - text
+id: paragraph.code.field_code
+field_name: field_code
+entity_type: paragraph
+bundle: code
+label: Code
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Your html code here ...'
+    format: code
+default_value_callback: ''
+settings: {  }
+field_type: text_long

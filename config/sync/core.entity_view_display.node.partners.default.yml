@@ -1,0 +1,54 @@
+uuid: 28b60158-b432-4337-8158-7239be727601
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.partners.body
+    - field.field.node.partners.field_link
+    - field.field.node.partners.field_logo_partner
+    - node.type.partners
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.partners.default
+targetEntityType: node
+bundle: partners
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 102
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_logo_partner:
+    weight: 103
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

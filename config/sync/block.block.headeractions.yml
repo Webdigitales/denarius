@@ -1,0 +1,25 @@
+uuid: 3bf72e38-d2ff-48c8-bcc2-c2d351731f36
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.top-bar-navigation
+  module:
+    - system
+  theme:
+    - wdi_theme
+id: headeractions
+theme: wdi_theme
+region: hidden
+weight: -12
+provider: null
+plugin: 'system_menu_block:top-bar-navigation'
+settings:
+  id: 'system_menu_block:top-bar-navigation'
+  label: 'Header actions'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

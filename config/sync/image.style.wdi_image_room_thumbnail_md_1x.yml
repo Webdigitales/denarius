@@ -1,0 +1,18 @@
+uuid: 45e95402-2c1a-4231-9dd8-1ade81a8d4a5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_image_room_thumbnail_md_1x
+label: 'wdi image room thumbnail | md | @1x'
+effects:
+  1945025a-9f2c-4aac-8b03-a212e6f541d3:
+    uuid: 1945025a-9f2c-4aac-8b03-a212e6f541d3
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 292
+      height: 208
+      crop_type: focal_point
+pipeline: __default__

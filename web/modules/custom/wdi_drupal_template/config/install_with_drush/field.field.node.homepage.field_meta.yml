@@ -1,0 +1,21 @@
+uuid: c0f3ab23-8cb6-4f5f-98cd-75462fc0a327
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta
+    - node.type.homepage
+  module:
+    - metatag
+id: node.homepage.field_meta
+field_name: field_meta
+entity_type: node
+bundle: homepage
+label: 'Meta SEO'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

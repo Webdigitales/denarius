@@ -1,0 +1,22 @@
+uuid: 92fb2152-3432-4270-8193-155420835c25
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.gallery
+id: paragraph.gallery.status
+field_name: status
+entity_type: paragraph
+bundle: gallery
+label: Publié
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

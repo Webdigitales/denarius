@@ -1,0 +1,91 @@
+uuid: 58cf1f49-1fa4-4616-b5a6-409b1045598a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_one_item
+    - paragraphs.paragraphs_type.image_text
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: paragraph.image_text.field_content_one_item
+field_name: field_content_one_item
+entity_type: paragraph
+bundle: image_text
+label: 'Content - one item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text: text
+    target_bundles_drag_drop:
+      body:
+        weight: 16
+        enabled: false
+      call_to_action:
+        weight: 17
+        enabled: false
+      gallery:
+        weight: 18
+        enabled: false
+      grid:
+        weight: 19
+        enabled: false
+      grid_item:
+        weight: 20
+        enabled: false
+      image:
+        weight: 21
+        enabled: false
+      block:
+        weight: 22
+        enabled: false
+      image_text:
+        weight: 22
+        enabled: false
+      intro:
+        weight: 23
+        enabled: false
+      link:
+        weight: 24
+        enabled: false
+      quote:
+        weight: 25
+        enabled: false
+      slider:
+        weight: 26
+        enabled: false
+      testimonials:
+        weight: 27
+        enabled: false
+      text:
+        enabled: true
+        weight: 28
+      text_image:
+        weight: 29
+        enabled: false
+      services:
+        weight: 30
+        enabled: false
+      title:
+        weight: 30
+        enabled: false
+      services_item:
+        weight: 31
+        enabled: false
+      pdf_link:
+        weight: 34
+        enabled: false
+      svg_icon:
+        weight: 37
+        enabled: false
+      view:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

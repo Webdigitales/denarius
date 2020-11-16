@@ -1,0 +1,23 @@
+uuid: a62cafe6-d78e-4010-84d3-61a28911160d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button
+    - node.type.horeca
+  module:
+    - link
+id: node.horeca.field_button
+field_name: field_button
+entity_type: node
+bundle: horeca
+label: 'Lien de réservation'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

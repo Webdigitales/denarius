@@ -1,0 +1,60 @@
+uuid: c9a2dbd1-4ad4-4f7a-80d2-5d43e35336d7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.wdi_image_room_slider_lg_1x
+    - image.style.wdi_image_room_slider_lg_2x
+    - image.style.wdi_image_room_slider_md_1x
+    - image.style.wdi_image_room_slider_md_2x
+    - image.style.wdi_image_room_slider_sm_1x
+    - image.style.wdi_image_room_slider_sm_2x
+    - image.style.wdi_image_room_slider_xs_1x
+    - image.style.wdi_image_room_slider_xs_2x
+  theme:
+    - bootstrap
+id: wdi_room_slider
+label: 'wdi room slider'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_slider_lg_1x
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_slider_lg_2x
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_slider_md_1x
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_slider_md_2x
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_slider_sm_1x
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_slider_sm_2x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_slider_xs_1x
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 2x
+    image_mapping_type: image_style
+    image_mapping: wdi_image_room_slider_xs_2x
+breakpoint_group: bootstrap
+fallback_image_style: wdi_image_room_slider_lg_1x

@@ -1,0 +1,27 @@
+uuid: bc2ed14b-236a-48ab-b50a-8e96ade360c2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - wdi_theme
+_core:
+  default_config_hash: 4O7xrVB4xPG0FczOxyE6c5AXnXqn1vxWlLun-FJQ9u4
+id: wdi_theme_main_menu
+theme: wdi_theme
+region: navigation_collapsible
+weight: -14
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navigation principale'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 3
+  expand_all_items: true
+visibility: {  }

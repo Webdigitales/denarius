@@ -1,0 +1,16 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+.breadcrumb {
+  margin-top: 40px;
+  display: none;
+
+  @media #{$normal}{
+    display: block;
+  }
+
+  a {
+    color: $white;
+  }
+}

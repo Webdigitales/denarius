@@ -1,0 +1,91 @@
+uuid: ea405025-0a8f-4074-b2bf-6c2525fba48e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.services
+    - paragraphs.paragraphs_type.services_item
+  module:
+    - entity_reference_revisions
+id: paragraph.services.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: services
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      services_item: services_item
+    target_bundles_drag_drop:
+      block:
+        weight: 21
+        enabled: false
+      services_item:
+        enabled: true
+        weight: 22
+      body:
+        weight: 22
+        enabled: false
+      call_to_action:
+        weight: 23
+        enabled: false
+      gallery:
+        weight: 24
+        enabled: false
+      grid:
+        weight: 25
+        enabled: false
+      grid_item:
+        weight: 26
+        enabled: false
+      image:
+        weight: 27
+        enabled: false
+      image_text:
+        weight: 28
+        enabled: false
+      services:
+        weight: 29
+        enabled: false
+      intro:
+        weight: 30
+        enabled: false
+      link:
+        weight: 31
+        enabled: false
+      pdf_link:
+        weight: 32
+        enabled: false
+      quote:
+        weight: 33
+        enabled: false
+      slider:
+        weight: 34
+        enabled: false
+      svg_icon:
+        weight: 35
+        enabled: false
+      testimonials:
+        weight: 36
+        enabled: false
+      text:
+        weight: 37
+        enabled: false
+      text_image:
+        weight: 38
+        enabled: false
+      title:
+        weight: 39
+        enabled: false
+      view:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

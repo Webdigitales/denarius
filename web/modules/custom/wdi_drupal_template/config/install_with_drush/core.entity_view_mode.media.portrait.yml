@@ -1,0 +1,10 @@
+uuid: d56eecd3-fce5-4a83-ab3d-a983a68175b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.portrait
+label: 'Portrait responsive'
+targetEntityType: media
+cache: true

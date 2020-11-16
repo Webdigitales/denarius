@@ -1,0 +1,10 @@
+uuid: d2b83b7f-9dc3-4796-9086-e4a8ea69ae3a
+langcode: fr
+status: true
+dependencies: {  }
+id: bigimage_texte
+label: 'Grande image + texte'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view template to display a list of rows.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows for this list.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ * - list: @todo.
+ *   - type: Starting tag will be either a ul or ol.
+ *   - attributes: HTML attributes for the list element.
+ *
+ * @see template_preprocess_views_view_list()
+ *
+ * @ingroup themeable
+ */
+#}
+<section class="paragraph__slider c-paragraph c-paragraph-offers" id="slider_{{ view.id() }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="c-paragraph__header text-left" data-aos="fade-up">
+          <h2 class="c-paragraph__title">{{ 'Our offers'|t }}</h2>
+          <div class="slider-control">
+            <button class="slider-control__button button--prev">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 8" width="14" height="12.6" class="slider-button_icon">
+                <path fill-rule="evenodd" d="M-.005 3.298h14.827c-.714-1.301-1.071-2.149-1.107-3.304 1.626 1.992 3.737 3.029 6.29 4.006-2.553.934-4.572 2.073-6.29 4.005.11-1.256.405-2.015 1.129-3.395H-.005V3.298z">
+                </path>
+              </svg>
+            </button>
+            <button class="slider-control__button button--next">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 8" width="14" height="12.6" class="slider-button_icon">
+                <path fill-rule="evenodd" d="M-.005 3.298h14.827c-.714-1.301-1.071-2.149-1.107-3.304 1.626 1.992 3.737 3.029 6.29 4.006-2.553.934-4.572 2.073-6.29 4.005.11-1.256.405-2.015 1.129-3.395H-.005V3.298z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-paragraph__body">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="slider-wrapper">
+            <div class="slider">
+              <div class="slider-container">
+                {% for key,row in rows if key|first != '#' %}
+                  <div class="slider__item item-{{ key + 1 }}" data-aos="fade-up">
+                    {{- row.content -}}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

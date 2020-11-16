@@ -1,0 +1,36 @@
+uuid: e9eb33bf-6843-4afa-acda-128cd5212d8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.wdi_banner_image
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.wdi_banner_image
+  module:
+    - lazy
+    - responsive_image
+_core:
+  default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
+id: media.image.wdi_banner_image
+targetEntityType: media
+bundle: image
+mode: wdi_banner_image
+content:
+  thumbnail:
+    type: responsive_image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      responsive_image_style: wdi_banner_image
+      image_link: ''
+    third_party_settings:
+      lazy:
+        lazy_image: '1'
+hidden:
+  created: true
+  field_media_image: true
+  langcode: true
+  name: true
+  uid: true

@@ -1,0 +1,59 @@
+name: WDI Drupal template
+description: WDI Drupal template
+type: module
+core: 8.x
+dependencies:
+  - drupal:paragraphs
+  - drupal:media
+  - drupal:metatag
+  - drupal:focal_point
+  - drupal:responsive_image
+  - drupal:dropzonejs_eb_widget
+  - drupal:adminimal_admin_toolbar
+  - drupal:entity_browser
+  - drupal:entity_browser_enhanced
+  - drupal:entity_embed
+  - drupal:google_tag
+  - drupal:inline_entity_form
+  - drupal:magnific_popup
+  - drupal:media_entity_browser
+  - drupal:metatag
+  - drupal:pathauto
+  - drupal:recaptcha
+  - drupal:simple_sitemap
+  - drupal:twig_tweak
+  - drupal:twig_vardumper
+  - drupal:vardumper
+  - drupal:views_bulk_operations
+  - drupal:dropzonejs
+  - drupal:block_access
+  - drupal:block_class
+  - drupal:scheduler
+  - drupal:content_translation
+  - drupal:language
+  - drupal:field_group
+  - drupal:redirect
+  - drupal:devel
+  - drupal:devel_generate
+  - drupal:locale
+  - drupal:views_infinite_scroll
+  - drupal:redirect_404
+  - drupal:better_exposed_filters
+  - drupal:lang_dropdown
+  - drupal:linkit
+  - drupal:mailsystem
+  - drupal:module_filter
+  - drupal:recreate_block_content
+  - drupal:social_media_links
+  - drupal:social_media_links_field
+  - drupal:token
+  - drupal:image_effects
+  - drupal:typed_data
+  - drupal:webform
+  - drupal:icon_select
+  - drupal:imageapi_optimize
+  - drupal:imageapi_optimize_binaries
+  - drupal:twig_field_value
+  - drupal:block_field
+  - drupal:link_attributes
+  - drupal:menu_link_attributes

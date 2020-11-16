@@ -1,0 +1,18 @@
+uuid: da312a76-03b3-4e89-83fd-eb47ed771919
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bigimage_texte
+id: paragraph.bigimage_texte.created
+field_name: created
+entity_type: paragraph
+bundle: bigimage_texte
+label: 'Écrit le'
+description: 'Heure de création du paragraphe.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

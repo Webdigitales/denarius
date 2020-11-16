@@ -1,0 +1,18 @@
+uuid: 4feec7ed-cb85-4fec-96d5-0b1082561d0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_banner_image_sm_2x
+label: 'wdi banner image | sm | @2x'
+effects:
+  e4f671a1-49d5-4a98-9bdc-37f6075b9248:
+    uuid: e4f671a1-49d5-4a98-9bdc-37f6075b9248
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2000
+      height: 1200
+      crop_type: focal_point
+pipeline: __default__

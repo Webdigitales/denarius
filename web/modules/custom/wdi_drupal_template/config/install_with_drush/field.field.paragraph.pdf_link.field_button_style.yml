@@ -1,0 +1,23 @@
+uuid: 7ed12ec3-af5b-48a7-a377-910ca40318e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_style
+    - paragraphs.paragraphs_type.pdf_link
+  module:
+    - options
+id: paragraph.pdf_link.field_button_style
+field_name: field_button_style
+entity_type: paragraph
+bundle: pdf_link
+label: 'Button style'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: btn-primary
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,136 @@
+uuid: bdf08966-3819-4a60-abae-efd5e685242d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_button
+    - field.field.node.service.field_buttons
+    - field.field.node.service.field_department
+    - field.field.node.service.field_media_image
+    - field.field.node.service.field_media_image_multiple
+    - field.field.node.service.field_meta
+    - field.field.node.service.field_offer_end
+    - field.field.node.service.field_offer_price
+    - field.field.node.service.field_page_content
+    - field.field.node.service.field_program
+    - field.field.node.service.field_promo_price
+    - field.field.node.service.field_video
+    - node.type.service
+  module:
+    - entity_reference_revisions
+    - link
+    - metatag
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  field_button:
+    weight: 6
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_buttons:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_department:
+    weight: 9
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media_image:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: wdi_banner_image
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_media_image_multiple:
+    weight: 8
+    label: hidden
+    settings:
+      view_mode: wdi_paragraph_gallery_thumbnail
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_meta:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_offer_end:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_offer_price:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_page_content:
+    weight: 11
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_program:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_promo_price:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_video:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: wdi_banner_image
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true
+  links: true

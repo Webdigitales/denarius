@@ -1,0 +1,19 @@
+uuid: 4bbb70a2-d7db-4fc3-882e-36711feb46fa
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - time_field
+id: node.field_checkin
+field_name: field_checkin
+entity_type: node
+type: time
+settings: {  }
+module: time_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

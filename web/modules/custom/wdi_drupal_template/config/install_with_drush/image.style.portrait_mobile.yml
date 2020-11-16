@@ -1,0 +1,26 @@
+uuid: 2789b950-f75f-4786-a467-4a0de9628b37
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: portrait_mobile
+label: 'Portrait mobile (400x260)'
+effects:
+  63304ae8-cb7e-4e0c-a67b-cf3f3be5decb:
+    uuid: 63304ae8-cb7e-4e0c-a67b-cf3f3be5decb
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 260
+      crop_type: focal_point
+  2a152200-91b3-4acc-a907-8ae339c7c3b1:
+    uuid: 2a152200-91b3-4acc-a907-8ae339c7c3b1
+    id: image_scale
+    weight: 2
+    data:
+      width: 400
+      height: null
+      upscale: false
+pipeline: __default__

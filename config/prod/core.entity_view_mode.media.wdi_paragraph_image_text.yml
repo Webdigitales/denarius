@@ -1,0 +1,10 @@
+uuid: 7ccaea25-ebe0-4de5-8f87-83b0286e14e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.wdi_paragraph_image_text
+label: 'wdi paragraph image text'
+targetEntityType: media
+cache: true

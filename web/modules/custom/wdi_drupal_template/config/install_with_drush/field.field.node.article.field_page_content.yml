@@ -1,0 +1,119 @@
+uuid: 83a5b91a-71b1-44e2-96f0-e420a1f497b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_content
+    - node.type.article
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.article.field_page_content
+field_name: field_page_content
+entity_type: node
+bundle: article
+label: 'Page Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text: text
+      image: image
+      video: video
+    target_bundles_drag_drop:
+      text:
+        enabled: true
+        weight: -53
+      image:
+        enabled: true
+        weight: -52
+      quote:
+        weight: -51
+        enabled: false
+      testimonials:
+        weight: -50
+        enabled: false
+      gallery:
+        weight: -49
+        enabled: false
+      slider:
+        weight: -48
+        enabled: false
+      call_to_action:
+        weight: -47
+        enabled: false
+      image_text:
+        weight: -46
+        enabled: false
+      intro:
+        weight: -45
+        enabled: false
+      text_image:
+        weight: -44
+        enabled: false
+      block:
+        weight: -43
+        enabled: false
+      body:
+        weight: -42
+        enabled: false
+      faq:
+        weight: -41
+        enabled: false
+      faq_item:
+        weight: -40
+        enabled: false
+      grid:
+        weight: -39
+        enabled: false
+      grid_item:
+        weight: -38
+        enabled: false
+      services:
+        weight: -37
+        enabled: false
+      services_item:
+        weight: -36
+        enabled: false
+      link:
+        weight: -35
+        enabled: false
+      pdf_link:
+        weight: -34
+        enabled: false
+      steps:
+        weight: -33
+        enabled: false
+      steps_item:
+        weight: -32
+        enabled: false
+      svg_icon:
+        weight: -31
+        enabled: false
+      testimonial:
+        weight: -30
+        enabled: false
+      title:
+        weight: -29
+        enabled: false
+      view:
+        weight: -28
+        enabled: false
+      code:
+        weight: 33
+        enabled: false
+      video:
+        enabled: true
+        weight: 56
+      webform:
+        weight: 58
+        enabled: false
+field_type: entity_reference_revisions

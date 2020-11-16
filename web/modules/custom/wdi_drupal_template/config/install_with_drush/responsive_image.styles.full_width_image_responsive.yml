@@ -1,0 +1,24 @@
+uuid: ecc52955-1d68-412b-a733-979a682019f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.full_width_image_dekstop
+    - image.style.full_width_image_mobile
+  theme:
+    - bootstrap
+id: full_width_image_responsive
+label: 'Full width image responsive'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_width_image_dekstop
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: full_width_image_mobile
+breakpoint_group: bootstrap
+fallback_image_style: full_width_image_dekstop

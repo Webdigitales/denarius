@@ -1,0 +1,25 @@
+uuid: 5a63a194-e782-4667-a77f-77aae8e2c2e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-third
+  module:
+    - system
+  theme:
+    - wdi_theme
+id: footerthird
+theme: wdi_theme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-third'
+settings:
+  id: 'system_menu_block:footer-third'
+  label: Titre
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

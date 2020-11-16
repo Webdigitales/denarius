@@ -1,0 +1,132 @@
+uuid: 45791e1e-a322-4214-97cc-d7ae0df7d5d9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.marketingpopup
+    - field.storage.block_content.field_content
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: block_content.marketingpopup.field_content
+field_name: field_content
+entity_type: block_content
+bundle: marketingpopup
+label: Contenu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image: image
+      text: text
+    target_bundles_drag_drop:
+      bigimage_texte:
+        weight: -66
+        enabled: false
+      block:
+        weight: -65
+        enabled: false
+      body:
+        weight: -67
+        enabled: false
+      call_to_action:
+        weight: -64
+        enabled: false
+      code:
+        weight: -63
+        enabled: false
+      faq:
+        weight: -62
+        enabled: false
+      faq_item:
+        weight: -61
+        enabled: false
+      gallery:
+        weight: -60
+        enabled: false
+      grid:
+        weight: -59
+        enabled: false
+      grid_item:
+        weight: -58
+        enabled: false
+      horeca_menu:
+        weight: -57
+        enabled: false
+      image:
+        enabled: true
+        weight: -69
+      image_text:
+        weight: -56
+        enabled: false
+      label_price:
+        weight: -55
+        enabled: false
+      link:
+        weight: -54
+        enabled: false
+      menu:
+        weight: -53
+        enabled: false
+      pages:
+        weight: -52
+        enabled: false
+      pages_item:
+        weight: -51
+        enabled: false
+      pdf_link:
+        weight: -50
+        enabled: false
+      pricing:
+        weight: -49
+        enabled: false
+      program:
+        weight: -48
+        enabled: false
+      program_item:
+        weight: -47
+        enabled: false
+      quote:
+        weight: -46
+        enabled: false
+      services:
+        weight: -45
+        enabled: false
+      services_item:
+        weight: -44
+        enabled: false
+      slider:
+        weight: -43
+        enabled: false
+      svg_icon:
+        weight: -42
+        enabled: false
+      testimonial:
+        weight: -41
+        enabled: false
+      testimonials:
+        weight: -40
+        enabled: false
+      text:
+        enabled: true
+        weight: -68
+      text_image:
+        weight: -39
+        enabled: false
+      title:
+        weight: -38
+        enabled: false
+      video:
+        weight: -37
+        enabled: false
+      webform:
+        weight: -36
+        enabled: false
+field_type: entity_reference_revisions

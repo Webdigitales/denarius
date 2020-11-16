@@ -1,0 +1,25 @@
+uuid: 7ca48a58-5367-4fe6-87f1-c74e2c64dc06
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: banner
+label: 'Banner (1920x800)'
+effects:
+  f2f7e906-2b71-49b3-9331-836260034819:
+    uuid: f2f7e906-2b71-49b3-9331-836260034819
+    id: image_resize
+    weight: -9
+    data:
+      width: 1920
+      height: 800
+  a641e5dc-a952-47e4-b6ad-e25ec7d05ba9:
+    uuid: a641e5dc-a952-47e4-b6ad-e25ec7d05ba9
+    id: focal_point_scale_and_crop
+    weight: -10
+    data:
+      width: 1920
+      height: 800
+      crop_type: focal_point
+pipeline: __default__

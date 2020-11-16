@@ -1,0 +1,26 @@
+uuid: 5bcd0cd3-1231-4e4f-85c7-8eeed7a5963e
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: portrait
+label: 'Portrait desktop (500x600)'
+effects:
+  19f9a91a-2b50-4d48-89cd-3fb75195db7a:
+    uuid: 19f9a91a-2b50-4d48-89cd-3fb75195db7a
+    id: focal_point_scale_and_crop
+    weight: -10
+    data:
+      width: 750
+      height: 980
+      crop_type: focal_point
+  91306362-b2fc-49bb-8207-c029f10430f4:
+    uuid: 91306362-b2fc-49bb-8207-c029f10430f4
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 750
+      height: 980
+      anchor: center-center
+pipeline: __default__

@@ -1,0 +1,19 @@
+uuid: 5c28030c-e8d3-4e2c-bd6f-a63b78d5ad82
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id_voucher_resengo
+    - node.type.horeca
+id: node.horeca.field_id_voucher_resengo
+field_name: field_id_voucher_resengo
+entity_type: node
+bundle: horeca
+label: 'ID bon cadeau Résengo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

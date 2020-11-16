@@ -1,0 +1,36 @@
+uuid: ea1baf78-5bd2-415f-b503-89371100dadc
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - language
+    - taxonomy
+id: partners
+label: Partners
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:original:vocabulary]/[term:name]'
+selection_criteria:
+  50b75f75-27b8-4e79-9b2d-0656420e5855:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      partners: partners
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 50b75f75-27b8-4e79-9b2d-0656420e5855
+  5c9c7832-8075-47aa-8442-81da94aeee87:
+    id: language
+    langcodes:
+      en: en
+      fr: fr
+      nl: nl
+    negate: false
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    uuid: 5c9c7832-8075-47aa-8442-81da94aeee87
+selection_logic: and
+weight: 0
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

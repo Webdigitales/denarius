@@ -1,0 +1,31 @@
+uuid: 27f6cea6-cb7e-4d95-91c6-23151039f159
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block
+    - paragraphs.paragraphs_type.block
+  module:
+    - block_field
+id: paragraph.block.field_block
+field_name: field_block
+entity_type: paragraph
+bundle: block
+label: Block
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    'views_block:offers-latest_offers': 'views_block:offers-latest_offers'
+    'views_block:chambres_suites-page_rooms': 'views_block:chambres_suites-page_rooms'
+    'views_block:chambres_suites-rooms_and_suites': 'views_block:chambres_suites-rooms_and_suites'
+    'views_block:horeca-page_horeca': 'views_block:horeca-page_horeca'
+    'views_block:offers-page_offers': 'views_block:offers-page_offers'
+    'views_block:chambres_suites-page_suites': 'views_block:chambres_suites-page_suites'
+    'block_content:f453c76f-67f6-4c38-9f42-45996cb116aa': 'block_content:f453c76f-67f6-4c38-9f42-45996cb116aa'
+    'block_content:88b60d05-f727-4898-b4dc-2174d801c96a': 'block_content:88b60d05-f727-4898-b4dc-2174d801c96a'
+    social_media_links_block: social_media_links_block
+field_type: block_field

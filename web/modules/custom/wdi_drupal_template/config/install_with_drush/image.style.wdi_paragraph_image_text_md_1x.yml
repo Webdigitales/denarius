@@ -1,0 +1,16 @@
+uuid: f7b9bfca-2722-4eb3-a99b-1d49bb0a9bec
+langcode: en
+status: true
+dependencies: {  }
+name: wdi_paragraph_image_text_md_1x
+label: 'wdi paragraph image text | md | @1x'
+effects:
+  298237f1-9d9c-4f06-bea7-902c0d6425c1:
+    uuid: 298237f1-9d9c-4f06-bea7-902c0d6425c1
+    id: image_scale
+    weight: 1
+    data:
+      width: 455
+      height: null
+      upscale: false
+pipeline: __default__

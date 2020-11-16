@@ -1,0 +1,21 @@
+uuid: 2531c237-c56a-48b7-abb6-8904e96c90e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_align
+    - paragraphs.paragraphs_type.grid
+  module:
+    - options
+id: paragraph.grid.field_align
+field_name: field_align
+entity_type: paragraph
+bundle: grid
+label: 'Alignement des textes'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

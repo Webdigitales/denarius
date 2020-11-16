@@ -1,0 +1,10 @@
+uuid: c98b1e8e-9695-44b4-b100-520e56dcb76d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.square
+label: 'Square 165x165'
+targetEntityType: media
+cache: true

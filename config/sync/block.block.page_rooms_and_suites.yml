@@ -1,0 +1,24 @@
+uuid: 434a1968-a29e-409f-8877-cb7eb553d215
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.chambres_suites
+  module:
+    - views
+  theme:
+    - wdi_theme
+id: page_rooms_and_suites
+theme: wdi_theme
+region: hidden
+weight: -14
+provider: null
+plugin: 'views_block:chambres_suites-rooms_and_suites'
+settings:
+  id: 'views_block:chambres_suites-rooms_and_suites'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

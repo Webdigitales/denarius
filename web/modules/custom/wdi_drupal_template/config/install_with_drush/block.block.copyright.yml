@@ -1,0 +1,25 @@
+uuid: 4443603f-fd34-4213-ad20-1d0774a274c3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:803e3dc9-ca86-4252-8271-866804a21bf6'
+  module:
+    - block_content
+  theme:
+    - wdi_theme
+id: copyright
+theme: wdi_theme
+region: hidden
+weight: 0
+provider: null
+plugin: 'block_content:803e3dc9-ca86-4252-8271-866804a21bf6'
+settings:
+  id: 'block_content:803e3dc9-ca86-4252-8271-866804a21bf6'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

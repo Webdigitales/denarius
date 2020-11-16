@@ -1,0 +1,23 @@
+uuid: fee2cfdb-9884-4bc8-b76d-73734bc98ecb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button
+    - node.type.homepage
+  module:
+    - link
+id: node.homepage.field_button
+field_name: field_button
+entity_type: node
+bundle: homepage
+label: Button
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

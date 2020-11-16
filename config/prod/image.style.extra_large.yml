@@ -1,0 +1,16 @@
+uuid: cfba2f2f-0a19-4dda-ad96-d184245b7834
+langcode: en
+status: true
+dependencies: {  }
+name: extra_large
+label: 'Extra-Large (570x570)'
+effects:
+  4dac4a19-312e-4e86-81ee-dd0d6103d4b3:
+    uuid: 4dac4a19-312e-4e86-81ee-dd0d6103d4b3
+    id: image_scale
+    weight: 1
+    data:
+      width: 570
+      height: 570
+      upscale: false
+pipeline: __default__

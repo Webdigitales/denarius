@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ebtb0q');
+  src:  url('fonts/icomoon.eot?ebtb0q#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ebtb0q') format('truetype'),
+    url('fonts/icomoon.woff?ebtb0q') format('woff'),
+    url('fonts/icomoon.svg?ebtb0q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-times-circle-regular:before {
+  content: "\e91c";
+}
+.icon-check-circle-regular:before {
+  content: "\e91d";
+}
+.icon-Location:before {
+  content: "\e91b";
+}
+.icon-Assurer:before {
+  content: "\e907";
+}
+.icon-Auto:before {
+  content: "\e909";
+}
+.icon-Camion:before {
+  content: "\e90a";
+}
+.icon-Chat:before {
+  content: "\e90b";
+}
+.icon-conducteur:before {
+  content: "\e90c";
+}
+.icon-Emprunter:before {
+  content: "\e90d";
+}
+.icon-Epargner:before {
+  content: "\e90e";
+}
+.icon-Famille:before {
+  content: "\e90f";
+}
+.icon-Faq:before {
+  content: "\e910";
+}
+.icon-Fax:before {
+  content: "\e911";
+}
+.icon-Habitation:before {
+  content: "\e913";
+}
+.icon-Hospitalisation:before {
+  content: "\e914";
+}
+.icon-Mail:before {
+  content: "\e915";
+}
+.icon-moto:before {
+  content: "\e916";
+}
+.icon-Pay:before {
+  content: "\e917";
+}
+.icon-Phone:before {
+  content: "\e918";
+}
+.icon-Protection:before {
+  content: "\e919";
+}
+.icon-Velo:before {
+  content: "\e91a";
+}
+.icon-arrow-right:before {
+  content: "\e906";
+}
+.icon-user:before {
+  content: "\e908";
+}
+.icon-arrow-left:before {
+  content: "\e912";
+}
+.icon-quote-top:before {
+  content: "\e904";
+}
+.icon-quote-bottom:before {
+  content: "\e905";
+}
+.icon-chevron-down:before {
+  content: "\e900";
+}
+.icon-chevron-left:before {
+  content: "\e901";
+}
+.icon-chevron-right:before {
+  content: "\e902";
+}
+.icon-chevron-up:before {
+  content: "\e903";
+}

@@ -1,0 +1,26 @@
+uuid: e29e98a9-5e7f-4d3f-a2f0-60bd1187aef1
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_team_thumbnail
+label: 'wdi team thumbnail'
+effects:
+  0e79a633-7980-4275-a42f-4eec32b1fc41:
+    uuid: 0e79a633-7980-4275-a42f-4eec32b1fc41
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 360
+      crop_type: focal_point
+  1dd78906-e8c1-4faa-9079-87c446106c1f:
+    uuid: 1dd78906-e8c1-4faa-9079-87c446106c1f
+    id: image_crop
+    weight: 2
+    data:
+      width: 360
+      height: 360
+      anchor: center-center
+pipeline: __default__

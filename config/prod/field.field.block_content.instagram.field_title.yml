@@ -1,0 +1,19 @@
+uuid: 1904cfb6-476e-4158-a045-a43a75ff85d6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.instagram
+    - field.storage.block_content.field_title
+id: block_content.instagram.field_title
+field_name: field_title
+entity_type: block_content
+bundle: instagram
+label: Titre
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

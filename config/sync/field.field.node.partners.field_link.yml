@@ -1,0 +1,23 @@
+uuid: 51b022c3-ac52-4a1a-a035-56299b1a9aad
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.partners
+  module:
+    - link
+id: node.partners.field_link
+field_name: field_link
+entity_type: node
+bundle: partners
+label: 'Lien partenaire'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

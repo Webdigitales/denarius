@@ -1,0 +1,23 @@
+uuid: 87acb24f-0ec1-4b9f-91d4-252e7d981436
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hide_title
+    - paragraphs.paragraphs_type.title
+id: paragraph.title.field_hide_title
+field_name: field_hide_title
+entity_type: paragraph
+bundle: title
+label: 'Cacher le titre'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

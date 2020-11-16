@@ -1,0 +1,18 @@
+uuid: a9efd149-8229-4655-848b-23df57481161
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.room_category
+id: taxonomy_term.room_category.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: room_category
+label: 'Balises meta (Meta tags)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

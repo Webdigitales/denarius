@@ -1,0 +1,21 @@
+uuid: eee78678-57bf-489f-972e-0980c836cf26
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_checkin
+    - node.type.room
+  module:
+    - time_field
+id: node.room.field_checkin
+field_name: field_checkin
+entity_type: node
+bundle: room
+label: 'Heure d''arrivée'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time

@@ -1,0 +1,46 @@
+uuid: 566a1fb7-2d02-47ca-8775-5edeabfedea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.call_to_action.field_align
+    - field.field.paragraph.call_to_action.field_content_one_item
+    - field.field.paragraph.call_to_action.field_media_image
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.call_to_action.default
+targetEntityType: paragraph
+bundle: call_to_action
+mode: default
+content:
+  field_align:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_content_one_item:
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: teaser
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: full_width_image
+      link: false
+    third_party_settings: {  }
+hidden:
+  field_body: true
+  field_button: true
+  field_title: true

@@ -1,0 +1,29 @@
+uuid: ee24a50f-9276-4417-a1e1-679bb4dfb0a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.targeted-audience
+  module:
+    - block_class
+    - system
+  theme:
+    - wdi_theme
+third_party_settings:
+  block_class:
+    classes: 'hidden-md hidden-lg'
+id: targetedaudience_mobile
+theme: wdi_theme
+region: navigation_collapsible
+weight: -14
+provider: null
+plugin: 'system_menu_block:targeted-audience'
+settings:
+  id: 'system_menu_block:targeted-audience'
+  label: 'targeted audience'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

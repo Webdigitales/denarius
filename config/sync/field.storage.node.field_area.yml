@@ -1,0 +1,20 @@
+uuid: cfd92c0e-ade2-42d6-8699-6ecf9985e91e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_area
+field_name: field_area
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

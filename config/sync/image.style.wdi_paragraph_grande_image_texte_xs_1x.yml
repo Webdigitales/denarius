@@ -1,0 +1,18 @@
+uuid: 2e9e2cbc-c858-462c-93ce-5ac1034e0427
+langcode: fr
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_paragraph_grande_image_texte_xs_1x
+label: 'wdi paragraph grande image texte | xs | @1x'
+effects:
+  59782671-9d80-4523-a996-60ff62176fe8:
+    uuid: 59782671-9d80-4523-a996-60ff62176fe8
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 767
+      height: 400
+      crop_type: focal_point
+pipeline: __default__

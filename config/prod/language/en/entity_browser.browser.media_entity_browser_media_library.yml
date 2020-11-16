@@ -1,0 +1,10 @@
+label: 'Media Entity Browser (Media Library)'
+display_configuration:
+  link_text: 'Select media'
+widgets:
+  552cfb05-063f-47a9-81d1-e1260fc8a402:
+    settings:
+      submit_text: 'Select media'
+    label: 'Choose existing media'
+  7e4422b4-dbe9-40f6-9b74-e2bf31b98ae8:
+    label: 'Upload new image'

@@ -1,0 +1,33 @@
+uuid: 5e962bd7-2c98-4526-8af4-53b729c1ef36
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: offre_en
+label: 'Offre EN'
+type: 'canonical_entities:node'
+pattern: 'our-offers/[node:title]'
+selection_criteria:
+  d8936a76-0e8c-4a0c-84c2-83df0b0be8ae:
+    id: node_type
+    bundles:
+      service: service
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d8936a76-0e8c-4a0c-84c2-83df0b0be8ae
+  4eb6b35e-9e65-4372-a866-8814907260a7:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: 4eb6b35e-9e65-4372-a866-8814907260a7
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

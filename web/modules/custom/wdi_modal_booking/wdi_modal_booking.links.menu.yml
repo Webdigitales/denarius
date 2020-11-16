@@ -1,0 +1,5 @@
+wdi_modal_booking.admin_settings:
+  title: 'Modal Booking Settings'
+  parent: system.admin_config_system
+  description: 'Control the various settings of the Modal Booking module'
+  route_name: wdi_modal_booking.admin_settings

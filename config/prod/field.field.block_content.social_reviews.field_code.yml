@@ -1,0 +1,24 @@
+uuid: 3baacb66-1dad-44d9-b165-c84ebfa80882
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.social_reviews
+    - field.storage.block_content.field_code
+  module:
+    - text
+id: block_content.social_reviews.field_code
+field_name: field_code
+entity_type: block_content
+bundle: social_reviews
+label: Code
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<div data-token=\"tzkl7MCq61tRbDpPNsPo40GAuEP7bwtap85djS8VurDBqrAPG1\" class=\"romw-badge\"></div>\r\n<div data-token=\"TTTWe7xSLiia7GDo2JDCp68Q5li2Xn0KE7Cd6zinToc52D6o5M\" class=\"romw-badge\"></div>\r\n<div data-token=\"o0ZE8Jw4KxwegRPS0M4HZFNjgPjhaLjPtiwWqYjHCVVvwFX4jP\" class=\"romw-badge\"></div>\r\n<script src=\"https://reviewsonmywebsite.com/js/embedLoader.js?id=16985fd9e429040ba7c6\" type=\"text/javascript\"></script>"
+    format: code
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: 72e15ff9-dbc6-4b3c-afdb-889d7b7b6f3b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_room_category
+field_name: field_room_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

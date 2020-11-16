@@ -1,0 +1,18 @@
+uuid: 68d03bbc-d8e1-4957-9198-6192a0cedd6a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - focal_point
+name: wdi_offer_image_md_1x
+label: 'wdi offer image | md | @1x'
+effects:
+  ce36eca5-8883-43b2-a36a-fb2e9614c85a:
+    uuid: ce36eca5-8883-43b2-a36a-fb2e9614c85a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 292
+      height: 400
+      crop_type: focal_point
+pipeline: __default__

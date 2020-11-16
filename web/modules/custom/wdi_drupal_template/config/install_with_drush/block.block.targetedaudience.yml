@@ -1,0 +1,25 @@
+uuid: 5a4e1a6c-d8a2-462c-bee8-b52400c3b47e
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.targeted-audience
+  module:
+    - system
+  theme:
+    - wdi_theme
+id: targetedaudience
+theme: wdi_theme
+region: tabs
+weight: -7
+provider: null
+plugin: 'system_menu_block:targeted-audience'
+settings:
+  id: 'system_menu_block:targeted-audience'
+  label: 'targeted audience'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

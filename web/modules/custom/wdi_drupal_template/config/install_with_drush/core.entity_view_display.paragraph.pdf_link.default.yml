@@ -1,0 +1,41 @@
+uuid: b6c39a67-7213-41d9-9f4c-3dd4617790b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pdf_link.field_button_style
+    - field.field.paragraph.pdf_link.field_button_text
+    - field.field.paragraph.pdf_link.field_file
+    - paragraphs.paragraphs_type.pdf_link
+  module:
+    - options
+id: paragraph.pdf_link.default
+targetEntityType: paragraph
+bundle: pdf_link
+mode: default
+content:
+  field_button_style:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_button_text:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_file:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: wdi_pdf_file
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

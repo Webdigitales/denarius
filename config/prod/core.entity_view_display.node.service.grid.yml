@@ -1,0 +1,77 @@
+uuid: 0c8cb5fb-0cdb-42ad-89f6-2f8fed42e6bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.grid
+    - field.field.node.service.field_button
+    - field.field.node.service.field_buttons
+    - field.field.node.service.field_department
+    - field.field.node.service.field_media_image
+    - field.field.node.service.field_media_image_multiple
+    - field.field.node.service.field_meta
+    - field.field.node.service.field_offer_end
+    - field.field.node.service.field_offer_price
+    - field.field.node.service.field_page_content
+    - field.field.node.service.field_program
+    - field.field.node.service.field_promo_price
+    - field.field.node.service.field_video
+    - node.type.service
+  module:
+    - user
+id: node.service.grid
+targetEntityType: node
+bundle: service
+mode: grid
+content:
+  field_department:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_media_image:
+    type: entity_reference_entity_view
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      view_mode: wdi_offer_thumbnail
+      link: false
+    third_party_settings: {  }
+  field_offer_end:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_offer_price:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_promo_price:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_button: true
+  field_buttons: true
+  field_media_image_multiple: true
+  field_meta: true
+  field_page_content: true
+  field_program: true
+  field_video: true
+  langcode: true
+  links: true

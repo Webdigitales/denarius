@@ -1,0 +1,23 @@
+uuid: 79c26317-6367-4e5f-8f7d-37ee643e9c0f
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - wdi_theme
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: wdi_theme_search
+theme: wdi_theme
+region: sidebar_first
+weight: -18
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

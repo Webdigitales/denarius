@@ -1,0 +1,30 @@
+uuid: 6af8e16c-dc9e-4247-9bed-6094b70b08cd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.wdi_partners
+  module:
+    - system
+    - views
+  theme:
+    - wdi_theme
+id: views_block__wdi_partners_block_testimonial_2
+theme: wdi_theme
+region: content_bottom
+weight: -21
+provider: null
+plugin: 'views_block:wdi_partners-block_testimonial'
+settings:
+  id: 'views_block:wdi_partners-block_testimonial'
+  label: 'Quelques Témoignages'
+  provider: views
+  label_display: visible
+  views_label: 'Quelques Témoignages'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/62
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,47 @@
+uuid: 4ad12dd4-515a-490c-9574-1a2f0a7e0ef1
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.room.field_amenities
+    - field.field.node.room.field_animal
+    - field.field.node.room.field_area
+    - field.field.node.room.field_article_summary
+    - field.field.node.room.field_bed
+    - field.field.node.room.field_button
+    - field.field.node.room.field_checkin
+    - field.field.node.room.field_checkout
+    - field.field.node.room.field_media_image_multiple
+    - field.field.node.room.field_option
+    - field.field.node.room.field_persons
+    - field.field.node.room.field_room_category
+    - field.field.node.room.field_teaser_image
+    - node.type.room
+  module:
+    - user
+id: node.room.teaser
+targetEntityType: node
+bundle: room
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_amenities: true
+  field_animal: true
+  field_area: true
+  field_article_summary: true
+  field_bed: true
+  field_button: true
+  field_checkin: true
+  field_checkout: true
+  field_media_image_multiple: true
+  field_option: true
+  field_persons: true
+  field_room_category: true
+  field_teaser_image: true
+  langcode: true

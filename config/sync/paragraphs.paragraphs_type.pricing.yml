@@ -1,0 +1,10 @@
+uuid: b0f1814b-a94f-4b0d-8e6d-aae6511a96a6
+langcode: fr
+status: true
+dependencies: {  }
+id: pricing
+label: Tarifs
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
