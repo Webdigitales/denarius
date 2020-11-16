@@ -1,6 +1,6 @@
 uuid: bf7bdb16-c6a5-42a6-9eac-fb7d14bd4472
 langcode: fr
-status: true
+status: false
 dependencies:
   module:
     - lang_dropdown

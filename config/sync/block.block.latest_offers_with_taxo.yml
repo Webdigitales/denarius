@@ -11,7 +11,7 @@ dependencies:
 id: latest_offers_with_taxo
 theme: wdi_theme
 region: hidden
-weight: 0
+weight: -5
 provider: null
 plugin: 'views_block:offers-latest_offers_with_taxo'
 settings:

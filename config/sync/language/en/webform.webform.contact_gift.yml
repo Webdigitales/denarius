@@ -1,2 +1,0 @@
-description: 'Basic email contact webform.'
-elements: "processed_text:\n  '#text': \"<h2>Gift vouchers</h2>\\n\\n<p>Choose the value of your gift voucher to offer a unique experience tailored to your loved ones.</p>\\n\"\nname:\n  '#title': 'Your Name'\n  '#first__title': 'First Name'\n  '#last__title': 'Last Name'\nemail:\n  '#title': 'Your Email'\nphone_number:\n  '#title': 'Phone number'\naddress:\n  '#postal_code__title': Postcode\nvoucher_value:\n  '#title': 'Voucher value'\nactions:\n  '#submit__label': 'Send message'\n"

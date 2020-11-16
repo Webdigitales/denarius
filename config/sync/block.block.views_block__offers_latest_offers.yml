@@ -12,7 +12,7 @@ dependencies:
 id: views_block__offers_latest_offers
 theme: wdi_theme
 region: hidden
-weight: -11
+weight: -17
 provider: null
 plugin: 'views_block:offers-latest_offers'
 settings:

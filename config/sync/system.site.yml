@@ -1,11 +1,11 @@
 uuid: 74eddb9c-90df-4ad8-a5cd-2a226bd3b8ed
-name: Sanglier
-mail: info@sanglier-des-ardennes.be
+name: Denarius
+mail: info@denarius.be
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/1
+  front: /node/83
 admin_compact_mode: false
 weight_select_max: 100
 langcode: fr

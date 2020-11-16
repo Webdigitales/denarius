@@ -8,8 +8,8 @@ dependencies:
     - wdi_theme
 id: socialmedialinks
 theme: wdi_theme
-region: footer_third
-weight: -21
+region: hidden
+weight: 0
 provider: null
 plugin: social_media_links_block
 settings:
@@ -19,15 +19,15 @@ settings:
   label_display: '0'
   platforms:
     facebook:
-      value: lesanglierdesardennes
+      value: webdigitales
       description: ''
       weight: '-33'
     instagram:
-      value: sanglier_des_ardennes/
+      value: webdigitales
       description: ''
       weight: '-32'
     linkedin:
-      value: company/sanglier-durbuy/
+      value: webdigitales
       description: ''
       weight: '-31'
     vimeo:

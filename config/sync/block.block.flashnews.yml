@@ -1,6 +1,6 @@
 uuid: 060413c9-1041-4fef-a75e-16dd3dacb4b7
 langcode: fr
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:flashnews:dadc8501-dee9-44df-b8c2-ddf29a65c189'

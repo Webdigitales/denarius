@@ -11,7 +11,7 @@ dependencies:
 id: topbarnavigation
 theme: wdi_theme
 region: hidden
-weight: -16
+weight: -23
 provider: null
 plugin: 'system_menu_block:top-bar-navigation'
 settings:

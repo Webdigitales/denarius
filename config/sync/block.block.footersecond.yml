@@ -1,6 +1,6 @@
 uuid: b84e2ca5-fa13-432d-8a0e-8de7495da8cd
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer-second

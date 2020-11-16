@@ -11,7 +11,7 @@ dependencies:
 id: legalfooterinfos
 theme: wdi_theme
 region: hidden
-weight: -1
+weight: -8
 provider: null
 plugin: 'block_content:51476087-23ce-4265-845a-555da7e123bd'
 settings:

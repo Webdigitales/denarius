@@ -11,7 +11,7 @@ dependencies:
 id: socialreviews
 theme: wdi_theme
 region: hidden
-weight: 0
+weight: -1
 provider: null
 plugin: 'block_content:88b60d05-f727-4898-b4dc-2174d801c96a'
 settings:

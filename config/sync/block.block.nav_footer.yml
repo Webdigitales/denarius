@@ -11,7 +11,7 @@ dependencies:
 id: nav_footer
 theme: wdi_theme
 region: hidden
-weight: -5
+weight: -11
 provider: null
 plugin: 'system_menu_block:footer-bottom'
 settings:

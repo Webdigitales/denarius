@@ -9,7 +9,7 @@ dependencies:
 id: searchform
 theme: wdi_theme
 region: hidden
-weight: -3
+weight: -9
 provider: null
 plugin: search_form_block
 settings:

@@ -11,7 +11,7 @@ dependencies:
 id: marketingpopup
 theme: wdi_theme
 region: hidden
-weight: 0
+weight: -4
 provider: null
 plugin: 'block_content:4dd6f255-b734-44d8-b888-5509d6b40e58'
 settings:

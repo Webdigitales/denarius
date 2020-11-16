@@ -7,7 +7,7 @@ dependencies:
 id: page_horeca
 theme: wdi_theme
 region: hidden
-weight: -10
+weight: -16
 provider: null
 plugin: 'views_block:horeca-page_horeca'
 settings:

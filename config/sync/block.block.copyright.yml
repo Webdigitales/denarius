@@ -11,7 +11,7 @@ dependencies:
 id: copyright
 theme: wdi_theme
 region: hidden
-weight: -6
+weight: -12
 provider: null
 plugin: 'block_content:803e3dc9-ca86-4252-8271-866804a21bf6'
 settings:

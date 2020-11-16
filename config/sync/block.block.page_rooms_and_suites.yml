@@ -11,7 +11,7 @@ dependencies:
 id: page_rooms_and_suites
 theme: wdi_theme
 region: hidden
-weight: -14
+weight: -21
 provider: null
 plugin: 'views_block:chambres_suites-rooms_and_suites'
 settings:

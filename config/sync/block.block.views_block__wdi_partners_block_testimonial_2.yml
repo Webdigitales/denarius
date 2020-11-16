@@ -1,6 +1,6 @@
 uuid: 6af8e16c-dc9e-4247-9bed-6094b70b08cd
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - views.view.wdi_partners
