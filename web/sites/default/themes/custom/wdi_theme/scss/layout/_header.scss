@@ -136,23 +136,23 @@ div.tabs {
       position: relative;
       z-index: 3;
 
-      @media #{$normal} {
+      /*@media #{$normal} {
         margin-top: 104px;
       }
 
       @media #{$mobile} {
         margin-top: 40px;
-      }
+      }*/
 
       .tag {
         margin-bottom: 16px;
       }
 
-      .path-frontpage & {
+      /*.path-frontpage & {
         @media #{$mobile} {
           margin-top: -40px;
         }
-      }
+      }*/
 
       .page-header {
         margin: 0;
