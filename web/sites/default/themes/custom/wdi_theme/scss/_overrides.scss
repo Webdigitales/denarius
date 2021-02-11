@@ -171,3 +171,214 @@ span.price {
   justify-content: center;
   margin: 16px 0 0;
 }
+
+.modal {
+  transition: opacity 0.25s ease;
+  z-index: 999;
+}
+
+.modal-container {
+  max-height: 80%;
+
+  @media (min-width: 1200px) {
+    max-height: 90%;
+  }
+}
+
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.opacity-50 {
+  opacity: .5;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+@media (min-width: 768px) {
+  .md\:max-w-lg {
+    max-width: 50rem;
+  }
+
+  button + button {
+    margin-left: 16px;
+  }
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rounded {
+  border-radius: .1875rem;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.modal-container {
+  max-height: 80%;
+}
+
+@media (min-width: 1024px) {
+  .modal-container {
+    max-height: 90%;
+  }
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.justify-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.modal p {
+  overflow-wrap: break-word;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.z-51 {
+  z-index: 51;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+#consentModal {
+  h2 {
+    margin-top: 0 !important;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-flow: row wrap;
+
+    button {
+      flex: 1 1 auto;
+      justify-content: center;
+    }
+  }
+
+  .btn-default {
+    color: $brand-primary !important;
+
+    &:hover {
+      color: $white !important;
+    }
+  }
+
+  @media #{$mobile} {
+    button + button {
+      margin: 16px 0 0 0;
+    }
+  }
+}

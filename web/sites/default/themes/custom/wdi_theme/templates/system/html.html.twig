@@ -82,6 +82,26 @@
 {{ page }}
 {{ page_bottom }}
 {{ drupal_entity('block', 'marketingpopup') }}
+
+<div id="consentModal" style="display: none;" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center" data-modal="consent_modal">
+  <div class="modal-container bg-white w-11/12 md:max-w-lg mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    <div class="modal-content p-2 text-left">
+      <!--Body-->
+        <div class="text">
+          <h2>Avez-vous 18 ans et plus ?</h2>
+          <div class="buttons">
+            <button class="btn btn-primary modal-close" data-modal="consent_modal">
+              Oui, continuer vers le site
+            </button>
+            <button class="btn btn-default">
+              Non
+            </button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal-overlay absolute w-full h-full bg-black opacity-50"></div>
+</div>
 <js-bottom-placeholder token="{{ placeholder_token|raw }}">
 </body>
 </html>
